@@ -4,7 +4,7 @@ This repo contains public documentation of the hpc-resources and tutorials.
 
 HPC @ ICM UW: http://kdm.icm.edu.pl/
 
-Tutorials are hosted at 
+Tutorials are hosted at https://icm-uw.github.io/hpc-docs/
 
 
 ## How to host the tutorials
