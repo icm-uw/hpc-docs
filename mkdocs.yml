@@ -1,0 +1,23 @@
+site_name: ICM HPC tutorials
+site_description: The reference tutorials for HPC @ ICM UW.
+site_author: ICM
+
+theme:
+  logo: 'images/Logo_icm_czarne.svg'
+  name: 'material'
+  palette:
+    primary: 'green'
+    accent: 'green'
+
+repo_name: ICM-HPC
+repo_url: https://github.com/ICM-UW/hpc-docs
+edit_uri: "https://github.com/ICM-UW/hpc-docs/edit/master/docs/"
+
+markdown_extensions:
+    - fenced_code
+    - codehilite
+    - mdx_math
+    - admonition
+    - footnotes
+extra_javascript: 
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
