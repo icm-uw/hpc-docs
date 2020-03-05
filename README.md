@@ -1,11 +1,11 @@
 
 # About docs repo
-This repo contains public documentation of the hpc-resources and tutorials. 
 
-HPC @ ICM UW: http://kdm.icm.edu.pl/
+This repo contains public documentation of the hpc-resources and tutorials.
 
-Tutorials are hosted at https://icm-uw.github.io/hpc-docs/
+HPC @ ICM UW: <http://kdm.icm.edu.pl/>
 
+Tutorials are hosted at <https://icm-uw.github.io/hpc-docs/>
 
 ## How to host the tutorials
 
@@ -36,6 +36,7 @@ $ mkvirtualenv --python=$(which python3) tclb-docs-env
 To activate `$ workon docs-env`, to deactive enter `$ deactivate`
 
 Install dependencies:
+
 ```sh
 (docs-env) $  pip install -r requirements.txt
 ```
@@ -51,7 +52,7 @@ To deploy:
 
 More questions? Visit original documentation: http://www.mkdocs.org/
 
-#### Common issues
+### Common issues
 
 Google virtual env installation
 
@@ -59,7 +60,33 @@ Google virtual env installation
 
 <https://itnext.io/virtualenv-with-virtualenvwrapper-on-ubuntu-18-04-goran-aviani-d7b712d906d5>
 
+## How run automaticaly check for broken links
 
-## How to contribute?
+Install nodejs <https://nodejs.org/en/download/>
 
-Make a pull request to the master branch.
+Install markdown-link-check:
+
+```.sh
+$ npm install -g markdown-link-check
+```
+
+Command Line Tool
+The command line tool optionally takes 1 argument, the file name or http/https URL. If not supplied, the tool reads from standard input.
+
+```.sh
+# Check links from a markdown file hosted on the web
+$ markdown-link-check https://github.com/tcort/markdown-link-check/blob/master/README.md  
+
+# Check links from a local markdown folder (recursive)
+$ find docs -name \*.md -exec markdown-link-check {} \;
+
+# Check links from a local markdown file
+$ markdown-link-check ./README.md  
+```
+
+Source: <https://www.npmjs.com/package/markdown-link-check>
+
+## How to contribute
+
+1) Test the changes on your local machine.
+2) Make a pull request to the develop branch.

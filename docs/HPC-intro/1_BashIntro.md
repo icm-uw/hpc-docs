@@ -4,4 +4,6 @@ date: 2020-02-26
 draft: false
 ---
 
-Usefull commands
+
+Materials in polish:
+<http://www.opcode.eu.org/>

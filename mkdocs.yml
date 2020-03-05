@@ -1,6 +1,7 @@
 site_name: ICM HPC tutorials
 site_description: The reference tutorials for HPC @ ICM UW.
 site_author: ICM
+#strict: true
 
 theme:
   logo: 'images/Logo_icm_czarne.svg'

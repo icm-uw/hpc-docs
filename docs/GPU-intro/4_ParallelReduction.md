@@ -36,6 +36,10 @@ int main()
 
 ```
 
+![parallel_reduction_interleaved_adressing](GPU_images/parallel_reduction_interleaved_adressing.png)
+
 ## Additional reading
+
+Try to figure out the basic algorithm by your own before clicking.
 
 <https://developer.download.nvidia.com/assets/cuda/files/reduction.pdf>

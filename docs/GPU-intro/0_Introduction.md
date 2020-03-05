@@ -170,3 +170,9 @@ Device 0: "GeForce GTX 660 Ti"
 deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 10.2, CUDA Runtime Version = 10.2, NumDevs = 1
 Result = PASS
 ```
+
+### Acknowledgements
+
+The wide variety of materials provided by nvidia is acknowledgement:
+
+<https://developer.nvidia.com/cuda-education-training>
