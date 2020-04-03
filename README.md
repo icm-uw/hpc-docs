@@ -42,10 +42,13 @@ Install dependencies:
 ```
 
 Run server on you local machine:
+
 ```sh
 (docs-env) $ mkdocs serve
 ```
+
 To deploy:
+
 ```sh
 (docs-env) $ mkdocs gh-deploy
 ```
