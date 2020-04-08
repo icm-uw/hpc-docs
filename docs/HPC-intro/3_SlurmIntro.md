@@ -1,5 +1,5 @@
 ---
-title: "3 SLURM Introduction PL"
+title: "3 SLURM Wstęp"
 date: 2020-03-16
 draft: false
 ---
@@ -7,13 +7,24 @@ draft: false
 
 ## Slurm - definicja
 
-SLURM (dawniej *Simple Linux Utiliy for Resource
-Management*) to system kolejkowy działający na wielu komputerach z listy
-Top500. W ICM system ten obsługuje wszystkie komputery dużej mocy.
+!!! Info
+    SLURM (dawniej *Simple Linux Utiliy for Resource Management*)
+    to system kolejkowy działający na wielu komputerach z listy Top500.
+    W ICM system ten obsługuje wszystkie komputery dużej mocy.
 
-'The Slurm Workload Manager, or Slurm, is a free and open-source job scheduler for Linux and Unix-like kernels, used by many of the world's supercomputers and computer clusters.' - Wikipedia
+System kolejkowy to element systemu operacyjnego odpowiedzialny za zarządzanie zasobami komputera obliczeniowego i przydzielanie ich użytkownikom zgodnie z obowiązującymi zasadami.
+Pozwala na optymalne wykorzystanie mocy obliczeniowych i pamięci komputera.
 
-Oficjalna dokumentacja:
+Kolejne zadania użytkowników zostają umieszczone w tzw. kolejce.
+Gdy zadeklarowane przez użytkowników zapotrzebowanie przekracza dostępne zasoby obliczeniowe tj. czasu procesora, pamięci operacyjnej i dyskowej, zadania kolejno oczekują na dostęp.
+Praca z systemem kolejkowym przebiega następująco:
+
+1. Użytkownik pisze tzw. skrypt, w którym określa zasoby niezbędne do przeprowadzenia obliczeń, a także sposób wykonania zadania
+użytkownik umieszcza zadanie w kolejce
+2. System kolejkowy na bieżąco sprawdza dostępność zasobów; gdy jest taka możliwość, rezerwuje zasoby według specyfikacji użytkownika, po czym uruchamia zadanie
+3. Po zakończeniu obliczeń system kolejkowy zwalnia zarezerwowane zasoby i próbuje je zarezerwować dla następnych zadań czekających w kolejce
+
+**Oficjalna dokumentacja:**
 
 <https://slurm.schedmd.com/documentation.html>
 
@@ -44,7 +55,7 @@ program.
     `#!/bin/bash -l`.
 * Kolejne linie powinny zawierać specyfikację zasobów
 
-!!! tip
+!!! Note
     Task jest rozumiany jako pojedynczy proces uruchomiony przez aplikację użytkownika.
     Rezerwacja zasobów oraz wszystkie uruchamiane komendy systemowe i programy nazywane są w skrócie zadaniem.
 
@@ -52,21 +63,21 @@ Większość opcji ma swoje skróty.
 W razie wątpliwości można zajrzeć do instrukcji korzystając z polecenia `man sbatch` lub `man srun`
 Poniżej przedstawiona jest lista najczęściej używanych opcji:
 
-| Skrót    | Pełna nazwa        |  Znaczenie |
-|----------|:------------------:|------:|
-| -N       |  --nodes=          | Liczba węzłów dostępowych do rezerwacji dla zadania.  |
-| ---      |  --ntasks-per-node | Liczba 'tasków' per węzeł. Opcja ta jest przydatna w przypadku hybrydowych aplikacji MPI / OpenMP, w której do każdego węzła należy przypisać tylko jedno „zadanie / stopień” MPI, jednocześnie umożliwiając części OpenMP wykorzystanie pozostałych procesorów dostępnych na węźle w ramach zaalokowanego zadania.
-| -n       |  --ntasks=         |   Liczpa procesów do uruchomienia. Domyśla wartość to jeden proces per węzeł. |
-| -p       |  --partition=      |    Zadanie uruchamiane będzie w dostępnej dla użytkownika partycji (np. topola, okeanos)  |
-| -q       |  --qos=            |    quality of service |
-| -A       |  --account=        |    Numer grantu obliczeniowego użytkownika grant, np. G99-99. Używane w celach sprawozdawczych. |
-| -c       |  --cpus-per-task=  |    Liczba procesorów per proces. |
-| -J       |  --job-name=       |    Ustawia nazwę zadania, domyślnie jest to nazwa skryptu. Pod taką nazwą będzie widziane zadanie w systemie, np. przy wyświetlaniu listy zadań.  |
+| Skrót    | Pełna nazwa             |  Znaczenie                                                                                      |
+|----------|:------------------------|:------------------------------------------------------------------------------------------------|
+| -N       |  --nodes=               | Liczba węzłów dostępowych do rezerwacji dla zadania.  |
+| ---      |  --ntasks-per-node      | Liczba 'tasków' per węzeł. Opcja ta jest przydatna w przypadku hybrydowych aplikacji MPI / OpenMP, w której do każdego węzła należy przypisać tylko jedno „zadanie / stopień” MPI, jednocześnie umożliwiając części OpenMP wykorzystanie pozostałych procesorów dostępnych na węźle w ramach zaalokowanego zadania. |
+| -n       |  --ntasks=         | Liczba procesów do uruchomienia. Domyśla wartość to jeden proces per węzeł.                     |
+| -p       |  --partition=      | Zadanie uruchamiane będzie w dostępnej dla użytkownika partycji (np. topola, okeanos)           |
+| -q       |  --qos=            | quality of service                                                                              |
+| -A       |  --account=        | Numer grantu obliczeniowego użytkownika grant, np. G99-99. Używane w celach sprawozdawczych.    |
+| -c       |  --cpus-per-task=  | Liczba procesorów per proces. |
+| -J       |  --job-name=       | Ustawia nazwę zadania, domyślnie jest to nazwa skryptu. Pod taką nazwą będzie widziane zadanie w systemie, np. przy wyświetlaniu listy zadań.  |
 | -t       |  --time=hh:mm:ss   |    Maksymalna długość działania zadania od momentu jego uruchomienia <gg:mm:ss>. Po tym czasie zadanie zostanie przerwane przez system kolejkowy. |
-| -C       |  --constraint      | Możliwość zażądania sprzętu o konkretnych, np. typu procesora|
-| ---      |  --gres=gpu:4      | Użycie dodatkowych zasobów, np GPU (klaster Rysy). |
-| ---      |  --mem=            | Rezerwacja pamięci per node (megabytes). |
-| ---      |  --mem-per-cpu=    | Rezerwacja pamięci per CPU (megabytes). |
+| -C       |  --constraint      | Możliwość zażądania sprzętu o konkretnych, np. typu procesora.                                  |
+| ---      |  --gres=gpu:4      | Użycie dodatkowych zasobów, np GPU (klaster Rysy).                                              |
+| ---      |  --mem=            | Rezerwacja pamięci per node (megabytes).                                                        |
+| ---      |  --mem-per-cpu=    | Rezerwacja pamięci per CPU (megabytes).                                                         |
 
 ### Przykładowy skrypt na system Topola
 
@@ -171,18 +182,14 @@ srun -p <partition_name>  -A <grant_name> -N 1 -n 12 --time=1:00:00 --pty /bin/b
 srun -A <grant_name> -N 1 -n 12 --time=1:00:00 --gres=gpu:2 --pty /bin/bash -l # cluster: rysy
 ```
 
-## Identyfikacja zadania
-
-Po wstawieniu zadania do kolejki poleceniem `sbatch` system kolejkowy
-powiadamia nas o przyznanym numerze zadania (`JOBID`).
-Jeśli polecenie to wykonamy gdy nasz program został już uruchomiony, możemy między innymi sprawdzić, na których
-węzłach/procesorach wykonywane są nasze obliczenia.
-W czasie trwania obliczeń na węźle możemy połączyć się z tym węzłem przy pomocy **ssh**,
-nasza sesja zostanie jednak przypisana do tych samych procesorów, które
-wykorzystuje zadnie. Z tego powodu nadużywanie logowania na węzły może
-prowadzić do obniżenia wydajności prowadzonych obliczeń.
-
 ### Informacje o kolejkach i zadaniach
+
+Po wstawieniu zadania do kolejki poleceniem `sbatch` system kolejkowy powiadamia nas o przyznanym numerze zadania (`JOBID`).
+Jeśli polecenie to wykonamy gdy nasz program został już uruchomiony,
+możemy między innymi sprawdzić, na których węzłach/procesorach wykonywane są nasze obliczenia.
+W czasie trwania obliczeń na węźle możemy połączyć się z tym węzłem przy pomocy **ssh**,
+nasza sesja zostanie jednak przypisana do tych samych procesorów, które wykorzystuje zadnie.
+Z tego powodu nadużywanie logowania na węzły może prowadzić do obniżenia wydajności prowadzonych obliczeń.
 
 ```.slurm
 squeue # lista aktualnie zakolejkowanych/uruchomionych zadań

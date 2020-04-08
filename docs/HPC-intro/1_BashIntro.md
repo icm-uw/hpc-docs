@@ -1,9 +1,9 @@
 ---
-title: "1 Bash Introduction"
+title: "1 Bash Wstęþ"
 date: 2020-02-26
 draft: false
 ---
 
 
-Materials in polish:
+Materiały dostępne sa na:
 <http://www.opcode.eu.org/>

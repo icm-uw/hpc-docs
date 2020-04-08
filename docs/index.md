@@ -18,3 +18,5 @@ For its users, ICM UW develops and optimizes dedicated software for High Perform
 Since 2018, ICM UW is the organizer of "Supercomputing Frontiers Europe" – an international conference devoted to visionary trends and innovations in High Performance Computing.
 Among the most recognizable ICM UW projects are: meteo.pl – a meteorological service using numerical weather prediction – and HPC hackathons Great Programming Challenges.
 The Center also conducts studies in the field of computational engineering.
+
+<center> ![](images/Centrum-Technologii-ICM.jpg) </center>

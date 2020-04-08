@@ -43,7 +43,7 @@ void CPU_version_wrapper(const int N)
 
     // Initialize array
     for(int i = 0; i < N; i++){
-        h_a[i] = 1.0; 
+        h_a[i] = 1.0;
         h_b[i] = 2.0;
     }
 
