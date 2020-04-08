@@ -1,5 +1,5 @@
 ---
-title: "1 Bash Wstęþ"
+title: "1 Bash Wstęp"
 date: 2020-02-26
 draft: false
 ---

@@ -140,7 +140,7 @@ Ponieważ część maszyn ICM'u dysponuje współdzielonymi systemami plików, n
 /lu/tetyda (dla okeanosa)
 ```
 
-Katalog domowy okeanosa */lustre/tetyda/home/* jest widoczny pod scieżką */lu/tetyda/home/ggruszcz/* z topoli.
+Katalog domowy okeanosa */lustre/tetyda/home/* jest widoczny pod scieżką */lu/tetyda/home/user_name/* z topoli.
 
 ## Kończenie pracy
 
