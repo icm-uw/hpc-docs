@@ -9,6 +9,8 @@ output: html_document
 body {text-align: justify}
 </style>
 
+<center> ![](images/Centrum-Technologii-ICM.jpg) </center>
+
 ## About ICM UW
 
 Interdisciplinary Centre for Mathematical and Computational Modelling at the University of Warsaw (ICM UW) is a leading European supercomputing center.
@@ -19,4 +21,4 @@ Since 2018, ICM UW is the organizer of "Supercomputing Frontiers Europe" – an 
 Among the most recognizable ICM UW projects are: meteo.pl – a meteorological service using numerical weather prediction – and HPC hackathons Great Programming Challenges.
 The Center also conducts studies in the field of computational engineering.
 
-<center> ![](images/Centrum-Technologii-ICM.jpg) </center>
+<iframe width="952" height="380" src="https://www.youtube.com/embed/S5bn9t2EHV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

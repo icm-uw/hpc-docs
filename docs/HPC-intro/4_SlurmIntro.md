@@ -1,5 +1,5 @@
 ---
-title: "3 SLURM Wstęp"
+title: "4 SLURM - Podstawy"
 date: 2020-03-16
 draft: false
 ---
@@ -90,8 +90,8 @@ Poniższy skrypt uruchamia obliczenia w programie Quantum Espresso:
 #SBATCH --ntasks-per-node 12
 #SBATCH --mem 5000
 #SBATCH --time=20:00:00
-#SBATCH -A GYY-xx
-#SBATCH -p topola
+#SBATCH --account=GYY-xx
+#SBATCH --partition=topola
 #SBATCH --output="qe.out"
 
 module load apps/espresso/6.1.0
@@ -121,7 +121,8 @@ mpirun -n 12 pw.x < S.in
 #SBATCH -J qe-1
 #SBATCH -N 1
 #SBATCH --ntasks-per-node 12
-#SBATCH -A GYY-XX
+#SBATCH --account=GYY-XX
+#SBATCH --partition=okeanos
 #SBATCH --output="qe.out"
 
 module swap PrgEnv-cray PrgEnv-intel
@@ -134,8 +135,15 @@ srun -n 12 pw.x < S.in
 Polecenie `sbatch` służy do wstawiania zadań do systemu kolejkowego.
 Wszystkie flagi, które można wyspecyfikować w tym poleceniu,
 alternatywnie podaje się w pierwszym bloku komentarza skryptu
-kolejkowego w liniach zaczynających się od `#SBATCH` . Niektóre opcje
-tego polecenia są specyficzne dla danego komputera.
+kolejkowego w liniach zaczynających się od `#SBATCH` .
+Niektóre opcje tego polecenia są specyficzne dla danego komputera.
+
+!!! Info
+    Zlecanie zadań na system `topola` możliwe jest ***bezpośrednio z węzła dostępowego*** `login.icm.edu.pl`.
+    W przypadku pozostałych systemów możliwy/wymagany jest ***dodatkowy krok logowania*** wykonany z komputera
+    login.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
+
+Więcej o komputerach dostępnych w ICM [tutaj](/HPC-intro/5_Komputery_w_ICM).
 
 ### Tryb wsadowy
 
@@ -167,13 +175,10 @@ jest numer grantu obliczeniowego, w ramach którego prowadzone są prace
 Dodatkowe opcje wykonania zadania możemy wprowadzać jedynie jako
 parametry polecenia `srun`, np.
 
-`srun -p hydra -A G99-99 -C interlagos --pty bash -l`
-(zadanie zostanie uruchomione na partycji z procesorami AMD *Interlagos*
-w ramach grantu G99-99)
+`srun --partition=topola -w wn1234 -A G99-99 -N 1 --ntasks-per-node 6 --pty bash -l`
 
-`srun -p hydra -w wn1234 -N 1 --ntasks-per-node 6 --pty bash -l`
-(zadanie zostanie uruchomione na węźle *wn1234*, z rezerwacją na 6
-procesorów/rdzeni na jednym(\!) węźle)
+zadanie zostanie uruchomione na *jednym* węźle o nazwie *wn1234*, z rezerwacją na *6
+procesorów/rdzeni (per węzeł) *
 
 #### Przykład rozpoczęcia pracy interaktywnej
 
@@ -200,11 +205,9 @@ squeue -u $USER # pokaż zadania należące do użytkownika
 sstat -a -j ID_zadania/ID_zadania.batch # zużycie zasobów w ramach kroków (step) działającego zadania
 sacct # zużycie zasobów zakończonego już zadania/kroku
 sacct --format=jobid,jobname,account,partition,ntasks,alloccpus,maxrss,elapsed,state,exitcode -j JOBID
- # informacje o wykorzystaniu zasobów zadania zakończonego o numerze
-podanym jako JOBID
+ # informacje o wykorzystaniu zasobów zadania zakończonego o numerze podanym jako JOBID
 
-scontrol show job <job_ID> # informacje o wszystkich parametrach, które system kolejkowy
-przyznał naszemu zadaniu.
+scontrol show job <job_ID> # informacje o wszystkich parametrach, które system kolejkowy przyznał zadaniu.
 scontrol show partition <nazwa_partycji> # właściwości partycji
 scontrol show node <nazwa_węzła> # właściwości węzła
 
@@ -242,7 +245,7 @@ squeue -o "% 16j% i" | grep "d3q27 *" | awk „{print 2 USD}”
 ```.slurm
 # czy użytkownik ma dostęp do XXX?
 sacctmgr show user $USER # pokaż informacje o użytkowniku
-id $USER # pokaż informacje o użytkowniku i jego grupach dostęp
+id $USER # pokaż informacje o użytkowniku i jego grupach dostępu
 
 sacctmgr show assoc format=account,cluster,user,qos | grep $USER # pokaż w jakich jestem grupach i do których qos mam dostęp
 sacctmgr show qos format=name,MaxWall # pokaż limit czasu obliczen dla qos

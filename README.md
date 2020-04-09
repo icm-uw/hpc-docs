@@ -89,6 +89,14 @@ $ markdown-link-check ./README.md
 
 Source: <https://www.npmjs.com/package/markdown-link-check>
 
+### Some potentially interesting stuff
+
+Converting a web page to markdown:
+
+```.sh
+pandoc -s -r html http://www.gnu.org/software/make/ -o example_from_web.md
+```
+
 ## How to contribute
 
 1) Test the changes on your local machine.
