@@ -22,3 +22,34 @@ markdown_extensions:
     - footnotes
 extra_javascript: 
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+pages:
+- Welcome to ICM HPC tutorials: index.md
+
+- O zasobach ICM:
+  - Superkomputery: O_zasobach_ICM/0_superkomputery.md
+  - Kto może być użytkownikiem: O_zasobach_ICM/1_uzytkownik.md
+  - Warunki korzystania: O_zasobach_ICM/2_warunki.md
+  - Regulamin użytkownika: O_zasobach_ICM/3_regulamin.md
+  - Jaki komputer wybrać: O_zasobach_ICM/4_jaki_komputer.md
+  
+- Podstawy HPC:
+  - Wstęp: HPC-intro/0_Introduction.md
+  - Bash – Podstawy: HPC-intro/1_BashIntro.md
+  - Logowanie SSH – Podstawy: HPC-intro/2_sshIntro.md
+  - Logowanie SSH – Użytkownicy Windows: HPC-intro/3_ssh_windows.md
+  - SLURM – Podstawy: HPC-intro/4_SlurmIntro.md
+  - Komputery w ICM: HPC-intro/5_Komputery_w_ICM.md
+  
+- Podstawy GPU:
+  - Introduction (Cheat Sheet): GPU-intro/0_Introduction.md
+  - Hello World: GPU-intro/1_HelloWorld.md
+  - Vector Add: GPU-intro/2_VectorAdd.md
+  - Element-wise Matrix Add: GPU-intro/3_MatrixAddition.md
+  - Parallel reduction: GPU-intro/4_ParallelReduction.md
+
+- NEC SX-Aurora Tsubasa:
+  - Introduction: NEC-SX-Aurora-Tsubasa/0_introduction.md
+  - Basic usage: NEC-SX-Aurora-Tsubasa/1_basic_usage.md
+  - "SOL: Neural Networks": NEC-SX-Aurora-Tsubasa/2_sol.md
+  
