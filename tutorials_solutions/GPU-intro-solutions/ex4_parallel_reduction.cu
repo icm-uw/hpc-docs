@@ -18,9 +18,8 @@ void cpu_sum(int *x, int n)
 __global__ void sum(int *x)
 {
     int tid = blockIdx.x * blockDim.x + threadIdx.x;  
-    // printf("Hello from device! I am threadIdx.x %d in blockIdx.x %d, the blockDim.x is %d \n",threadIdx.x, blockIdx.x, blockDim.x);
- 
-    // printf("_tid = %d \n", tid);
+    // printf("Hello from device! My threadId = blockIdx.x *blockDim.x + threadIdx.x <=> %d = %d * %d + %d \n",
+    // tidx blockIdx.x, blockDim.x, threadIdx.x);
 
     // for(unsigned int s=1; s < blockDim.x; s *= 2) {
     //     if (tid % (2*s) == 0) {
@@ -54,7 +53,7 @@ int main()
 	cudaMalloc(&d, size);
 	cudaMemcpy(d, h, size, cudaMemcpyHostToDevice);
 
-    sum <<<1, count >>>(d);
+    sum <<<1, count >>>(d);  // <<<blocks, threads_per_block>>>
 
     int result;
 	cudaMemcpy(&result, d, sizeof(int), cudaMemcpyDeviceToHost);

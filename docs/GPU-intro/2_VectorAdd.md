@@ -75,7 +75,7 @@ int main(){
 
 ### Initialize the data
 
-```.cpp
+```.cu
 void GPU_version_wrapper(const int N)
 {
 
@@ -100,7 +100,7 @@ void GPU_version_wrapper(const int N)
 
 The GPU has to allocate corresponding amount of memory to handle the data.
 
-```.cpp
+```.cu
     // Allocate device memory for d_a
     float *d_a, *d_b, *d_out;
     cudaMalloc((void**)&d_a, sizeof(float) * N);
@@ -112,13 +112,13 @@ The GPU has to allocate corresponding amount of memory to handle the data.
 
 Transfer data from host to device memory
 
-```.cpp
+```.cu
   cudaMemcpy(d_a, h_a, sizeof(float) * N, cudaMemcpyHostToDevice);
 ```
 
 ### Call the kernel
 
-```.cpp
+```.cu
 gpu_vector_add<<<1,1024>>>(d_out, d_a, d_b, N);
 ```
 
@@ -126,13 +126,13 @@ gpu_vector_add<<<1,1024>>>(d_out, d_a, d_b, N);
 
 Transfer data from device memory to host
 
-```.cpp
+```.cu
 cudaMemcpy(h_out, d_out, sizeof(float) * N, cudaMemcpyDeviceToHost);
 ```
 
 ### Verify the result
 
-```.cpp
+```.cu
     printf("GPU Last element in the array: out[%d] = %f\n",N-1,  h_out[N-1]);
     for(int i = 0; i < N; i++){
         assert(fabs(h_out[i] - h_a[i] - h_b[i]) < MAX_ERR);
@@ -145,7 +145,7 @@ cudaMemcpy(h_out, d_out, sizeof(float) * N, cudaMemcpyDeviceToHost);
 
 Cleanup the memory after kernel execution
 
-```.cpp
+```.cu
     .
     .
     .
@@ -155,14 +155,14 @@ Cleanup the memory after kernel execution
     free(h_a);
     free(h_b);
     free(h_out);
-}
+} // end of GPU_version_wrapper
 ```
 
 ### The gpu_vector_add kernel
 
 Don't forget to write the actual kernel
 
-```.cpp
+```.cu
 __global__ void gpu_vector_add(float *out, float *a, float *b, int n) {
     // built-in variable blockDim.x describes amount threads per block
 

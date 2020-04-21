@@ -82,7 +82,7 @@ void GPU_version_wrapper(const int N)
 
     // Allocate device memory for d_a
     float *d_a, *d_b, *d_out;
-    cudaMalloc((void**)&d_a, sizeof(float) * N);
+    cudaMalloc((void**)&d_b, sizeof(float) * N);
     cudaMalloc((void**)&d_b, sizeof(float) * N);
     cudaMalloc((void**)&d_out, sizeof(float) * N);
 

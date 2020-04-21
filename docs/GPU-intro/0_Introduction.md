@@ -10,7 +10,7 @@ Some frequently used commands/qualifiers/concepts are listed below for convenien
 
 ### Functions qualifers
 
-```.cpp
+```.cu
 __global__ // launched by CPU on device (must return void)
 __device__ // called from other GPU functions (never CPU)
 __host__   // can be executed by CPU (can be used together with __device__)
@@ -19,11 +19,11 @@ __host__   // can be executed by CPU (can be used together with __device__)
 ### Copying memory
 
 The memory between host and device can be copied in two ways.
-The synchronous callblocks the CPU until the copy is complete.
-Copy begins when all preceding CUDA calls have completed.
+The synchronous call blocks the CPU until the copy is complete.
+Copy begins when all preceding CUDA calls are completed.
 
-```.cpp
-cudaMemcpy (void ∗dst, const void ∗src, size t count, enum cudaMemcpyKind kind)
+```.cu
+cudaMemcpy (void ∗dst, const void ∗src, size_t count, enum cudaMemcpyKind kind)
 ```
 
 Asynchronous call which does not block the CPU is `cudaMemcpyAsync(...)`
@@ -31,14 +31,20 @@ Asynchronous call which does not block the CPU is `cudaMemcpyAsync(...)`
 ### Kernel launch
 
 Kernel launches are asynchronous - Control returns to the CPU immediately.
+According to [documentation](https://docs.nvidia.com/cuda/cuda-c-programming-guide/#execution-configuration) the execution configuration is defined as follows:
 
-```.cpp
-f_name<<<gridDim, blockDim, sharedMem, strId>>>(p1,... pN)
+```.cu
+f_name<<<dim3 gridDim, dim3 blockDim, size_t sharedMem, cudaStream_t strId>>>(p1,... pN)
+
+// specifies the dimension and size of the grid.
+// specifies the dimension and size of each block
+// specifies the number of bytes in shared memory that is dynamically allocated per block for this call in addition to the statically allocated memory.
+// specifies the associated stream, is an optional parameter which defaults to 0.
 ```
 
 To block the CPU until all preceding CUDA calls have completed call
 
-```.cpp
+```.cu
 cudaDeviceSynchronize()
 ```
 
@@ -51,20 +57,20 @@ However, if the y or z dimension is not specified explicitly then the defualt va
 
 Declaration of the size of block/grid:
 
-```.cpp
+```.cu
 dim3 gridDim   // This variable describes number of blocks in the grid in each dimension.
 dim3 blockDim  // This variable describes number of threads in the block in each dimension.
 ```
 
 #### Setting the dimensions of a kernel
 
-Given N as the size of the problem the block/grid dimenesions can be evalueated as
+Given N as the size of the problem, the block/grid dimenesions can be evalueated as:
 
-```.cpp
-// N is a friendly multiplier of THREADS_PER_BLOCK
+```.cu
+// if N is a friendly multiplier of THREADS_PER_BLOCK
 my_kernel<<<N/THREADS_PER_BLOCK,THREADS_PER_BLOCK>>>(args)
 
-// N is not a friendly multiplier of THREADS_PER_BLOCK
+// if N is not a friendly multiplier of THREADS_PER_BLOCK
 my_kernel<<<(N + THREADS_PER_BLOCK-1) / THREADS_PER_BLOCK, THREADS_PER_BLOCK>>>(args);
 ```
 
@@ -72,7 +78,7 @@ my_kernel<<<(N + THREADS_PER_BLOCK-1) / THREADS_PER_BLOCK, THREADS_PER_BLOCK>>>(
 
 Within the kernel, the following build-in variables can be referenced:
 
-```.cpp
+```.cu
 int blockIdx  // This variable contains the block index within the grid.
 int threadIdx // This variable contains the thread index within the block.
 ```
@@ -84,7 +90,7 @@ blockDim describes number of threads in the block.
 
 ### Maximum number of threads in a block
 
-The maximum number of threads in the block is limited to 1024. This is the product of whatever your threadblock dimensions are (x*y*z). For example (32,32,1) creates a block of 1024 threads. (33,32,1) is not legal, since 33*32*1 > 1024.
+The maximum number of threads in the block is limited to 1024. This is the product of whatever your threadblock dimensions are (x*y*z). For example (32,32,1) creates a block of 1024 threads. (33,32,1) is not legal, since 33\*32\*1 > 1024.
 
 Source:
 
@@ -120,7 +126,7 @@ $ cuda-gdb # Linux and mac (debugger)
 `sudo apt-get install cuda-samples-10-2`
 `cp -r /usr/local/cuda-10.2/samples/ NVIDIA_CUDA-10.2_Samples`
 
-`~/NVIDIA_CUDA-10.2_Samples/1_Utilities/deviceQuery$ ./deviceQuery` 
+`~/NVIDIA_CUDA-10.2_Samples/1_Utilities/deviceQuery$ ./deviceQuery`
 ./deviceQuery Starting...
 ```
 

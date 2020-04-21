@@ -8,12 +8,13 @@ draft: false
 Write a simple `ex1_hello_world.cu` application using cuda.
 Experiment with different amount of blocks and threads per block.
 
-```.cpp
+```.cu
 #include <iostream>
 
 __global__ void print_from_gpu(void) {
-    printf("Hello from device! I am threadIdx.x %d in blockIdx.x %d, the blockDim.x is %d \n",
-    threadIdx.x, blockIdx.x, blockDim.x);
+    int tidx = blockIdx.x*blockDim.x+threadIdx.x;
+    printf("Hello from device! My threadId = blockIdx.x *blockDim.x + threadIdx.x <=> %d = %d * %d + %d \n",
+    tidx, blockIdx.x, blockDim.x, threadIdx.x);
 }
 
 int main(void) {
