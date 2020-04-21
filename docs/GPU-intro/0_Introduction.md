@@ -36,10 +36,10 @@ According to [documentation](https://docs.nvidia.com/cuda/cuda-c-programming-gui
 ```.cu
 f_name<<<dim3 gridDim, dim3 blockDim, size_t sharedMem, cudaStream_t strId>>>(p1,... pN)
 
-// specifies the dimension and size of the grid.
-// specifies the dimension and size of each block
-// specifies the number of bytes in shared memory that is dynamically allocated per block for this call in addition to the statically allocated memory.
-// specifies the associated stream, is an optional parameter which defaults to 0.
+// gridDim - specifies the dimension and size of the grid.
+// blockDim - specifies the dimension and size of each block
+// sharedMem - specifies the number of bytes in shared memory that is dynamically allocated per block for this call in addition to the statically allocated memory.
+// strId - specifies the associated stream, is an optional parameter which defaults to 0.
 ```
 
 To block the CPU until all preceding CUDA calls have completed call
