@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-
-#define MAX_THREADS_IN_BLOCK 1024
-
 void cpu_add_matrix_elementwise (float *a, float *b, float  *c, int N)
 {
     int index;
