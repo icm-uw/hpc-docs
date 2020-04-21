@@ -97,6 +97,7 @@ void GPU_version_wrapper(const int N)
     dim3 dimBlock(blockSize, blockSize); // This variable describes number of threads in the block in each dimension.
     int gridSize = (N + blockSize-1) / blockSize;
     dim3 dimGrid(gridSize, gridSize);    // This variable describes number of blocks in the grid in each dimension.      
+    
     // Run the kernel
     gpu_matrix_add_elementwise<<<dimGrid,dimBlock>>>(d_a, d_b, d_out, N);
     // my_kernel<<<N/THREADS_PER_BLOCK,THREADS_PER_BLOCK>>>(args) when the N (size of problem) is a friendly multiplier of THREADS_PER_BLOCK
