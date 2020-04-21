@@ -1,10 +1,6 @@
-#include <iostream>
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include <assert.h>
-#include <cuda.h>
-#include <cuda_runtime.h>
+
 
 //cudaMemcpy (void ∗dst, const void ∗src, size t count, enum cudaMemcpyKind kind)
 #define MAX_THREADS_IN_BLOCK 1024
@@ -22,18 +18,18 @@ void cpu_vector_add(float *h_out, float *h_a, float *h_b, int n) {
 __global__ void gpu_vector_add(float *out, float *a, float *b, int n) {
     // built-in variable blockDim.x describes amount threads per block
 
-    // int tid = blockIdx.x * blockDim.x + threadIdx.x;
-    // if (tid < n)
-    //     out[tid] = a[tid] + b[tid];
+    int tid = blockIdx.x * blockDim.x + threadIdx.x;
+    if (tid < n)
+        out[tid] = a[tid] + b[tid];
     
    
     // more advanced version - handling arbitrary vector/kernel size
-    int i = blockIdx.x * blockDim.x + threadIdx.x;  
-    int step = gridDim.x * blockDim.x;
+    // int i = blockIdx.x * blockDim.x + threadIdx.x;  
+    // int step = gridDim.x * blockDim.x;
 
-    for(; i < n; i += step){
-        out[i] = a[i] + b[i];
-    }
+    // for(; i < n; i += step){
+    //     out[i] = a[i] + b[i];
+    // }
 }
 
 void CPU_version_wrapper(const int N)
@@ -82,7 +78,7 @@ void GPU_version_wrapper(const int N)
 
     // Allocate device memory for d_a
     float *d_a, *d_b, *d_out;
-    cudaMalloc((void**)&d_b, sizeof(float) * N);
+    cudaMalloc((void**)&d_a, sizeof(float) * N);
     cudaMalloc((void**)&d_b, sizeof(float) * N);
     cudaMalloc((void**)&d_out, sizeof(float) * N);
 
@@ -91,9 +87,13 @@ void GPU_version_wrapper(const int N)
     cudaMemcpy(d_b, h_b, sizeof(float) * N, cudaMemcpyHostToDevice);
 
     // Main function
-    // gpu_vector_add<<<1,1024>>>(d_out, d_a, d_b, N);
+    gpu_vector_add<<<1,1024>>>(d_out, d_a, d_b, N);//  <<<blocks, threads_per_block>>>
 
-    gpu_vector_add<<<N/MAX_THREADS_IN_BLOCK,MAX_THREADS_IN_BLOCK>>>(d_out, d_a, d_b, N);
+    // if N is a friendly multiplier of THREADS_PER_BLOCK
+    // gpu_vector_add<<<N/MAX_THREADS_IN_BLOCK,MAX_THREADS_IN_BLOCK>>>(d_out, d_a, d_b, N);
+    
+    // if N is not a friendly multiplier of THREADS_PER_BLOCK
+    // gpu_vector_add<<<(N + MAX_THREADS_IN_BLOCK-1) / MAX_THREADS_IN_BLOCK, MAX_THREADS_IN_BLOCK>>>(d_out, d_a, d_b, N);
 
     // Transfer data from device memory to host
     cudaMemcpy(h_out, d_out, sizeof(float) * N, cudaMemcpyDeviceToHost);
@@ -116,7 +116,7 @@ void GPU_version_wrapper(const int N)
 
 
 int main(){
-    const int N = 10240;
+    const int N = 1024;
     CPU_version_wrapper(N);
     GPU_version_wrapper(N);
 
@@ -124,9 +124,11 @@ int main(){
 }
 
 
-// experiment with inappriopate d_array by threads adressing
+// experiment with inappriopate size of array/number of threads
 
-// cuda-memcheck ./ex2_vector_add 
+// $ nvcc ex2_vector_add.cu -o ex2_vector_add
+// $ cuda-memcheck ./ex2_vector_add 
+
 // ========= CUDA-MEMCHECK
 // CPU Result: 3
 // ========= Invalid __global__ read of size 4

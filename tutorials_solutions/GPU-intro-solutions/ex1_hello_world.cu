@@ -1,5 +1,4 @@
-
-#include <iostream>
+#include <stdio.h>
 
 // functions qualifers:
 // __global__ launched by CPU on device (must return void)

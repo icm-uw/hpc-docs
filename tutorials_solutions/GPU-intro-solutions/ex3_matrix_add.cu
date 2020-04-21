@@ -1,16 +1,11 @@
-#include <iostream>
 #include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <cuda.h>
-#include <cuda_runtime.h>
+
 
 #define MAX_THREADS_IN_BLOCK 1024
 
 void cpu_add_matrix_elementwise (float *a, float *b, float  *c, int N)
 {
     int index;
-
     for (int i=0; i <N; ++i)
     {
         for (int j=0; j <N; ++j)
@@ -23,7 +18,6 @@ void cpu_add_matrix_elementwise (float *a, float *b, float  *c, int N)
 
 void __global__ gpu_matrix_add_elementwise (float *a, float *b, float  *c, int N)
 {
-
     int i = blockIdx.x * blockDim.x + threadIdx.x;  
     int j = blockIdx.y * blockDim.y + threadIdx.y;
 
@@ -32,12 +26,26 @@ void __global__ gpu_matrix_add_elementwise (float *a, float *b, float  *c, int N
         c[index] = a[index] + b[index];
 }
 
+void print_matrix(float *Matrix, const int N)
+{
+    for (int i=0; i <N; ++i)
+    {
+        printf("\n");
+        for (int j=0; j <N; ++j)
+        {
+            int index = i + j*N;
+            printf(" %f ", Matrix[index]);
+        }
+    }  
+}
+
 void CPU_version_wrapper(const int N)
 {
-    
-    float* A = (float*)malloc(N*N*sizeof(float*));
-    float* B = (float*)malloc(N*N*sizeof(float*));
-    float* C = (float*)malloc(N*N*sizeof(float*));
+    const int mem_size = N*N*sizeof(float);
+
+    float* A = (float*)malloc(mem_size);
+    float* B = (float*)malloc(mem_size);
+    float* C = (float*)malloc(mem_size);
     // initialize data
     for (int i=0; i <N; ++i)
     {
@@ -49,18 +57,10 @@ void CPU_version_wrapper(const int N)
         }
     }
 
+    // run calculations
     cpu_add_matrix_elementwise(A,B,C,N);
+    print_matrix(C, N);
 
-    // print result
-    for (int i=0; i <N; ++i)
-    {
-        printf("\n");
-        for (int j=0; j <N; ++j)
-        {
-            int index = i + j*N;
-            printf(" %f ",C[index]);
-        }
-    }  
     // Free memory
     free(A); free(B); free(C);
 }
@@ -106,16 +106,8 @@ void GPU_version_wrapper(const int N)
     // my_kernel<<<(N + THREADS_PER_BLOCK-1) / THREADS_PER_BLOCK, THREADS_PER_BLOCK>>>(args);  when the N (size of problem) is not a friendly multiplier of THREADS_PER_BLOCK
     cudaMemcpy(h_out, d_out, mem_size, cudaMemcpyDeviceToHost);
     
-    // print result
-    for (int i=0; i <N; ++i)
-    {
-        printf("\n");
-        for (int j=0; j <N; ++j)
-        {
-            int index = i + j*N;
-            printf(" %f ",h_out[index]);
-        }
-    }  
+    print_matrix(h_out, N);
+
     // Free memory
     cudaFree(d_a);cudaFree(d_b);cudaFree(d_out);
     free(h_a); free(h_b); free(h_out);

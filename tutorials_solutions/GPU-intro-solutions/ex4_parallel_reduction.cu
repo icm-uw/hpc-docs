@@ -1,10 +1,4 @@
 #include <stdio.h>
-#include <numeric>
-
-#include "cuda_runtime.h"
-#include "device_launch_parameters.h"
-
-using namespace std;
 
 void cpu_sum(int *x, int n)
 {
@@ -12,7 +6,7 @@ void cpu_sum(int *x, int n)
     for(unsigned int i=0; i < n; ++i) { 
         result += x[i];
     }
-    printf("CPU result is %d \n", result);
+    printf("CPU Sum is %d \n", result);
 }
 
 __global__ void sum(int *x)
@@ -60,7 +54,7 @@ int main()
     int count = size/sizeof(int);
     
 	int* d;
-	cudaMalloc(&d, size);
+	cudaMalloc((void**)&d, size);
 	cudaMemcpy(d, h, size, cudaMemcpyHostToDevice);
 
     sum <<<1, count >>>(d);  // <<<blocks, threads_per_block>>>
@@ -75,7 +69,7 @@ int main()
     // cudaMemcpy(processed_d, d, size, cudaMemcpyDeviceToHost);
     
     // for (int i = 0; i < count; ++i)
-    //      cout << "processed_d[" << i << "] " << processed_d[i] << endl;
+    //     printf("processed_d[%d]=%d \n", i, processed_d[i]);
 
     cudaFree(d);
 	return 0;

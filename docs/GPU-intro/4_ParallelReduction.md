@@ -12,6 +12,17 @@ Write a kernel performing the sum operation.
 Starting point:
 
 ```.cpp
+#include <stdio.h>
+
+void cpu_sum(int *x, int n)
+{
+    int result = 0;
+    for(unsigned int i=0; i < n; ++i) {
+        result += x[i];
+    }
+    printf("CPU Sum is %d \n", result);
+}
+
 int main()
 {
     int h[] = {10, 1, 8, -1, 0, -2, 3, 5, -2, -3, 2, 7, 0, 11, 0, 2};

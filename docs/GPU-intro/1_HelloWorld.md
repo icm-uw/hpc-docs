@@ -9,7 +9,7 @@ Write a simple `ex1_hello_world.cu` application using cuda.
 Experiment with different amount of blocks and threads per block.
 
 ```.cu
-#include <iostream>
+#include <stdio.h>
 
 __global__ void print_from_gpu(void) {
     int tidx = blockIdx.x*blockDim.x+threadIdx.x;
@@ -32,4 +32,15 @@ Compile and run:
 ```.sh
 $ nvcc ex1_hello_world.cu -o hello_world
 $ ./hello_world
+```
+
+If you have an account at ICM HPC, you can use the Rysy cluster to run GPU jobs:
+
+```.sh
+ssh username@login.icm.edu.pl
+ssh rysy
+# run interactive session
+srun -N1 -n4 --account=GRANT_NAME --gres=gpu:1 --time=01:00:00 --pty /bin/bash -l
+# prepare enviroment
+module load gpu/cuda/10.2
 ```

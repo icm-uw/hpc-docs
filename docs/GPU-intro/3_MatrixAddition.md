@@ -10,12 +10,8 @@ here is a time for a stand-alone practice.
 Accelerate the serial, element-wise square matrix addition code using cuda kernel.
 
 ```.cpp
-#include <iostream>
 #include <stdio.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <cuda.h>
-#include <cuda_runtime.h>
+
 
 cpu_add_matrix_elementwise (float* a, float* b, float* c, int N)
 {
@@ -29,12 +25,27 @@ cpu_add_matrix_elementwise (float* a, float* b, float* c, int N)
         }
 }
 
+void print_matrix(float *Matrix, const int N)
+{
+    for (int i=0; i <N; ++i)
+    {
+        printf("\n");
+        for (int j=0; j <N; ++j)
+        {
+            int index = i + j*N;
+            printf(" %f ",Matrix[index]);
+        }
+    }  
+}
+
 void CPU_version_wrapper(const int N)
 {
-    
-    float* A = (float*)malloc(N*N*sizeof(float*));
-    float* B = (float*)malloc(N*N*sizeof(float*));
-    float* C = (float*)malloc(N*N*sizeof(float*));
+    const int mem_size = N*N*sizeof(float);
+
+    float* A = (float*)malloc(mem_size);
+    float* B = (float*)malloc(mem_size);
+    float* C = (float*)malloc(mem_size);
+
     // initialize data
     for (int i=0; i <N; ++i)
     {
@@ -46,18 +57,10 @@ void CPU_version_wrapper(const int N)
         }
     }
 
+    // run calculations
     cpu_add_matrix_elementwise(A,B,C,N);
+    print_matrix(C, N);
 
-    // print result
-    for (int i=0; i <N; ++i)
-    {
-        printf("\n");
-        for (int j=0; j <N; ++j)
-        {
-            int index = i + j*N;
-            printf(" %f ",C[index]);
-        }
-    }  
     // Free memory
     free(A); free(B); free(C);
 }

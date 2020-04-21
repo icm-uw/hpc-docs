@@ -13,14 +13,11 @@ Write a cuda kernel to add two vectors.
 First, consider a serial CPU code.
 
 ```.cpp
-#include <iostream>
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 #include <assert.h>
-#include <cuda.h>
-#include <cuda_runtime.h>
 
+
+#define MAX_THREADS_IN_BLOCK 1024
 #define MAX_ERR 1e-6
 
 using namespace std;
@@ -110,24 +107,31 @@ The GPU has to allocate corresponding amount of memory to handle the data.
 
 ### Transfer data to GPU
 
-Transfer data from host to device memory
+Transfer data from host to device (global) memory
 
 ```.cu
-  cudaMemcpy(d_a, h_a, sizeof(float) * N, cudaMemcpyHostToDevice);
+    cudaMemcpy(d_a, h_a, sizeof(float) * N, cudaMemcpyHostToDevice);
+    cudaMemcpy(d_b, h_b, sizeof(float) * N, cudaMemcpyHostToDevice);
 ```
 
 ### Call the kernel
 
 ```.cu
-gpu_vector_add<<<1,1024>>>(d_out, d_a, d_b, N);
+    gpu_vector_add<<<1,1024>>>(d_out, d_a, d_b, N); //  <<<blocks, threads_per_block>>>
+
+    // if N is a friendly multiplier of THREADS_PER_BLOCK
+    // gpu_vector_add<<<N/MAX_THREADS_IN_BLOCK,MAX_THREADS_IN_BLOCK>>>(d_out, d_a, d_b, N);
+
+    // if N is not a friendly multiplier of THREADS_PER_BLOCK
+    // gpu_vector_add<<<(N + MAX_THREADS_IN_BLOCK-1) / MAX_THREADS_IN_BLOCK, MAX_THREADS_IN_BLOCK>>>(d_out, d_a, d_b, N);
 ```
 
 ### Transfer data from GPU
 
-Transfer data from device memory to host
+Transfer data from device (global) memory to host
 
 ```.cu
-cudaMemcpy(h_out, d_out, sizeof(float) * N, cudaMemcpyDeviceToHost);
+    cudaMemcpy(h_out, d_out, sizeof(float) * N, cudaMemcpyDeviceToHost);
 ```
 
 ### Verify the result
@@ -165,13 +169,11 @@ Don't forget to write the actual kernel
 ```.cu
 __global__ void gpu_vector_add(float *out, float *a, float *b, int n) {
     // built-in variable blockDim.x describes amount threads per block
-
     int tid = blockIdx.x * blockDim.x + threadIdx.x;
-    // Handling arbitrary vector size
     if (tid < n)
         out[tid] = a[tid] + b[tid];
 
-    // more advanced version
+    // more advanced version - handling arbitrary vector/kernel size
     // int i = blockIdx.x * blockDim.x + threadIdx.x;  
     // int step = gridDim.x * blockDim.x;
 
@@ -181,9 +183,9 @@ __global__ void gpu_vector_add(float *out, float *a, float *b, int n) {
 }
 ```
 
-## Experiment
+## Experiments
 
-Make experiments to gain experiece.
+Make experiments to gain experience.
 
 When do you need to introduce the `step` in the cuda kernel?
 

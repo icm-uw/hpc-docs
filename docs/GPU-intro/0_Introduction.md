@@ -36,8 +36,6 @@ According to [documentation](https://docs.nvidia.com/cuda/cuda-c-programming-gui
 ```.cu
 f_name<<<dim3 gridDim, dim3 blockDim, size_t sharedMem, cudaStream_t strId>>>(p1,... pN)
 
-// gridDim - specifies the dimension and size of the grid.
-// blockDim - specifies the dimension and size of each block
 // sharedMem - specifies the number of bytes in shared memory that is dynamically allocated per block for this call in addition to the statically allocated memory.
 // strId - specifies the associated stream, is an optional parameter which defaults to 0.
 ```
@@ -74,13 +72,16 @@ my_kernel<<<N/THREADS_PER_BLOCK,THREADS_PER_BLOCK>>>(args)
 my_kernel<<<(N + THREADS_PER_BLOCK-1) / THREADS_PER_BLOCK, THREADS_PER_BLOCK>>>(args);
 ```
 
-#### Accessing threadId
+#### Calculating threadId
 
-Within the kernel, the following build-in variables can be referenced:
+Within the kernel, the following build-in variables can be referenced (in x,y,z-dimension) to calculate *tid*:
 
 ```.cu
-int blockIdx  // This variable contains the block index within the grid.
-int threadIdx // This variable contains the thread index within the block.
+int tid = blockIdx.x * blockDim.x + threadIdx.x;
+
+int threadIdx.x // This variable contains the thread index within the block in x-dimension.
+int blockDim.x  // This variable contains the number of threads per block in x-dimension.
+int blockIdx.x  // This variable contains the block index within the grid in x-dimension.
 ```
 
 <!-- gridDim describes number of blocks in the grid.
