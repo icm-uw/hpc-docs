@@ -23,7 +23,7 @@ markdown_extensions:
 extra_javascript: 
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
-pages:
+nav:
 - Welcome to ICM HPC tutorials: index.md
 
 - O zasobach ICM:
@@ -53,4 +53,11 @@ pages:
   - Introduction: NEC-SX-Aurora-Tsubasa/0_introduction.md
   - Basic usage: NEC-SX-Aurora-Tsubasa/1_basic_usage.md
   - "SOL: Neural Networks": NEC-SX-Aurora-Tsubasa/2_sol.md
-  
+
+- Szkolenia:
+  - Informacje: Szkolenia/informacje.md
+  - Materiały:
+    - Wprowadzenie do obliczeń na komputerach ICM: Szkolenia/intro_icm.md
+    - Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa: Szkolenia/intro_nec.md
+  - Archiwum: Szkolenia/archiwum.md
+    
