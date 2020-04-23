@@ -34,7 +34,7 @@ $ nvcc ex1_hello_world.cu -o hello_world
 $ ./hello_world
 ```
 
-If you have an account at ICM HPC, you can use the Rysy cluster to run GPU jobs:
+If you have an account at ICM HPC, you can use the *Rysy* cluster to run GPU jobs:
 
 ```.sh
 ssh username@login.icm.edu.pl

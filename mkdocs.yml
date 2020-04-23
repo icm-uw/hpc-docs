@@ -41,6 +41,7 @@ nav:
   - Logowanie SSH – Użytkownicy Windows: HPC-intro/3_ssh_windows.md
   - SLURM – Podstawy: HPC-intro/4_SlurmIntro.md
   - Komputery w ICM: HPC-intro/5_Komputery_w_ICM.md
+  - QOS: HPC-intro/6_QOS.md
   
 - Podstawy GPU:
   - Introduction (Cheat Sheet): GPU-intro/0_Introduction.md

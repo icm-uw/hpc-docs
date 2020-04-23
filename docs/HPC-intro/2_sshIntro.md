@@ -146,6 +146,30 @@ Ponieważ część maszyn ICM'u dysponuje współdzielonymi systemami plików, n
 
 Katalog domowy okeanosa */lustre/tetyda/home/* jest widoczny pod scieżką */lu/tetyda/home/user_name/* z topoli.
 
+## Udzielenie dostępu do danych dla członków tego samego grantu
+
+Najlepszym sposobem na przekaznie dostępu do plików w ramach grantu jest użycie mechanizmu praw dostępu do pliku w Linux.
+W tym celu należy najpierw ustawić właściwą grupę dla plików które nas interesują,
+a następnie prawo odczytu (i zapisu jeżeli dotyczy) dla tej grupy.
+
+Przykładowo, jeżeli grant ma numer `GBXX-YY`,
+
+1. Zmieniamy grupę główną w powłoce:  
+
+    `$ newgrp GBXX-YY`
+
+2. Ustawiamy własność dla tej grupy dla plików:
+
+    `$ chgrp GBXX-YY  nazwa_pliku`
+
+    opcja `-R` pozwala robić to rekursywnie dla katalogów
+
+3. Ustawiamy prawa dla członków grupy:
+
+    `$ chmod g+r nazwa_pliku # odczyt`
+
+    `$ chmod g+w nazwa_pliku # zapis`
+
 ## Kończenie pracy
 
 Po skończeniu pracy należy się wylogować poleceniem `exit` lub `logout`

@@ -132,7 +132,7 @@ srun -n 12 pw.x < S.in
 
 ### Przykładowy skrypt na system Rysy
 
-Proszę zwrócić uwagę, że w celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji `--gres=gpu:liczba_gpu`.
+W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji `--gres=gpu:liczba_gpu`.
 
 ```.slurm
 #!/bin/bash -l
@@ -148,6 +148,8 @@ Proszę zwrócić uwagę, że w celu uruchomienia aplikacji na GPU niezbędne je
 
 srun hello_world_cuda
 ```
+
+Przykładowy program *hello_world_cuda* znajduje się w sekcji [Podstawy GPU](../GPU-intro/1_HelloWorld.md).
 
 ## Wstawianie zadania do kolejki
 
