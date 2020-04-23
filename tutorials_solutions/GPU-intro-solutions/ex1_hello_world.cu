@@ -7,7 +7,7 @@
 // (can be used together with __device__)
 
 // kernel launch:
-// f_name<<<gridDim, blockDim, sharedMem, strId>>>(p1,... pN)
+// f_name<<<blocks,threads_per_block>>>(p1,... pN)
 
 __global__ void print_from_gpu(void) {
     int tidx = blockIdx.x*blockDim.x+threadIdx.x;

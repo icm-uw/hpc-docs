@@ -8,7 +8,7 @@ draft: false
 
 !!! Info
     Logowanie do ICM: `ssh username@login.icm.edu.pl`
-    W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera login.icm.edu.pl, np. ssh rysy, ssh okeanos.
+    W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera login.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
 ## Tworzenie kluczy SSH
 

@@ -90,7 +90,7 @@ Poniższy skrypt uruchamia obliczenia w programie Quantum Espresso:
 #SBATCH --ntasks-per-node 12
 #SBATCH --mem 5000
 #SBATCH --time=20:00:00
-#SBATCH --account=GYY-xx
+#SBATCH --account=GYY-XX
 #SBATCH --partition=topola
 #SBATCH --output="qe.out"
 
@@ -128,6 +128,25 @@ mpirun -n 12 pw.x < S.in
 module swap PrgEnv-cray PrgEnv-intel
 module load espresso/6.1.0
 srun -n 12 pw.x < S.in
+```
+
+### Przykładowy skrypt na system Rysy
+
+Proszę zwrócić uwagę, że w celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji `--gres=gpu:liczba_gpu`.
+
+```.slurm
+#!/bin/bash -l
+#SBATCH -J gpu_test
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --account=GYY-XX
+#SBATCH --time=01:00:00
+#SBATCH --qos=normal
+
+srun hello_world_cuda
 ```
 
 ## Wstawianie zadania do kolejki
