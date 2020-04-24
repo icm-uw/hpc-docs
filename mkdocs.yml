@@ -35,14 +35,15 @@ nav:
   - Aplikacje: O_zasobach_ICM/5_aplikacje.md
   
 - Podstawy HPC:
-  - Wstęp: HPC-intro/0_Introduction.md
-  - Bash – Podstawy: HPC-intro/1_BashIntro.md
-  - Logowanie SSH – Podstawy: HPC-intro/2_sshIntro.md
-  - Logowanie SSH – Użytkownicy Windows: HPC-intro/3_ssh_windows.md
-  - SLURM – Podstawy: HPC-intro/4_SlurmIntro.md
-  - Komputery w ICM: HPC-intro/5_Komputery_w_ICM.md
-  - QOS: HPC-intro/6_QOS.md
-  
+  - Wstęp: HPC-intro/Introduction.md
+  - Bash – Podstawy: HPC-intro/BashIntro.md
+  - Logowanie SSH – Podstawy: HPC-intro/sshIntro.md
+  - Logowanie SSH – Użytkownicy Windows: HPC-intro/ssh_windows.md
+  - SLURM – Podstawy: HPC-intro/SlurmIntro.md
+  - Komputery w ICM: HPC-intro/Komputery_w_ICM.md
+  - QOS: HPC-intro/QOS.md
+  - CI status: HPC-intro/CI_Status.md
+
 - Podstawy GPU:
   - Introduction (Cheat Sheet): GPU-intro/0_Introduction.md
   - Hello World: GPU-intro/1_HelloWorld.md
