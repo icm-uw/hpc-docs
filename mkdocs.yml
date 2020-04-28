@@ -24,7 +24,7 @@ extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 nav:
-- Welcome to ICM HPC tutorials: index.md
+- About HPC @ ICM UW: index.md
 
 - O zasobach ICM:
   - Formalności:
@@ -32,8 +32,8 @@ nav:
     - Kto może być użytkownikiem: O_zasobach_ICM/Formalnosci/uzytkownik.md
     - Warunki korzystania: O_zasobach_ICM/Formalnosci/warunki.md
     - Regulamin użytkownika: O_zasobach_ICM/Formalnosci/regulamin.md
-    - Jaki komputer wybrać: O_zasobach_ICM/Formalnosci/jaki_komputer.md
   - Komputery:
+    - Jaki komputer wybrać: O_zasobach_ICM/Komputery/jaki_komputer.md
     - Komputery w ICM: O_zasobach_ICM/Komputery/komputery_w_icm.md
     - QOS: O_zasobach_ICM/Komputery/qos.md
     - Przechowywanie danych: O_zasobach_ICM/Komputery/przechowywanie_danych.md

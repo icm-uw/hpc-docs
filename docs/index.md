@@ -1,6 +1,5 @@
 ---
-title: Welcome to ICM HPC tutorials
-author: "Grzegorz Gruszczyński"
+title: ""
 date: "February 25, 2020"
 output: html_document
 ---
@@ -10,8 +9,6 @@ body {text-align: justify}
 </style>
 
 <center> ![](images/Centrum-Technologii-ICM.jpg) </center>
-
-## About ICM UW
 
 Interdisciplinary Centre for Mathematical and Computational Modelling at the University of Warsaw (ICM UW) is a leading European supercomputing center.
 It provides innovative solutions for science, administration and business.
