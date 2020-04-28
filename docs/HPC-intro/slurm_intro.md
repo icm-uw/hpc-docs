@@ -1,5 +1,5 @@
 ---
-title: "4 SLURM - Podstawy"
+title: "SLURM"
 date: 2020-03-16
 draft: false
 ---
@@ -149,7 +149,7 @@ W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji `--gres=gpu:l
 srun hello_world_cuda
 ```
 
-Przykładowy program *hello_world_cuda* znajduje się w sekcji [Podstawy GPU](../GPU-intro/1_HelloWorld.md).
+Przykładowy program *hello_world_cuda* znajduje się w sekcji [Podstawy GPU](../GPU-intro/hello_world.md).
 
 ## Wstawianie zadania do kolejki
 
@@ -164,7 +164,7 @@ Niektóre opcje tego polecenia są specyficzne dla danego komputera.
     W przypadku pozostałych systemów możliwy/wymagany jest ***dodatkowy krok logowania*** wykonany z komputera
     login.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
-Więcej o komputerach dostępnych w ICM [tutaj](/HPC-intro/5_Komputery_w_ICM).
+Więcej o komputerach dostępnych w ICM [tutaj](../O_zasobach_ICM/Komputery/komputery_w_icm.md).
 
 ### Tryb wsadowy
 
@@ -259,34 +259,4 @@ squeue -o "% 16j% i" | grep "d3q27 *" | awk „{print 2 USD}”
 17817943
 17817944
 17817945
-```
-
-## Aby sprawdzić status grantu / konta
-
-```.slurm
-# czy użytkownik ma dostęp do XXX?
-sacctmgr show user $USER # pokaż informacje o użytkowniku
-id $USER # pokaż informacje o użytkowniku i jego grupach dostępu
-
-sacctmgr show assoc format=account,cluster,user,qos | grep $USER # pokaż w jakich jestem grupach i do których qos mam dostęp
-sacctmgr show qos format=name,MaxWall # pokaż limit czasu obliczen dla qos
-
-# jak policzyć ile grantu jeszcze zostało?
-/apps/bin/chkgrantusage <grant_id> [yyyy-mm-dd yyyy-mm-dd] # aktualnie zużycie
-sacctmgr show assoc where account=<grant_id> format=user,GrpTRESMins%50  # limit cpu w grancie
-```
-
-## Polecenia module
-
-Polecenia module służą do ustawienia środowiska obliczeniowego.
-Przykładowe sposoby użycia:
-
-```.sh
-module list # wypisuje listę obecnie załadowanych modułów użytkownika
-module avail # wypisuje listę wszystkich dostępnych modułów (m.in. wszystkie dostępne wersje kompilatorów)
-module load [modulefile ...] # ładuje moduł o nazwie modulefile
-module unload [modulefile ...] # usuwa moduł
-module swap oldmodule newmodule # podmienia moduł oldmodule na moduł newmodule
-module help [modulefile ...] # wyświetla informację na temat modułu (czasem niestety niewystarczającą, więcej można odnaleźć po załadowaniu modułu i odwiedzeniu odpowiedniej strony manuala)
-module display [modulefile ...] # wyświetla zawartość danego modułu (zwykle są to komendy ustawiające zmienne środowiskowe)
 ```

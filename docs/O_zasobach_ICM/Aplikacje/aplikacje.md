@@ -28,8 +28,7 @@ krajowymi. W przypadku programów, które nie należą do tej kategorii, a
 nie są objęte wolną licencją, obowiązek pozyskania licencji i
 dopełnienia jej warunków spoczywa na Użytkowniku.
 
-Prośby o instalację aplikacji należy zgłaszać na adres
-<pomoc@icm.edu.pl>.
+Prośby o instalację aplikacji należy zgłaszać [tu](../../kontakt.md).
 
 Użytkownicy mają także możliwość samodzielnej kompilacji i instalacji
 oprogramowania z wykorzystaniem dostępnych w systemach narzędzi. W tym

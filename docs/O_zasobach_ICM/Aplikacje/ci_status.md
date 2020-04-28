@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "CI"
 date: 2020-04-24
 draft: false
 ---
@@ -9,7 +9,7 @@ Operacyjność aplikacji zainstalowanych na komputerach ICM jest testowanna codz
 
 W pliku *artifacts.zip* znajduje się przykładowy skrypt wsadowy *job.txt* użyty do testowania aplikacji.  
 
-Tabela przedstawia status aplikacji zainstalowanych na komputerach ICM.
+Poniższa, automatycznie wygenerowana tabela przedstawia status aplikacji zainstalowanych na komputerach ICM.
 
 Legenda:
 

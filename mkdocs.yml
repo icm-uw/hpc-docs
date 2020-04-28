@@ -27,34 +27,41 @@ nav:
 - Welcome to ICM HPC tutorials: index.md
 
 - O zasobach ICM:
-  - Superkomputery: O_zasobach_ICM/0_superkomputery.md
-  - Kto może być użytkownikiem: O_zasobach_ICM/1_uzytkownik.md
-  - Warunki korzystania: O_zasobach_ICM/2_warunki.md
-  - Regulamin użytkownika: O_zasobach_ICM/3_regulamin.md
-  - Jaki komputer wybrać: O_zasobach_ICM/4_jaki_komputer.md
-  - Aplikacje: O_zasobach_ICM/5_aplikacje.md
-  
+  - Formalności:
+    - Superkomputery: O_zasobach_ICM/Formalnosci/superkomputery.md
+    - Kto może być użytkownikiem: O_zasobach_ICM/Formalnosci/uzytkownik.md
+    - Warunki korzystania: O_zasobach_ICM/Formalnosci/warunki.md
+    - Regulamin użytkownika: O_zasobach_ICM/Formalnosci/regulamin.md
+    - Jaki komputer wybrać: O_zasobach_ICM/Formalnosci/jaki_komputer.md
+  - Komputery:
+    - Komputery w ICM: O_zasobach_ICM/Komputery/komputery_w_icm.md
+    - QOS: O_zasobach_ICM/Komputery/qos.md
+    - Przechowywanie danych: O_zasobach_ICM/Komputery/przechowywanie_danych.md
+  - Aplikacje:
+    - Aplikacje: O_zasobach_ICM/Aplikacje/aplikacje.md
+    - CI status: O_zasobach_ICM/Aplikacje/ci_status.md
+
 - Podstawy HPC:
-  - Wstęp: HPC-intro/Introduction.md
-  - Bash – Podstawy: HPC-intro/BashIntro.md
-  - Logowanie SSH – Podstawy: HPC-intro/sshIntro.md
-  - Logowanie SSH – Użytkownicy Windows: HPC-intro/ssh_windows.md
-  - SLURM – Podstawy: HPC-intro/SlurmIntro.md
-  - Komputery w ICM: HPC-intro/Komputery_w_ICM.md
-  - QOS: HPC-intro/QOS.md
-  - CI status: HPC-intro/CI_Status.md
+  - Wstęp: HPC-intro/introduction.md
+  - Case - BASH i terminal: HPC-intro/bash_intro.md
+  - Case - Logowanie SSH: HPC-intro/ssh_intro.md
+  - Case - Logowanie SSH (Użytkownicy Windows): HPC-intro/ssh_windows.md
+  - Case - Kopiowanie plików: HPC-intro/kopiowanie_plikow.md
+  - Case - Zlecanie zadań do SLURM: HPC-intro/slurm_intro.md
+  - Case - Ustawianie środowiska: HPC-intro/module.md
+  - Case - Status grantu/konta: HPC-intro/status_grantu_i_konta.md
 
 - Podstawy GPU:
-  - Introduction (Cheat Sheet): GPU-intro/0_Introduction.md
-  - Hello World: GPU-intro/1_HelloWorld.md
-  - Vector Add: GPU-intro/2_VectorAdd.md
-  - Element-wise Matrix Add: GPU-intro/3_MatrixAddition.md
-  - Parallel reduction: GPU-intro/4_ParallelReduction.md
+  - Introduction (Cheat Sheet): GPU-intro/introduction.md
+  - Hello World: GPU-intro/hello_world.md
+  - Vector Add: GPU-intro/vector_add.md
+  - Element-wise Matrix Add: GPU-intro/matrix_addition.md
+  - Parallel reduction: GPU-intro/parallel_reduction.md
 
 - NEC SX-Aurora Tsubasa:
-  - Introduction: NEC-SX-Aurora-Tsubasa/0_introduction.md
-  - Basic usage: NEC-SX-Aurora-Tsubasa/1_basic_usage.md
-  - "SOL: Neural Networks": NEC-SX-Aurora-Tsubasa/2_sol.md
+  - Introduction: NEC-SX-Aurora-Tsubasa/introduction.md
+  - Basic usage: NEC-SX-Aurora-Tsubasa/basic_usage.md
+  - SOL - Neural Networks: NEC-SX-Aurora-Tsubasa/sol.md
 
 - Szkolenia:
   - Informacje: Szkolenia/informacje.md
@@ -63,3 +70,4 @@ nav:
     - Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa: Szkolenia/intro_nec.md
   - Archiwum: Szkolenia/archiwum.md
     
+- Kontakt: kontakt.md

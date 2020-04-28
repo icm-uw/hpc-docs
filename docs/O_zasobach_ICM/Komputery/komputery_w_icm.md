@@ -21,6 +21,6 @@ Po zalogowaniu się przez ssh na węzeł dostępowy (login.icm.edu.pl) można po
 |Rysy - węzeł PBaran | Komputer wektorowy, NEC Aurora A300-8    | Intel Haswell Cray XC40  |1084        | 24 rdzenie 190 GB pamięci RAM, 8 VE (Vecto Engine) |
 
 
-![Okeanos](HPC_images/Okeanos_foto.jpg)
+![Okeanos](KomputeryImages/Okeanos_foto.jpg)
 
 *Superkomputer Okeanos*

@@ -1,5 +1,5 @@
 ---
-title: "1 Bash - Podstawy"
+title: "Bash"
 date: 2020-02-26
 draft: false
 ---
