@@ -4,7 +4,18 @@ date: 2020-04-09
 draft: false
 ---
 
-<!-- <Last revision: 2020-04-09 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
+<!-- <Last revision: 2020-04-30 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
+
+!!! Note
+    Please note that a PDF version of the materials contained herein is also [available][en_nec_tsubasa_pdf].
+
+[en_nec_tsubasa_pdf]: ./pdf/en_nec_tsubasa.pdf
+
+!!! Info
+    This document aims to provide basic information on how to use the NEC SX-Aurora Tsubasa system
+    available at ICM UW computational facility. The contents herein are based on a number of documents,
+    as referenced in the text, to provide a concise quick start guide and suggest further reading material for
+    the ICM users.
 
 To use the Tsubasa installation users must access the login node first
 at `hpc.icm.edu.pl` through [SSH] and then establish a further

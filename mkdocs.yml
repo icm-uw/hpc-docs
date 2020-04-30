@@ -41,27 +41,25 @@ nav:
     - Aplikacje: O_zasobach_ICM/Aplikacje/aplikacje.md
     - CI status: O_zasobach_ICM/Aplikacje/ci_status.md
 
-- Podstawy HPC:
-  - Wstęp: HPC-intro/introduction.md
-  - Case - BASH i terminal: HPC-intro/bash_intro.md
-  - Case - Logowanie SSH: HPC-intro/ssh_intro.md
-  - Case - Logowanie SSH (Użytkownicy Windows): HPC-intro/ssh_windows.md
-  - Case - Kopiowanie plików: HPC-intro/kopiowanie_plikow.md
-  - Case - Zlecanie zadań do SLURM: HPC-intro/slurm_intro.md
-  - Case - Ustawianie środowiska: HPC-intro/module.md
-  - Case - Status grantu/konta: HPC-intro/status_grantu_i_konta.md
-
-- Podstawy GPU:
-  - Introduction (Cheat Sheet): GPU-intro/introduction.md
-  - Hello World: GPU-intro/hello_world.md
-  - Vector Add: GPU-intro/vector_add.md
-  - Element-wise Matrix Add: GPU-intro/matrix_addition.md
-  - Parallel reduction: GPU-intro/parallel_reduction.md
-
-- NEC SX-Aurora Tsubasa:
-  - Introduction: NEC-SX-Aurora-Tsubasa/introduction.md
-  - Basic usage: NEC-SX-Aurora-Tsubasa/basic_usage.md
-  - SOL - Neural Networks: NEC-SX-Aurora-Tsubasa/sol.md
+- Tutorials:
+  - Podstawy HPC:
+    - Wstęp: Tutorials/HPC-intro/introduction.md
+    - Case - BASH i terminal: Tutorials/HPC-intro/bash_intro.md
+    - Case - Logowanie SSH: Tutorials/HPC-intro/ssh_intro.md
+    - Case - Logowanie SSH (Użytkownicy Windows): Tutorials/HPC-intro/ssh_windows.md
+    - Case - Kopiowanie plików: Tutorials/HPC-intro/kopiowanie_plikow.md
+    - Case - Zlecanie zadań do SLURM: Tutorials/HPC-intro/slurm_intro.md
+    - Case - Ustawianie środowiska: Tutorials/HPC-intro/module.md
+    - Case - Status grantu/konta: Tutorials/HPC-intro/status_grantu_i_konta.md
+  - Podstawy GPU:
+    - Introduction (Cheat Sheet): Tutorials/GPU-intro/introduction.md
+    - Hello World: Tutorials/GPU-intro/hello_world.md
+    - Vector Add: Tutorials/GPU-intro/vector_add.md
+    - Element-wise Matrix Add: Tutorials/GPU-intro/matrix_addition.md
+    - Parallel reduction: Tutorials/GPU-intro/parallel_reduction.md
+  - NEC SX-Aurora Tsubasa:
+    - Basic usage: Tutorials/NEC/basic_usage.md
+    - SOL - Neural Networks: Tutorials/NEC/sol.md
 
 - Szkolenia:
   - Informacje: Szkolenia/informacje.md

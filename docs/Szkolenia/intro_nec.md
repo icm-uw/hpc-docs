@@ -36,10 +36,10 @@ draft: false
 ## Materiały szkoleniowe
 
 * Instrukcje:
-    * [EN] PDF: [NEC SX-Aurora Tsubasa: User's Guide](/NEC-SX-Aurora-Tsubasa/pdf/en_nec_tsubasa.pdf)
+    * [EN] PDF: [NEC SX-Aurora Tsubasa: User's Guide](/Tutorials/NEC/pdf/en_nec_tsubasa.pdf)
     * [EN] HTML: [Online][nec]
 
 * Oficjalna [dokumentacja NEC][necdoc]
 
 [necdoc]: https://www.hpc.nec/documents/
-[nec]: /NEC-SX-Aurora-Tsubasa/0_introduction/
+[nec]: /Tutorials/NEC/basic_usage/

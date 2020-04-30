@@ -17,8 +17,8 @@ Po zalogowaniu się przez ssh na węzeł dostępowy (login.icm.edu.pl) można po
 |----------| :-----------------------------| :---------------------------| :----------------------------| :--------------------------------------------------|
 |Okeanos   | Superkomputer                 | Intel Haswell Cray XC40     |1084                          | 24 rdzenie, 128 GB pamięci RAM                     |
 |Topola    | Klaster HPC, Klaster PL-Grid  | Intel Haswell Huawei E9000  |223                           | 28 rdzeni, 64 lub 128 GB pamięci RAM               |
-|Rysy      | Klaster GPU    | Intel Skylake, NVIDIA Volta                |6                             | 36 rdzenie, 380 GB pamięci RAM, 4 GPU              |
-|Rysy - węzeł PBaran | Komputer wektorowy, NEC Aurora A300-8    | Intel Haswell Cray XC40  |1084        | 24 rdzenie 190 GB pamięci RAM, 8 VE (Vecto Engine) |
+|Rysy/GPU      | Klaster GPU    | Intel Skylake, NVIDIA Volta                |6                             | 36 rdzenie, 380 GB pamięci RAM, 4 GPU              |
+|Rysy/PBaran | Komputer wektorowy, NEC Aurora A300-8    | Intel Xeon Gold 6126 / NEC SX-Aurora Tsubasa   | 1        | 24 rdzenie, 192 GB RAM / 8 x 8 rdzeni, 8 x 48 GB RAM  |
 
 
 ![Okeanos](KomputeryImages/Okeanos_foto.jpg)
