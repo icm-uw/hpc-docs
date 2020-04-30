@@ -60,6 +60,7 @@ nav:
   - NEC SX-Aurora Tsubasa:
     - Basic usage: Tutorials/NEC/basic_usage.md
     - SOL - Neural Networks: Tutorials/NEC/sol.md
+  - Python - środowisko wirtualne: Tutorials/python.md
 
 - Szkolenia:
   - Informacje: Szkolenia/informacje.md
