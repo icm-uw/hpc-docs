@@ -7,8 +7,8 @@ draft: false
 ## SSH - logowanie
 
 !!! Info
-    Logowanie do ICM: `ssh username@login.icm.edu.pl`
-    W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera login.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
+    Logowanie do ICM: `ssh username@hpc.icm.edu.pl`
+    W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera hpc.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
 ## Tworzenie kluczy SSH
 
@@ -46,8 +46,7 @@ stronie wyszukać w drzewie wpis:
 HKEY\_CURRENT\_USER\\Software\\SimonTatham\\PuTTY\\SshHostKeys
 ```
 
-i w oknie po prawej stronie odszukać wiersz zawierający nazwę
-'login.icm.edu.pl' lub 'hpc.icm.edu.pl', a następnie go usunąć.
+i w oknie po prawej stronie odszukać wiersz zawierający nazwę 'hpc.icm.edu.pl', a następnie go usunąć.
 
 2\. System Linux: Aby usunąć stary klucz wykonujemy w terminalu komendę:
 

@@ -16,7 +16,7 @@ Pokazuje się okienko podobne do poniższego:
 
 <center> ![](HPC_images/Putty.png) </center>
 
-- W polu **Host Name (or IP address)** wpisujemy **login.icm.edu.pl**
+- W polu **Host Name (or IP address)** wpisujemy **hpc.icm.edu.pl**
     (adres maszyny dostępowej) i klikamy w przycisk **Open**.
 
 - Przy pierwszym logowaniu pojawi się okno z komunikatem dotyczącym
@@ -25,7 +25,7 @@ Pokazuje się okienko podobne do poniższego:
 - Pojawia się terminal, w którym proszeni jesteśmy o podanie nazwy
     użytkownika, a następnie hasła.
 
-Po wpisaniu obu wartości znajdujemy się na komputerze dostępowym *login.icm.edu.pl*
+Po wpisaniu obu wartości znajdujemy się na komputerze dostępowym *hpc.icm.edu.pl*
 (komputer ten może występować też pod nazwą *hpc*):
 
 <center> ![](HPC_images/Login.jpg) </center>

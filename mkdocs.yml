@@ -50,7 +50,8 @@ nav:
     - Case - Kopiowanie plików: Tutorials/HPC-intro/kopiowanie_plikow.md
     - Case - Zlecanie zadań do SLURM: Tutorials/HPC-intro/slurm_intro.md
     - Case - Ustawianie środowiska: Tutorials/HPC-intro/module.md
-    - Case - Status grantu/konta: Tutorials/HPC-intro/status_grantu_i_konta.md
+    - Case - Status zadania: Tutorials/HPC-intro/status_zadania.md
+    - Case - Status grantu/konta/qos: Tutorials/HPC-intro/status_grantu_i_konta.md
   - Podstawy GPU:
     - Introduction (Cheat Sheet): Tutorials/GPU-intro/introduction.md
     - Hello World: Tutorials/GPU-intro/hello_world.md

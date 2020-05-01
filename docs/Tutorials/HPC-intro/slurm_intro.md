@@ -79,7 +79,9 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:
 | ---      |  --mem=            | Rezerwacja pamięci per node (megabytes).                                                        |
 | ---      |  --mem-per-cpu=    | Rezerwacja pamięci per CPU (megabytes).                                                         |
 
-### Przykładowy skrypt na system Topola
+### Przykładowe skrypty
+
+#### Partycja Topola
 
 Poniższy skrypt uruchamia obliczenia w programie Quantum Espresso:
 
@@ -114,7 +116,7 @@ mpirun -n 12 pw.x < S.in
 * Polecenie "*mpirun -n 12 pw.x < S.in*" uruchamia właściwy program
     obliczeniowy w środowisku równoległym MPI.
 
-### Przykładowy skrypt na system Okeanos
+### Partycja Okeanos
 
 ```.slurm
 #!/bin/tcsh
@@ -130,7 +132,7 @@ module load espresso/6.1.0
 srun -n 12 pw.x < S.in
 ```
 
-### Przykładowy skrypt na system Rysy
+### Partycja Rysy
 
 W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji `--gres=gpu:liczba_gpu`.
 
@@ -160,11 +162,11 @@ kolejkowego w liniach zaczynających się od `#SBATCH` .
 Niektóre opcje tego polecenia są specyficzne dla danego komputera.
 
 !!! Info
-    Zlecanie zadań na system `topola` możliwe jest ***bezpośrednio z węzła dostępowego*** `login.icm.edu.pl`.
+    Zlecanie zadań na system `topola` możliwe jest ***bezpośrednio z węzła dostępowego*** `hpc.icm.edu.pl`.
     W przypadku pozostałych systemów możliwy/wymagany jest ***dodatkowy krok logowania*** wykonany z komputera
-    login.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
+    hpc.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
-Więcej o komputerach dostępnych w ICM [tutaj](../O_zasobach_ICM/Komputery/komputery_w_icm.md).
+Więcej o komputerach dostępnych w ICM [tutaj](../../O_zasobach_ICM/Komputery/komputery_w_icm.md).
 
 ### Tryb wsadowy
 
@@ -208,55 +210,14 @@ srun -p <partition_name>  -A <grant_name> -N 1 -n 12 --time=1:00:00 --pty /bin/b
 srun -A <grant_name> -N 1 -n 12 --time=1:00:00 --gres=gpu:2 --pty /bin/bash -l # cluster: rysy
 ```
 
-### Informacje o kolejkach i zadaniach
+## Quality of Service (QOS)
 
-Po wstawieniu zadania do kolejki poleceniem `sbatch` system kolejkowy powiadamia nas o przyznanym numerze zadania (`JOBID`).
-Jeśli polecenie to wykonamy gdy nasz program został już uruchomiony,
-możemy między innymi sprawdzić, na których węzłach/procesorach wykonywane są nasze obliczenia.
-W czasie trwania obliczeń na węźle możemy połączyć się z tym węzłem przy pomocy **ssh**,
-nasza sesja zostanie jednak przypisana do tych samych procesorów, które wykorzystuje zadnie.
-Z tego powodu nadużywanie logowania na węzły może prowadzić do obniżenia wydajności prowadzonych obliczeń.
+Parametr ten określa na jak długo możliwa jest alokacja zasobów oraz priorytet w uruchomieniu zadania.
+
+Aby przypisać zadanie do konkretnego qos'a należy ustalić zmienną:
 
 ```.slurm
-squeue # lista aktualnie zakolejkowanych/uruchomionych zadań
-squeue -l -j <job_ID> # Sprawdź status zadania
-squeue --start -j <job_ID> # Sprawdź planowany czas rozpoczęcia zadania
-squeue -u $USER # pokaż zadania należące do użytkownika
-
-sstat -a -j ID_zadania/ID_zadania.batch # zużycie zasobów w ramach kroków (step) działającego zadania
-sacct # zużycie zasobów zakończonego już zadania/kroku
-sacct --format=jobid,jobname,account,partition,ntasks,alloccpus,maxrss,elapsed,state,exitcode -j JOBID
- # informacje o wykorzystaniu zasobów zadania zakończonego o numerze podanym jako JOBID
-
-scontrol show job <job_ID> # informacje o wszystkich parametrach, które system kolejkowy przyznał zadaniu.
-scontrol show partition <nazwa_partycji> # właściwości partycji
-scontrol show node <nazwa_węzła> # właściwości węzła
-
-sinfo -N -l # lista węzłów
-smap -i 2 # quasi-graficzna informacja o wykorzystaniu węzłów
-
-scancel <job_ID> # analuj zadanie
-scancel -u $USER # analuj wszystkie zadania należące do użytkownika
+--qos=NAZWA_QOSa
 ```
 
-### Przykład sformatowania wydruku „squeue”
-
-```.slurm
-# squeue - format output
-#  %j   Job or job step name.
-#  %i   Job or job step id.
-
-squeue -o "% 16j% i"
-CLB: batch_HotKar 17817851
-CLB: batch_HotKar 17817852
-CLB: batch_HotKar 17817853
-CLB: d3q27q7 / batc 17817943
-CLB: d3q27q7 / batc 17817944
-CLB: d3q27q7 / batc 17817945
-
-# wydrukuj drugą kolumnę
-squeue -o "% 16j% i" | grep "d3q27 *" | awk „{print 2 USD}”
-17817943
-17817944
-17817945
-```
+Szczegóły qos'ów dostępnych w ICM znajdują się [tu](../../O_zasobach_ICM/Komputery/qos.md).

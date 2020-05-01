@@ -37,7 +37,7 @@ $ ./hello_world
 If you have an account at ICM HPC, you can use the *Rysy* cluster to run GPU jobs:
 
 ```.sh
-ssh username@login.icm.edu.pl
+ssh username@hpc.icm.edu.pl
 ssh rysy
 # run interactive session
 srun -N1 -n4 --account=GRANT_NAME --gres=gpu:1 --time=01:00:00 --pty /bin/bash -l

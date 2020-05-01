@@ -6,12 +6,12 @@ draft: false
 
 
 Poniżej przedstawiamy zestawienie i krótką charakterystykę maszyn obliczeniowych ICM.
-Po zalogowaniu się przez ssh na węzeł dostępowy (login.icm.edu.pl) można ponownie użyć ssh do zalogowania się na kolejną maszynę (np. Okeanos, Rysy), niedostępna zza firewalla. Po zalogowaniu na węzeł dostępowy *login.icm.edu.pl* może występować on pod nazwą *hpc*.
+Po zalogowaniu się przez ssh na węzeł dostępowy (hpc.icm.edu.pl) można ponownie użyć ssh do zalogowania się na kolejną maszynę (np. Okeanos, Rysy), niedostępna zza firewalla. Po zalogowaniu na węzeł dostępowy *hpc.icm.edu.pl* może występować on pod nazwą *hpc*.
 
 !!! Info
-    Zlecanie zadań na system `topola` możliwe jest ***bezpośrednio z węzła dostępowego*** `login.icm.edu.pl`.
+    Zlecanie zadań na system `topola` możliwe jest ***bezpośrednio z węzła dostępowego*** `hpc.icm.edu.pl`.
     W przypadku pozostałych systemów możliwy/wymagany jest ***dodatkowy krok logowania*** wykonany z komputera
-    login.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
+    hpc.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
 | Nazwa    | Typ                           | Architektura                | Liczba węzłów obliczeniowych | Parametry węzła obliczeniowego                     |
 |----------| :-----------------------------| :---------------------------| :----------------------------| :--------------------------------------------------|

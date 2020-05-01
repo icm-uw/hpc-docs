@@ -44,13 +44,13 @@ Uwagi:
 
 ```.sh
 # Kopiowanie pliku do ICM:
-    scp -C -p plik.tar.gz username@login.icm.edu.pl:.
+    scp -C -p plik.tar.gz username@hpc.icm.edu.pl:.
 # Kopiowanie pliku z ICM:
-    scp -C -p username@login.icm.edu.pl:plik.tar.gz destination_folder
+    scp -C -p username@hpc.icm.edu.pl:plik.tar.gz destination_folder
 # Kopiowanie zawartości katalogu do ICM:
-    scp -r -C -p source_folder username@login.icm.edu.pl:destination_folder
+    scp -r -C -p source_folder username@hpc.icm.edu.pl:destination_folder
 # Kopiowanie zawartości katalogu z ICM:
-    scp -r -C -p username@login.icm.edu.pl:source_folder destination_folder
+    scp -r -C -p username@hpc.icm.edu.pl:source_folder destination_folder
 ```
 
 !!! Note
@@ -71,7 +71,7 @@ Uwagi:
 
 ## Przechowywanie Danych
 
-Szczegóły zasobów dyskowych ICM dostępne są [tu](../O_zasobach_ICM/Komputery/przechowywanie_danych.md).
+Szczegóły zasobów dyskowych ICM dostępne są [tu](../../O_zasobach_ICM/Komputery/przechowywanie_danych.md).
 
 ### Kopiowanie poprzez zasób współdzielony
 
