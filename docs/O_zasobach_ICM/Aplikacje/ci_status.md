@@ -20,9 +20,9 @@ Legenda:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready( function(){
-      var myurl='http://213.135.53.167/ci-badges/index.html';
+      var target_url='https://213.135.53.167/ci-badges/index.html';
 jQuery.ajax({
-        url:myurl,
+        url:target_url,
         type:'get',
         dataType:'html',
         success:function(data)
