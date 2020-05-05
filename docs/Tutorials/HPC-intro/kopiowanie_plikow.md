@@ -71,7 +71,7 @@ Uwagi:
 
 ## Przechowywanie Danych
 
-Szczegóły zasobów dyskowych ICM dostępne są [tu](../../O_zasobach_ICM/Komputery/przechowywanie_danych.md).
+Szczegóły zasobów dyskowych ICM dostępne są [tu](../../O_zasobach_ICM/Zasoby/przechowywanie_danych.md).
 
 ### Kopiowanie poprzez zasób współdzielony
 

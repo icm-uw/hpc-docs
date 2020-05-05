@@ -28,15 +28,12 @@ nav:
 
 - O zasobach ICM:
   - Formalności:
-    - Superkomputery: O_zasobach_ICM/Formalnosci/superkomputery.md
     - Kto może być użytkownikiem: O_zasobach_ICM/Formalnosci/uzytkownik.md
     - Warunki korzystania: O_zasobach_ICM/Formalnosci/warunki.md
     - Regulamin użytkownika: O_zasobach_ICM/Formalnosci/regulamin.md
-  - Komputery:
-    - Jaki komputer wybrać: O_zasobach_ICM/Komputery/jaki_komputer.md
-    - Komputery w ICM: O_zasobach_ICM/Komputery/komputery_w_icm.md
-    - QOS: O_zasobach_ICM/Komputery/qos.md
-    - Przechowywanie danych: O_zasobach_ICM/Komputery/przechowywanie_danych.md
+  - Zasoby:
+    - Komputery: O_zasobach_ICM/Zasoby/komputery_w_icm.md
+    - Przechowywanie danych: O_zasobach_ICM/Zasoby/przechowywanie_danych.md
   - Aplikacje:
     - Aplikacje: O_zasobach_ICM/Aplikacje/aplikacje.md
     - CI status: O_zasobach_ICM/Aplikacje/ci_status.md
