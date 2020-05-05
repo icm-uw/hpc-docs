@@ -7,8 +7,6 @@ draft: false
 Operacyjność aplikacji zainstalowanych na komputerach ICM jest testowanna codziennie, automatycznie
 [(CI - Continous Integration)](https://en.wikipedia.org/wiki/Continuous_integration).
 
-W pliku *artifacts.zip* znajduje się przykładowy skrypt wsadowy *job.txt* użyty do testowania aplikacji.  
-
 Poniższa, automatycznie wygenerowana tabela przedstawia status aplikacji zainstalowanych na komputerach ICM.
 
 Legenda:
@@ -19,11 +17,20 @@ Legenda:
 
 <img src="../ci-icons/warning.jpg" width="25" height="25"/>  CI - work in progress
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-    $("#content_to_load").load("https://raw.githubusercontent.com/icm-uw/hpc-docs/experimental/experimental/webpagefolder/bare_table.html");
+$(document).ready( function(){
+      var myurl='http://213.135.53.167/ci-badges/index.html';
+jQuery.ajax({
+        url:myurl,
+        type:'get',
+        dataType:'html',
+        success:function(data)
+    {
+            var responce_html= jQuery(data);
+            jQuery('#content_to_load').html(responce_html);
+    }
+    });
 });
 </script>
 
