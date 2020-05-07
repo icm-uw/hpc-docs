@@ -1,4 +1,4 @@
-site_name: ICM HPC tutorials
+site_name: Komputery Dużej Mocy ICM UW
 site_description: The reference tutorials for HPC @ ICM UW.
 site_author: ICM
 #strict: true
@@ -7,8 +7,8 @@ theme:
   logo: 'images/Logo_icm_czarne.svg'
   name: 'material'
   palette:
-    primary: 'green'
-    accent: 'green'
+    primary: rgb(0, 79, 110);
+    accent: rgb(0, 79, 110);
 
 repo_name: ICM-HPC
 repo_url: https://github.com/ICM-UW/hpc-docs
@@ -38,15 +38,15 @@ nav:
     - Aplikacje: O_zasobach_ICM/Aplikacje/aplikacje.md
     - CI status: O_zasobach_ICM/Aplikacje/ci_status.md
 - Podręcznik grantowy:
-    - Zakładanie konta:
-    - Jak wystąpić o grant obliczeniowy:
-    - Przyznawane zasoby:
-    - Kierownik oraz współwykonawcy grantu:
-    - Sprawozdania i publikacje w grancie:
-    - Rozliczanie grantu:
-    - Zamykanie grantu:
-    - Użytkownik i kilka grantów obliczeniowych:
-- Najczęściej zadawane pytania:
+    - Zakładanie konta: Podrecznik_grantowy/Zakładanie_konta.md
+    - Jak wystąpić o grant obliczeniowy: Podrecznik_grantowy/Jak_wystąpić_o_grant_obliczeniowy.md
+    - Przyznawane zasoby: Podrecznik_grantowy/Przyznawane_zasoby.md
+    - Kierownik oraz współwykonawcy grantu: Podrecznik_grantowy/Kierownik_oraz_nowi_współwykonawcy_grantu.md
+    - Sprawozdania i publikacje w grancie: Podrecznik_grantowy/Sprawozdania_i_publikacje_w_grancie.md
+    - Rozliczanie grantu: Podrecznik_grantowy/Rozliczanie_grantu.md
+    - Zamykanie grantu: Podrecznik_grantowy/
+    - Użytkownik i kilka grantów obliczeniowych: Podrecznik_grantowy/Użytkownik_i_kilka_grantów_obliczeniowych.md
+#- Najczęściej zadawane pytania:
 - Tutorials:
   - Podstawy HPC:
     - Wstęp: Tutorials/HPC-intro/introduction.md
