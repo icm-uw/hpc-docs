@@ -37,7 +37,16 @@ nav:
   - Aplikacje:
     - Aplikacje: O_zasobach_ICM/Aplikacje/aplikacje.md
     - CI status: O_zasobach_ICM/Aplikacje/ci_status.md
-
+- Podręcznik grantowy:
+    - Zakładanie konta:
+    - Jak wystąpić o grant obliczeniowy:
+    - Przyznawane zasoby:
+    - Kierownik oraz współwykonawcy grantu:
+    - Sprawozdania i publikacje w grancie:
+    - Rozliczanie grantu:
+    - Zamykanie grantu:
+    - Użytkownik i kilka grantów obliczeniowych:
+- Najczęściej zadawane pytania:
 - Tutorials:
   - Podstawy HPC:
     - Wstęp: Tutorials/HPC-intro/introduction.md
