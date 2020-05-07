@@ -6,6 +6,12 @@ draft: false
 
 Poniższa tabelka prezentuje dostępne w infrastrukturze ICM zasoby służące przechowywaniu danych.
 
+| Zasób             | Topola             | Okeanos            | Rysy              | Uwagi                                                                |
+|------------------ |--------------------| -------------------| ----------------- |--------------------------------------------------------------------- |
+| Storage globalny  | /lu/tetyda/$USER/  | /lu/tetyda/$USER/  | /lu/tetyda/$USER/ | katalog widoczny z węzłów dostępowych (do wymiany danych)            |
+| Storage lokalny  | /lu/topola/$USER/  | /lu/tetyda/$USER/  | /lu/tetyda/$USER/ | katalog widoczny z węzłów dostępowych i obliczeniowych (do obliczeń) |
+
+
 <!--
 | Zasób                  | widoczny na     | pod ścieżką       | quota      | limit plików   | backup  |
 |----------------------- |-----------------| ----------------- | ---------- |--------------- |---------|
@@ -15,8 +21,7 @@ Poniższa tabelka prezentuje dostępne w infrastrukturze ICM zasoby służące p
 | Lokalny                | okeanos, topola |  /lu/tetyda/home  | -          |                | nie     |
 | Lokalny                | rysy            |  /home            | 200 GB     |                | nie     |
  -->
-
-| Zasób             | Topola             | Okeanos            | Rysy              | Uwagi                                                                |
-|------------------ |--------------------| -------------------| ----------------- |--------------------------------------------------------------------- |
-| Storage globalny  | /lu/tetyda/$USER/  | /lu/tetyda/$USER/  | /lu/tetyda/$USER/ | katalog widoczny z węzłów dostępowych (do wymiany danych)            |
-| Storage globalny  | /lu/topola/$USER/  | /lu/tetyda/$USER/  | /lu/tetyda/$USER/ | katalog widoczny z węzłów dostępowych i obliczeniowych (do obliczeń) |
+ 
+<!-- !!! warning
+   Nie wolno wykorzystywać katalogu domowego do intensywnego zapisu i odczytu plików tymczasowych generowanych w trakcie obliczeń, o ile informacje widoczne podczas logowania nie mówią inaczej.
+   Do tego celu na każdym systemie obliczeniowym przeznaczone są katalogi tymczasowe. -->

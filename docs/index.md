@@ -1,21 +1,32 @@
 ---
 title: ""
 date: "February 25, 2020"
-output: html_document
+draft: false
 ---
 
 <style>
 body {text-align: justify}
 </style>
 
+Komputery Dużej Mocy, zwane też superkomputerami to maszyny o wydajności przekraczającej wiele tysięcy razy komputery osobiste.
+Naukowcowcom oraz przedsiębiorcom oferujemy możliwość skorzystania ze sprzętu, którym dysponujemy.
+
+**Niniejszy serwis poświęcony jest dokumentacji na potrzeby użytkowników KDM @ ICM UW.**
+
 <center> ![](images/Centrum-Technologii-ICM.jpg) </center>
 
-Interdisciplinary Centre for Mathematical and Computational Modelling at the University of Warsaw (ICM UW) is a leading European supercomputing center.
-It provides innovative solutions for science, administration and business.
-The comprehensive offer of ICM UW includes the use of supercomputers for advanced computational tasks, building complex models, performing simulations, as well as data processing, analysis and visualization.
-For its users, ICM UW develops and optimizes dedicated software for High Performance Computing systems. The Center's portfolio covers projects implemented for entities from various sectors, including transport, energy, medicine and the environment.
-Since 2018, ICM UW is the organizer of "Supercomputing Frontiers Europe" – an international conference devoted to visionary trends and innovations in High Performance Computing.
-Among the most recognizable ICM UW projects are: meteo.pl – a meteorological service using numerical weather prediction – and HPC hackathons Great Programming Challenges.
-The Center also conducts studies in the field of computational engineering.
+*Centrum Technolgii ICM UW.*
+
+## O Nas
+
+Interdyscyplinarne Centrum Modelowania Matematycznego i Obliczeniowego na Uniwersytecie Warszawskim
+([ICM UW](https://icm.edu.pl/)) jest jednym z wiodących europejskich centrów superkomputerowych.
+Zapewnia innowacyjne rozwiązania dla nauki, administracji i biznesu.
+Kompleksowa oferta ICM UW obejmuje wykorzystanie superkomputerów do zaawansowanych zadań obliczeniowych, budowanie złożonych modeli, wykonywanie symulacji, a także przetwarzanie, analizę i wizualizację danych.
+Dla swoich użytkowników ICM UW opracowuje i optymalizuje dedykowane oprogramowanie dla systemów obliczeniowych o wysokiej wydajności. Portfolio Centrum obejmuje projekty realizowane dla podmiotów z różnych sektorów, w tym transportu, energii, medycyny i środowiska.
+Od 2018 r. ICM UW jest organizatorem międzynarodowej konferencji „Supercomputing Frontiers Europe” poświęconej wizjonerskim trendom i innowacjom w dziedzinie obliczeń o wysokiej wydajności.
+Do najbardziej rozpoznawalnych projektów ICM UW należą:
+meteo.pl - serwis meteorologiczny wykorzystujący numeryczne prognozy pogody - oraz hackatony HPC Wielkie wyzwania programistyczne.
+Centrum prowadzi również studia II stopnia z zakresu inżynierii obliczeniowej.
 
 <iframe width="952" height="380" src="https://www.youtube.com/embed/S5bn9t2EHV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
