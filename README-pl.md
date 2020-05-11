@@ -12,7 +12,7 @@
 $ git clone https://github.com/icm-uw/hpc-docs.git
 ```
 
-2. Instalujemy środowisko wirtualne Pythona, a w nim **mkdocs** wraz z zależnościami określonymi w pliku *requirements.txt*:
+2. Instalujemy środowisko wirtualne Pythona, aktywujemy je, a następnie instalujemy **mkdocs** wraz z zależnościami określonymi w pliku *requirements.txt*:
 
 ```sh
 $ pyenv python-venv
@@ -20,15 +20,13 @@ $ pyenv python-venv
 $ python -m venv python-venv
 ```
 
-Aktywacja:
-
 ```sh
+# Aktywacja:
 $ source ./python-venv/bin/activate
 ```
 
-Instalacja **mkdocs**:
-
 ```sh
+# Instalacja mkdocs:
 $ cd hpc-docs
 $ pip install -r requirements.txt
 ```
@@ -54,3 +52,7 @@ $ git add ./
 $ git commit -m "Adding this and that"
 $ git push
 ```
+
+### Uwagi
+
+- Do zarządzania układem (pod)stron wykorzystujemy sekcję **nav** w pliku *mkdocs.yml*.
