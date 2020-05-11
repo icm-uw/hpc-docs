@@ -20,25 +20,32 @@ $ pyenv python-venv
 $ python -m venv python-venv
 ```
 
-i aktywujemy je:
+Aktywacja:
 
 ```sh
 $ source ./python-venv/bin/activate
 ```
 
-3. Przechodzimy do sklonowanego repozytorium i uruchamiany lokalną instancję **mkdocs**, żeby monitorować (na razie offline) wprowadzane zmiany:
+Instalacja **mkdocs**:
+
 ```sh
 $ cd hpc-docs
+$ pip install -r requirements.txt
+```
+
+3. Będąc w sklonowanym repozytorium uruchamiany lokalną instancję **mkdocs**, żeby monitorować (na razie *offline*) wprowadzane zmiany:
+```sh
 $ mkdocs serve
 ```
 
 4. Wprowadzamy zmiany w plikach Markdown (*.md) lub tworzony nowe. Żeby sprawdzić efekt zmian kierujemy przeglądarkę internetową na adres http://127.0.0.1:8000
 
-5. Jeżeli zmiany są zadowalające, wysyłamy je na serwer:
+5. Jeżeli zmiany są zadowalające, wysyłamy je na serwer (z katalogu **hpc-docs**):
 ```sh
-$ cd hpc-docs
 $ mkdocs gh-deploy
 ```
+
+Po chwili zmiany będą widoczne *online* (https://icm-uw.github.io/hpc-docs/).
 
 6. Dodatkowo dodajemy do repozytorium zmodyfikowane pliki źródłowe (*.md):
 ```sh
