@@ -4,9 +4,6 @@ date: 2020-03-16
 draft: false
 ---
 
-!!! warning
-    Nie wolno wykorzystywać katalogu domowego do intensywnego zapisu i odczytu plików tymczasowych generowanych w trakcie obliczeń, o ile informacje widoczne podczas logowania nie mówią inaczej.
-    Do tego celu na każdym systemie obliczeniowym przeznaczone są katalogi tymczasowe.
 
 Do kopiowania plików używa się komendy cp:
 `cp kopiowany\_plik ścieżka\_docelowa\`

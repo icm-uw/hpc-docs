@@ -1,5 +1,5 @@
-site_name: Komputery Dużej Mocy ICM UW
-site_description: The reference tutorials for HPC @ ICM UW.
+site_name: KDM @ ICM UW
+site_description: Komputery Dużej Mocy @ ICM UW
 site_author: ICM
 #strict: true
 
@@ -7,8 +7,8 @@ theme:
   logo: 'images/Logo_icm_czarne.svg'
   name: 'material'
   palette:
-    primary: rgb(0, 79, 110);
-    accent: rgb(0, 79, 110);
+    primary: 'white'
+    accent: 'light blue'
 
 repo_name: ICM-HPC
 repo_url: https://github.com/ICM-UW/hpc-docs
@@ -24,7 +24,7 @@ extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 nav:
-- About HPC @ ICM UW: index.md
+- Komputery Dużej Mocy @ ICM UW: index.md
 
 - O zasobach ICM:
   - Formalności:
