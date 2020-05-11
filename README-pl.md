@@ -4,6 +4,7 @@
 
    1. Zakładamy konto użytkownika Github: https://github.com
    2. W serwisie z dokumentacją (https://icm-uw.github.io/hpc-docs/): na każdej (pod)stronie przy nagłówku działu znajduje się link o nazwie **Edit this page**, prowadzący do logowania w serwisie Github (punkt 1). Zalogowanie pozwala na edycję treści danej strony w repozytorium bezpośrednio z poziomu przeglądarki internetowej.
+   3. Wprowadzone zmiany potwierdzamy na dole strony: *Commit changes*.
 
 ## Edycja treści z poziomu klienta **git**
 
