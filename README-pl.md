@@ -36,7 +36,7 @@ $ pip install -r requirements.txt
 $ mkdocs serve
 ```
 
-4. Wprowadzamy zmiany w plikach Markdown (*.md) lub tworzony nowe. Żeby sprawdzić efekt zmian kierujemy przeglądarkę internetową na adres http://127.0.0.1:8000
+4. Wprowadzamy zmiany w plikach Markdown (*.md) lub tworzymy nowe. Żeby sprawdzić efekt zmian kierujemy przeglądarkę internetową na adres http://127.0.0.1:8000
 
 5. Jeżeli zmiany są zadowalające, wysyłamy je na serwer (z katalogu **hpc-docs**):
 ```sh
