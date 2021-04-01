@@ -120,6 +120,8 @@ lscpu                   # informacja o architekturze cpu (warto wykonać te kome
 sinfo -N -l             # lista węzłów
 sinfo -l -N | awk '{printf ("%1s %15s %15s %15s %10s %10s \n", $1, $2, $3, $5, $6, $7)}' # formatowanie kolumn
 smap -i 2               # quasi-graficzna informacja o wykorzystaniu węzłów
+sprio                   # pokazuje priorytet zadań oczekujących na uruchomienie 
+sshare                  
 ```
 
 ## QOS na poszczególnych systemach
