@@ -36,7 +36,7 @@ before_script:
 after_script:
   - killall ssh-agent
 
-test-pages:
+test-build:
   stage: test
   extends: .all
   artifacts:
@@ -48,11 +48,17 @@ test-pages:
   script:
     - mkdocs build --verbose --clean --strict
 
-publish-pages:
+pages:
   stage: deploy
-  needs: [test-pages]
+  needs: [test-build]
   dependencies:
-    - test-pages
+    - test-build
   extends: .all
+  # only:
+  #   - master
   script:
-    - mkdocs gh-deploy
+    # - mkdocs gh-deploy
+    - mkdocs build --site-dir public
+  artifacts:
+    paths:
+      - public

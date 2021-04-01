@@ -34,7 +34,7 @@ Dla swoich użytkowników ICM UW opracowuje i optymalizuje dedykowane oprogramow
 Od 2018 r. ICM UW jest organizatorem międzynarodowej konferencji „Supercomputing Frontiers Europe” poświęconej wizjonerskim trendom i innowacjom w dziedzinie obliczeń o wysokiej wydajności.
 Do najbardziej rozpoznawalnych projektów ICM UW należą:
 
-- meteo.pl - serwis meteorologiczny wykorzystujący numeryczne prognozy pogody 
+- meteo.pl - serwis meteorologiczny wykorzystujący numeryczne prognozy pogody.
 - oraz hackatony HPC Wielkie wyzwania programistyczne.
 - studia II stopnia z zakresu inżynierii obliczeniowej.
 
