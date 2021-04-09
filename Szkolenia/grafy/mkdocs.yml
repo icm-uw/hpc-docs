@@ -1,0 +1,30 @@
+site_name: Grafy
+
+nav:
+    - 'Start': 'index.md'
+    - 'Terminy warsztatów': 'terminy.md'
+    - 'Wymagania wstępne': 'wymagania.md'
+    - 'Warsztaty z Trovares xGT':
+      - 'Materiały wprowadzające': './xgt/materialy-wprowadzajace.md'
+      - 'Agenda warsztatów': './xgt/agenda.md'
+      - 'Prezentacje + Notebooki':
+        - 'Prezentacje':
+          - 'Wprowadzenie': ./xgt/files/presentations/wprowadzenie.pdf
+          - 'Łączenie się po SSH z superkomputerem Rysy': ./xgt/files/presentations/ssh.pdf
+          - 'Część praktyczna': ./xgt/files/presentations/czesc-praktyczna.pdf
+        - 'Jupyter Notebook':
+          - 'Demo - analiza ruchu sieciowego w LANL': ./xgt/files/notebooks/demo.ipynb
+          - 'Hands-on cz. I': ./xgt/files/notebooks/zadania-1.ipynb
+          - 'Hands-on cz. II': ./xgt/files/notebooks/zadania-2.ipynb
+    - 'Warsztaty z Urika-XC Cray Graph Engine':
+      - 'Materiały wprowadzające': './urika-xc/materialy-wprowadzajace.md'
+      - 'Agenda warsztatów': './urika-xc/agenda.md'
+      - 'Materiały':
+        - 'Prezentacja': './urika-xc/files/presentations/warsztaty_cray_graph_engine.pdf'
+        - 'Przygotowanie do działania': './urika-xc/przygotowanie_do_dzialania.md'
+        - 'SPARQL': './urika-xc/sparql.md'
+        - 'S-T Connectivity': './urika-xc/st_connectivity.md'
+      - 'Materiały dodatkowe':
+        - 'Metody użycia CGE': ./urika-xc/metody_uzycia_cge.ipynb
+        - 'Pagerank': ./urika-xc/pagerank.ipynb
+    - 'Kontakt & Organizatorzy': 'kontakty.md'
