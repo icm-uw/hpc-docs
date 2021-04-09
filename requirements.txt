@@ -5,3 +5,4 @@ mkdocs-git-revision-date-localized-plugin
 pymdown-extensions
 mkdocs-monorepo-plugin
 mkdocs-jupyter
+nbconvert < 6.0

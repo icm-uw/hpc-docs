@@ -32,8 +32,8 @@ before_script:
   - ls -latr
   - ssh -vT git@git.icm.edu.pl
   - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
-  - git submodule update --init --recursive
-  - git submodule update --recursive --remote
+  # - git submodule add https://github.com/kubajal/hpc-docs-graphs.git docs/Szkolenia/grafy
+  - git submodule update --init --recursive --remote
 
 after_script:
   - killall ssh-agent

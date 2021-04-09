@@ -19,3 +19,6 @@ else
 fi
 
 pip install --upgrade -r requirements.txt
+
+echo "listing $ENV_NAME"
+pip freeze 
