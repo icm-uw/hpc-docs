@@ -32,6 +32,8 @@ before_script:
   - ls -latr
   - ssh -vT git@git.icm.edu.pl
   - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
+  - git submodule update --init --recursive
+  - git submodule update --recursive --remote
 
 after_script:
   - killall ssh-agent
