@@ -99,6 +99,14 @@ Source:
 
 <https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#features-and-technical-specifications__technical-specifications-per-compute-capability>
 
+### Performance Tuning - grid and block dimensions for CUDA kernels
+
+Occupancy is defined as the ratio of active [warps](https://en.wikipedia.org/wiki/Thread_block_(CUDA_programming)#Warps) (a set of 32 threads) on an Streaming Multiprocessor (SM) to the maximum number of active warps supported by the SM.
+
+Low occupancy results in poor instruction issue efficiency, because there are not enough eligible warps to hide latency between dependent instructions. When occupancy is at a sufficient level to hide latency, increasing it further may degrade performance due to the reduction in resources per thread. An early step of kernel performance analysis should be to check occupancy and observe the effects on kernel execution time when running at different occupancy levels.
+
+<https://docs.nvidia.com/gameworks/content/developertools/desktop/analysis/report/cudaexperiments/kernellevel/achievedoccupancy.htm>
+
 ### Cuda Memory Model
 
 <center> ![](GPU_images/CUDA-memory-model.gif) </center>
