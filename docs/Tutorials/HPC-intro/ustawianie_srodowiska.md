@@ -26,7 +26,7 @@ which moja_aplikacja  # pokazuje która wersja aplikacji jest domyślna
 whereis moja_aplikacja   # pokazuje scieżkę do aplikacji
 moja_aplikacja --version
 moja_aplikacja --help
-lld sciezka_do_folderu/moja_aplikacja  # print shared library dependencies
+ldd sciezka_do_folderu/moja_aplikacja  # print shared library dependencies
 echo $PATH
 set  # pokazuje/ustawia zmienne powłoki (shell)
 ```

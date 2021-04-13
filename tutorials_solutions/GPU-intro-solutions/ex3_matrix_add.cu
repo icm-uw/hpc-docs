@@ -25,6 +25,14 @@ void __global__ gpu_matrix_add_elementwise (float *a, float *b, float  *c, int N
         c[index] = a[index] + b[index];
 }
 
+void  __global__ gpu_matrix_add_elementwise_naive(float *a, float *b, float  *c, int n) {
+    // built-in variable blockDim.x describes amount threads per block
+
+    int tid = blockIdx.x * blockDim.x + threadIdx.x;
+    if (tid < n*n)
+        c[tid] = a[tid] + b[tid];
+}
+
 void print_matrix(float *Matrix, const int N)
 {
     for (int i=0; i <N; ++i)
