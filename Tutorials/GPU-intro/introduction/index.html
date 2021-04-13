@@ -1044,6 +1044,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#performance-tuning-grid-and-block-dimensions-for-cuda-kernels" class="md-nav__link">
+    Performance Tuning - grid and block dimensions for CUDA kernels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cuda-memory-model" class="md-nav__link">
     Cuda Memory Model
   </a>
@@ -2124,6 +2131,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#performance-tuning-grid-and-block-dimensions-for-cuda-kernels" class="md-nav__link">
+    Performance Tuning - grid and block dimensions for CUDA kernels
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#cuda-memory-model" class="md-nav__link">
     Cuda Memory Model
   </a>
@@ -2241,6 +2255,10 @@ blockDim describes number of threads in the block.
 <p>Source:</p>
 <p><a href="https://devtalk.nvidia.com/default/topic/978550/cuda-programming-and-performance/maximum-number-of-threads-on-thread-block/">https://devtalk.nvidia.com/default/topic/978550/cuda-programming-and-performance/maximum-number-of-threads-on-thread-block/</a></p>
 <p><a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#features-and-technical-specifications__technical-specifications-per-compute-capability">https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#features-and-technical-specifications__technical-specifications-per-compute-capability</a></p>
+<h3 id="performance-tuning-grid-and-block-dimensions-for-cuda-kernels">Performance Tuning - grid and block dimensions for CUDA kernels</h3>
+<p>Occupancy is defined as the ratio of active <a href="https://en.wikipedia.org/wiki/Thread_block_(CUDA_programming)#Warps">warps</a> (a set of 32 threads) on an Streaming Multiprocessor (SM) to the maximum number of active warps supported by the SM.</p>
+<p>Low occupancy results in poor instruction issue efficiency, because there are not enough eligible warps to hide latency between dependent instructions. When occupancy is at a sufficient level to hide latency, increasing it further may degrade performance due to the reduction in resources per thread. An early step of kernel performance analysis should be to check occupancy and observe the effects on kernel execution time when running at different occupancy levels.</p>
+<p><a href="https://docs.nvidia.com/gameworks/content/developertools/desktop/analysis/report/cudaexperiments/kernellevel/achievedoccupancy.htm">https://docs.nvidia.com/gameworks/content/developertools/desktop/analysis/report/cudaexperiments/kernellevel/achievedoccupancy.htm</a></p>
 <h3 id="cuda-memory-model">Cuda Memory Model</h3>
 <p><center> <img alt="" src="../GPU_images/CUDA-memory-model.gif" /> </center></p>
 <p>Readings:</p>
@@ -2320,7 +2338,7 @@ deviceQuery, CUDA <span class="nv">Driver</span> <span class="o">=</span> CUDART
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2021</span>
     
   </small>
 </div>
