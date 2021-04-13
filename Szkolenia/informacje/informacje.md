@@ -16,8 +16,9 @@ Jeśli są Państwo zainteresowani tzw. szkoleniami podstawowymi (podstawy syste
 
 Data           | Zapisy    | Prowadzący                     | Temat                                         | Uwagi
 ---------------|-----------|--------------------------------|-----------------------------------------------|-----
-18 III 2021    | otwarte   | M. Hermanowicz                 | Wprowadzenie do obliczeń na komputerach ICM   | [Program](./intro_icm_2021.md)
+22 IV 2021     | otwarte   | Dział Oprogramowania i Wsparcia Użytkowników | Sesja Q&A                       | [Szczegóły](./sesja_qa.md)
 –              | –         | –                              | –                                             | –
+
 
 
 ## Akademia ICM

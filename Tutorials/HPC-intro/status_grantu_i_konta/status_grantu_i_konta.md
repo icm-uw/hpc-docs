@@ -14,6 +14,7 @@ sacctmgr show assoc where account=<grant_id> format=Cluster,Account%25,Partition
 sacctmgr show assoc where user=$USER format=Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 # pokaż w jakich jestem grantach i do których qos mam dostęp
 sacctmgr show assoc format=Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 | grep $USER # j.w.
 sacctmgr show qos format=name,MaxWall,Priority,MaxTRESPU%50 # pokaż limit czasu obliczen dla poszczególnych qos
+scontrol show res # pokaż rezerwacje
 ```
 
 Więcej informacji o na poszczegółnych systemach (topola/okeanos/rysy) znajduje się [tu](../../O_zasobach_ICM/Zasoby/komputery_w_icm.md).

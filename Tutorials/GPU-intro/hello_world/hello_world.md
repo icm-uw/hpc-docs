@@ -56,7 +56,9 @@ Or schedule the job to the queue:
 #SBATCH --nodes=1 
 #SBATCH --account=GRANT_NAME
 #SBATCH --time=01:00:00 
-#SBATCH --qos=normal
+
+#SBATCH --reservation=reservation_name_if_there_is_one_for_classes # optional
+#SBATCH --qos=normal # optional
 
 
 module load gpu/cuda/11.1  
