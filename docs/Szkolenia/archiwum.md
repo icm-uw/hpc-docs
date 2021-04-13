@@ -6,9 +6,17 @@ draft: false
 
 <!-- <Last revision: 2020-04-22 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
+
+## 2021
+
+Data           | Zapisy    | Prowadzący                     | Temat                                         | Uwagi
+---------------|-----------|--------------------------------|-----------------------------------------------|-----
+18 III 2021    | zamknięte | M. Hermanowicz                 | Wprowadzenie do obliczeń na komputerach ICM   | [Program](./intro_icm_2021.md)
+–              | –         | –                              | –                                             | –
+
 ## 2019/2020
 
-**Data **|**Zapisy **|**Prowadzący **|**Temat **|**Uwagi**
+Data | Zapisy | Prowadzący | Temat | Uwagi
 -----|-----|-----|-----|-----
 2019-11-15 |zamknięte |Maciej Marchwiany, Michał Hermanowicz, Maciej Szpindler | [Wprowadzenie do obliczeń na komputerach ICM](./intro_icm_2019.md) |wymagana rejestracja
 2020-01-15 |zamknięte |Michał Hermanowicz | [Wprowadzenie do obliczeń wektorowych: NEC SX-Aurora Tsubasa](./intro_nec.md) |wymagana rejestracja
