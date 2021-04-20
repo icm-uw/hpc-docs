@@ -910,6 +910,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#wybor-kompilatora-okeanos" class="md-nav__link">
+    Wybór kompilatora - Okeanos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dodatek-zmienna-path" class="md-nav__link">
     Dodatek - zmienna $PATH
   </a>
@@ -2003,6 +2010,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#wybor-kompilatora-okeanos" class="md-nav__link">
+    Wybór kompilatora - Okeanos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dodatek-zmienna-path" class="md-nav__link">
     Dodatek - zmienna $PATH
   </a>
@@ -2049,6 +2063,43 @@ make configure
 ./configure --prefix<span class="o">=</span><span class="nv">$HOME</span>/myapps
 make
 make install
+</code></pre></div>
+
+<h3 id="wybor-kompilatora-okeanos">Wybór kompilatora - Okeanos</h3>
+<p>Superkomputer Okeanos został zbudowany przez firmę Cray.
+Udostępnia ona polecenia <code>cc</code>/<code>CC</code>, które są uniwersalnym opakowaniem na kompilatory języka C/C++.
+Pod maską używany jest żądany kompilator (gcc, icc, itp.) oraz odpowiednie biblioteki MPI.
+Po załadowaniu żądanego środowiska, należy używać tylko polecenia <code>cc</code>/<code>CC</code>.
+Na przykład:</p>
+<div class="highlight"><pre><span></span><code>$ module list
+...
+...
+PrgEnv-cray/6.0.5 <span class="c1"># środowisko domyślne</span>
+...
+...
+
+$ cc --version
+Cray clang version <span class="m">9</span>.0.2 <span class="o">(</span>2a3a7003aaa5b93e2070bde59a5ee6b9682b67d7<span class="o">)</span> <span class="o">(</span>based on LLVM <span class="m">9</span>.0.0svn<span class="o">)</span>
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/cray/pe/cce/9.0.2/cce-clang/x86_64/bin
+
+$ module switch PrgEnv-cray PrgEnv-intel
+$ cc --version
+icc <span class="o">(</span>ICC<span class="o">)</span> <span class="m">19</span>.1.0.166 <span class="m">20191121</span>
+Copyright <span class="o">(</span>C<span class="o">)</span> <span class="m">1985</span>-2019 Intel Corporation.  All rights reserved.
+
+$ module switch PrgEnv-intel PrgEnv-gnu
+$ cc --version
+gcc <span class="o">(</span>GCC<span class="o">)</span> <span class="m">8</span>.3.0 <span class="m">20190222</span> <span class="o">(</span>Cray Inc.<span class="o">)</span>
+Copyright <span class="o">(</span>C<span class="o">)</span> <span class="m">2018</span> Free Software Foundation, Inc.
+This is free software<span class="p">;</span> see the <span class="nb">source</span> <span class="k">for</span> copying conditions.  There is NO
+warranty<span class="p">;</span> not even <span class="k">for</span> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+$ CC --version
+g++ <span class="o">(</span>GCC<span class="o">)</span> <span class="m">8</span>.3.0 <span class="m">20190222</span> <span class="o">(</span>Cray Inc.<span class="o">)</span>
+Copyright <span class="o">(</span>C<span class="o">)</span> <span class="m">2018</span> Free Software Foundation, Inc.
+This is free software<span class="p">;</span> see the <span class="nb">source</span> <span class="k">for</span> copying conditions.  There is NO
+warranty<span class="p">;</span> not even <span class="k">for</span> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 </code></pre></div>
 
 <h3 id="dodatek-zmienna-path">Dodatek - zmienna $PATH</h3>
@@ -2109,7 +2160,7 @@ hello someone
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2021</span>
     
   </small>
 </div>

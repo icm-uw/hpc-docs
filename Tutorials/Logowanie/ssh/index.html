@@ -2283,7 +2283,7 @@ System będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w apl
 <p>Po usunięciu tokenu z aplikacji w telefonie nie ma możliwości jego odzyskania (tylko reset wykonany przez administratora).</p>
 </div>
 <h3 id="aplikacje-do-obsugi-tokenow-totp">Aplikacje do obsługi tokenów TOTP</h3>
-<p>W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów <strong>TOTP</strong> (Time-based One-time Password), np. <code>FreeOTP</code> lub <code>GoogleAuthenicator</code>. 
+<p>W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów <strong>TOTP</strong> (Time-based One-time Password), np. <code>FreeOTP</code> lub <code>GoogleAuthenicator</code>.
 Aplikację są dostępne w GooglePlay i AppStore, są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).</p>
 <p>Użycie aplikacji na telefon jest preferowane ponieważ:</p>
 <ul>
@@ -2293,8 +2293,8 @@ Aplikację są dostępne w GooglePlay i AppStore, są darmowe i nie wymagają do
 <p>Jeżeli nie jest to możliwe, należy zainstalować aplikację na komputerze.
 Szczegóły poniżej.</p>
 <h4 id="pl-gnulinux">[PL] GNU/Linux</h4>
-<p>Rejestracja tokenu TOTP przy pomocy aplikacji "pass" w systemie
-operacyjnym GNU/Linux:</p>
+<p>TOTP token może być zarejstrowany w aplikacji z interfejsem graficznym (GUI), np <a href="https://keepassxc.org/">https://keepassxc.org/</a></p>
+<p>Alternatywnie, token TOTP może być zarejestrowany przy pomocy aplikacji "pass" (CLI - command line interface) w systemie operacyjnym GNU/Linux:</p>
 <ol>
 <li>
 <p>Instalujemy aplikację "pass". Najwygodniej jest to zrobić za pośrednictwem repozytorium pakietów właściwego dla naszej dystrybucji systemu. Alternatywnie - program można pobrać ze strony: <a href="https://github.com/tadfisher/pass-otp">https://github.com/tadfisher/pass-otp</a></p>
@@ -2309,23 +2309,22 @@ operacyjnym GNU/Linux:</p>
 </li>
 <li>
 <p>Wchodzimy w przeglądarce internetowej na stronę
- <a href="https://mfa.hpc.icm.edu.pl">https://mfa.hpc.icm.edu.pl</a> i logujemy się do serwisu przy użyciu
- dotychczasowej nazwy użytkownika i hasła.</p>
+   <a href="https://mfa.hpc.icm.edu.pl">https://mfa.hpc.icm.edu.pl</a> i logujemy się do serwisu przy użyciu
+   dotychczasowej nazwy użytkownika i hasła.</p>
 </li>
 <li>
-<p>Wybieramy opcję "Enroll Token" i bez zmiany domyślnych parametrów
+<p>Wybieramy opcję "Enroll Token" i bez zmiany domyślnych parametrów 
    wybieramy "Enroll".</p>
-<p><em>Uwaga: Tu musimy działać powoli, zbyt szybkie
-        przejście dalej spowoduje niemożliwość wykorzystania
-        wygenerowanego tokenu.</em></p>
-</li>
-</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tu musimy działać powoli, zbyt szybkie przejście dalej spowoduje niemożliwość wykorzystania wygenerowanego tokenu.</p>
+</div>
 <p>Pojawi się nowa strona z obrazem kodu QR
-   odpowiadającemu tokenowi. Obok kodu jest dostępny
-   link (pokolorowane "here"). Kopiujemy adres, na który
-   wskazuje link do schowka lub do dowolnego edytora
-   tekstu.</p>
-<ol>
+  odpowiadającemu tokenowi. Obok kodu jest dostępny
+  link (pokolorowane "here"). Kopiujemy adres, na który
+  wskazuje link do schowka lub do dowolnego edytora
+  tekstu.</p>
+</li>
 <li>
 <p>W terminalu wykonujemy instrukcję:</p>
 <p><code>pass otp insert icm</code></p>
@@ -2347,8 +2346,8 @@ Error: blahblah is not in the password store.
 </li>
 <li>
 <p>Gotowe. Można już zamknąć stronę internetową rejestracji tokenu, a
-link nie będzie już potrzebny. Żeby wygenerować token, wystarczy wydać
-w terminalu polecenie:</p>
+   link nie będzie już potrzebny. Żeby wygenerować token, wystarczy wydać
+   w terminalu polecenie:</p>
 <p><code>pass otp icm</code></p>
 <p>Program zapyta nas o hasło – UWAGA: nie jest to hasło ICM, ale
 hasło klucza GPG, który wygenerowaliśmy w punkcie 1.</p>
@@ -2361,7 +2360,9 @@ do sesji SSH.</p>
 <p>Opcjonalnie, żeby proces logowania do systemów ICM był
 wygodniejszy, można utworzyć następujący alias (i umieścić
 poniższą linię w pliku ~/.bashrc) - dla powłoki Bash:</p>
-<p><code>alias sshicm='pass otp -c icm &amp;&amp; ssh 213.135.51.79'</code></p>
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">sshicm</span><span class="o">=</span><span class="s1">&#39;pass otp -c icm &amp;&amp; ssh 213.135.51.79&#39;</span>
+</code></pre></div>
+
 <p>Chcąc zalogować się do systemu ICM wystarczy wówczas napisać w
 terminalu:</p>
 <p><code>sshicm</code></p>
@@ -2371,7 +2372,9 @@ gdzie możemy natychmiast wkleić token ze schowka.</p>
 </li>
 </ol>
 <h4 id="en-gnulinux">[EN] GNU/Linux</h4>
-<p>TOTP token registration with "pass" for GNU/Linux operating system:</p>
+<p>TOTP token can be registered with a GUI application, like <a href="https://keepassxc.org/">https://keepassxc.org/</a></p>
+<p>Alternatively, the TOTP token can be registrated with "pass", which is a CLI application. 
+Instructions for GNU/Linux operating system:</p>
 <ol>
 <li>
 <p>Install the "pass" application. It is convenient to use the
@@ -2408,10 +2411,26 @@ corresponding to your token. There is also a link of the form:</p>
 </li>
 <li>
 <p>In the terminal, use the command:</p>
+</li>
+</ol>
 <p><code>pass otp insert icm</code></p>
 <p>You will be asked to provide "otpauth://". Paste the link you
-have just copied.</p>
-</li>
+    have just copied.</p>
+<p>If you receive a message like <code>Error: otp is not in the password store.</code>,
+   then the 'pass-otp' plugin for 'pass' application has been improperly installed.
+   As a result, the 'otp' command is not recognized.
+   Improper examples are listed below:</p>
+<div class="highlight"><pre><span></span><code>username@hostname:~$ pass blahblah
+Error: blahblah is not in the password store.
+
+username@hostname:~$ pass blahblah insert
+Error: blahblah is not in the password store.
+
+username@hostname:~$ pass blahblah insert icm
+Error: blahblah is not in the password store.
+</code></pre></div>
+
+<ol>
 <li>
 <p>Done. You can now close the token registration website and discard the
 link. To use the token, issue the command:</p>
@@ -2600,7 +2619,7 @@ lub kombinacją klawiszy <code>Ctrl+D</code>.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 23, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2021</span>
     
   </small>
 </div>

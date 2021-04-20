@@ -34,7 +34,7 @@ System będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w apl
 
 ### Aplikacje do obsługi tokenów TOTP
 
-W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów **TOTP** (Time-based One-time Password), np. `FreeOTP` lub `GoogleAuthenicator`. 
+W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów **TOTP** (Time-based One-time Password), np. `FreeOTP` lub `GoogleAuthenicator`.
 Aplikację są dostępne w GooglePlay i AppStore, są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).
 
 Użycie aplikacji na telefon jest preferowane ponieważ:
@@ -47,8 +47,9 @@ Szczegóły poniżej.
 
 #### [PL] GNU/Linux
 
-Rejestracja tokenu TOTP przy pomocy aplikacji "pass" w systemie
-operacyjnym GNU/Linux:
+TOTP token może być zarejstrowany w aplikacji z interfejsem graficznym (GUI), np <https://keepassxc.org/>
+
+Alternatywnie, token TOTP może być zarejestrowany przy pomocy aplikacji "pass" (CLI - command line interface) w systemie operacyjnym GNU/Linux:
 
 1. Instalujemy aplikację "pass". Najwygodniej jest to zrobić za pośrednictwem repozytorium pakietów właściwego dla naszej dystrybucji systemu. Alternatywnie - program można pobrać ze strony: https://github.com/tadfisher/pass-otp
 
@@ -64,21 +65,21 @@ operacyjnym GNU/Linux:
 	`pass init <gpg-id lub adres e-mail klucza GPG>`
 
 3. Wchodzimy w przeglądarce internetowej na stronę
- https://mfa.hpc.icm.edu.pl i logujemy się do serwisu przy użyciu
- dotychczasowej nazwy użytkownika i hasła.
+   https://mfa.hpc.icm.edu.pl i logujemy się do serwisu przy użyciu
+   dotychczasowej nazwy użytkownika i hasła.
 
-4. Wybieramy opcję "Enroll Token" i bez zmiany domyślnych parametrów
+4. Wybieramy opcję "Enroll Token" i bez zmiany domyślnych parametrów 
    wybieramy "Enroll".
 
-      *Uwaga: Tu musimy działać powoli, zbyt szybkie
-            przejście dalej spowoduje niemożliwość wykorzystania
-            wygenerowanego tokenu.*
+	!!!Note
+		Tu musimy działać powoli, zbyt szybkie przejście dalej spowoduje niemożliwość wykorzystania wygenerowanego tokenu.
 
-   Pojawi się nowa strona z obrazem kodu QR
-   odpowiadającemu tokenowi. Obok kodu jest dostępny
-   link (pokolorowane "here"). Kopiujemy adres, na który
-   wskazuje link do schowka lub do dowolnego edytora
-   tekstu.
+
+      Pojawi się nowa strona z obrazem kodu QR
+      odpowiadającemu tokenowi. Obok kodu jest dostępny
+      link (pokolorowane "here"). Kopiujemy adres, na który
+      wskazuje link do schowka lub do dowolnego edytora
+      tekstu.
 
 5. W terminalu wykonujemy instrukcję:
 
@@ -103,8 +104,8 @@ operacyjnym GNU/Linux:
      ```
 
 6. Gotowe. Można już zamknąć stronę internetową rejestracji tokenu, a
-link nie będzie już potrzebny. Żeby wygenerować token, wystarczy wydać
-w terminalu polecenie:
+   link nie będzie już potrzebny. Żeby wygenerować token, wystarczy wydać
+   w terminalu polecenie:
 
     `pass otp icm`
 
@@ -124,8 +125,8 @@ w terminalu polecenie:
     wygodniejszy, można utworzyć następujący alias (i umieścić
     poniższą linię w pliku ~/.bashrc) - dla powłoki Bash:
 
-    ```
-   alias sshicm='pass otp -c icm && ssh 213.135.51.79'
+    ```.sh
+    alias sshicm='pass otp -c icm && ssh 213.135.51.79'
     ```
 
     Chcąc zalogować się do systemu ICM wystarczy wówczas napisać w
@@ -139,7 +140,10 @@ w terminalu polecenie:
 
 #### [EN] GNU/Linux
 
-TOTP token registration with "pass" for GNU/Linux operating system:
+TOTP token can be registered with a GUI application, like <https://keepassxc.org/>
+
+Alternatively, the TOTP token can be registrated with "pass", which is a CLI application. 
+Instructions for GNU/Linux operating system:
 
 1. Install the "pass" application. It is convenient to use the
 official package repository for your distribution. Alternatively - you
@@ -178,10 +182,26 @@ and log in with your credentials.
 
 5. In the terminal, use the command:
 
-	`pass otp insert icm`
+   `pass otp insert icm`
 
-	You will be asked to provide "otpauth://". Paste the link you
+   You will be asked to provide "otpauth://". Paste the link you
 	have just copied.
+
+   If you receive a message like `Error: otp is not in the password store.`,
+   then the 'pass-otp' plugin for 'pass' application has been improperly installed.
+   As a result, the 'otp' command is not recognized.
+   Improper examples are listed below:
+
+   ```.bash
+   username@hostname:~$ pass blahblah
+   Error: blahblah is not in the password store.
+
+   username@hostname:~$ pass blahblah insert
+   Error: blahblah is not in the password store.
+
+   username@hostname:~$ pass blahblah insert icm
+   Error: blahblah is not in the password store.
+   ```
 
 6. Done. You can now close the token registration website and discard the
 link. To use the token, issue the command:
@@ -298,7 +318,7 @@ TOTP token registration with "OTP Manager" for MS Windows 10
 
 9. At this point, the token registration website can be closed and the
    secret key forgotten.
-   
+
 
 ## Tworzenie kluczy SSH
 
