@@ -34,6 +34,48 @@ make
 make install
 ```
 
+### Wybór kompilatora - Okeanos
+
+Superkomputer Okeanos został zbudowany przez firmę Cray.
+Udostępnia ona polecenia `cc`/`CC`, które są uniwersalnym opakowaniem na kompilatory języka C/C++.
+Pod maską używany jest żądany kompilator (gcc, icc, itp.) oraz odpowiednie biblioteki MPI.
+Po załadowaniu żądanego środowiska, należy używać tylko polecenia `cc`/`CC`.
+Na przykład:
+
+```.sh
+$ module list
+...
+...
+PrgEnv-cray/6.0.5 # środowisko domyślne
+...
+...
+
+$ cc --version
+Cray clang version 9.0.2 (2a3a7003aaa5b93e2070bde59a5ee6b9682b67d7) (based on LLVM 9.0.0svn)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/cray/pe/cce/9.0.2/cce-clang/x86_64/bin
+
+$ module switch PrgEnv-cray PrgEnv-intel
+$ cc --version
+icc (ICC) 19.1.0.166 20191121
+Copyright (C) 1985-2019 Intel Corporation.  All rights reserved.
+
+$ module switch PrgEnv-intel PrgEnv-gnu
+$ cc --version
+gcc (GCC) 8.3.0 20190222 (Cray Inc.)
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+$ CC --version
+g++ (GCC) 8.3.0 20190222 (Cray Inc.)
+Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+```
+
 ### Dodatek - zmienna $PATH
 
 Aby nie musieć każdorazowo wpisywać pełnej ścieżki do programu w celu jego uruchomienia, można zmodyfikować systemową zmienną `$PATH`.

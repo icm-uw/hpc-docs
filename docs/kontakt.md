@@ -16,4 +16,16 @@ Wsparcie użytkowników i obsługa grantów obliczeniowych jest dostępna pod ad
 
     E-mail: **pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.**
 
-    Telefon: **+48 22 8749 200**
+    Telefon: **+48 22 87 49 200**
+
+## Czy wiesz że odpowiedź na zgłoszenie możesz otrzymać szybciej?
+
+Warto podać następujące dane:
+
+- login, nr grantu
+
+- komendy jakie były wykonywane (polecenie `history`)
+
+- plik wsadowy my_job.sbatch
+
+- plik wynikowy slurm-123456.out

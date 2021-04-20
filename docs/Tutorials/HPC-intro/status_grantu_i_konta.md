@@ -45,7 +45,7 @@ Przykładowo
 ```.text
 alice@rysy ~ $ icm-show-grant-usage GR12-34 2020-01-01 2020-07-30
 You are on the Rysy cluster.
-Usage summary for grant app-installers (from 2020-01-01 to 2020-07-30):
+Usage summary for grant GR12-34 (from 2020-01-01 to 2020-07-30):
 
 --------------------------------------------------------------------
      Cluster           Login                TRES    Usage(coreh)

@@ -14,7 +14,7 @@ Wieloetapowe logowanie bywa uciążliwe przy pracy na plikach.
 
 - Konieczność wieloetapowego logowania można uprościć poprzez tunelowanie połączenia.
 
-## Tunelowanie ssh
+## Tunelowanie ssh - intrukcja dla systemów LINUX
 
 [Tunel](https://pl.wikipedia.org/wiki/Tunel_(informatyka)) – zestawienie połączenia między dwoma odległymi hostami tak, by stworzyć wrażenie, że są połączone bezpośrednio. - Wikipedia.
 
@@ -68,7 +68,7 @@ ff02::2 ip6-allrouters
 !!! note
     Aby tunel był otwarty należy zalogować się na węzeł dostępowy  `ssh nazwa_uzytkownika@hpc.icm.edu.pl`.
 
-## Kopiowanie plików i logowanie - tips & tricks
+## Kopiowanie plików i logowanie - tips & tricks (LINUX)
 
 Przykład użycia:
 
