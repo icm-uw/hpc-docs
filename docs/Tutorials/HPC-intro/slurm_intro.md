@@ -164,7 +164,7 @@ W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji `--gres=gpu:l
 srun hello_world_cuda
 ```
 
-Przykładowy program *hello_world_cuda* znajduje się w sekcji [Podstawy GPU](../GPU-intro/hello_world.md).
+Przykładowy program *hello_world_cuda* znajduje się w sekcji [Podstawy GPU](../GPU-intro/hello_world.en.md).
 
 ## Wstawianie zadania do kolejki
 
