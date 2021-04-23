@@ -48,7 +48,8 @@ test-pages:
     expire_in: 1 week
     when: always # on_failure
   script:
-    - mkdocs build --verbose --clean --strict
+    - echo "lalala"
+    # - mkdocs build --verbose --clean --strict
 
 publish-pages:
   stage: deploy
@@ -57,4 +58,5 @@ publish-pages:
     - test-pages
   extends: .all
   script:
-    - mkdocs gh-deploy
+    - echo "bebebe"
+    # - mkdocs gh-deploy
