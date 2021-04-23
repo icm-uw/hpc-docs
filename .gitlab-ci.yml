@@ -30,8 +30,6 @@ before_script:
   - cd $CLONE_DIR
   - git checkout -b $CI_COMMIT_BRANCH origin/$CI_COMMIT_BRANCH
   - git branch -v
-  - echo $CI_COMMIT_TAG	
-  - echo $CI_COMMIT_BRANCH
   - pwd 
   - ls -latr
   - ssh -vT git@git.icm.edu.pl
@@ -52,8 +50,7 @@ test-pages:
     expire_in: 1 week
     when: always # on_failure
   script:
-    - echo "lalala"
-    # - mkdocs build --verbose --clean --strict
+    - mkdocs build --verbose --clean --strict
 
 publish-pages:
   stage: deploy
@@ -62,5 +59,4 @@ publish-pages:
     - test-pages
   extends: .all
   script:
-    - echo "bebebe"
-    # - mkdocs gh-deploy
+    - mkdocs gh-deploy

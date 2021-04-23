@@ -20,7 +20,7 @@ fi
 
 echo "listing requirements.txt"
 cat requirements.txt
-echo "updating packageges... "
+echo "updating packages... "
 pip install --upgrade -r requirements.txt
 echo "listing $ENV_NAME"
 pip freeze 
