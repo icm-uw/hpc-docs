@@ -18,7 +18,9 @@ else
     workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
 fi
 
+echo "listing requirements.txt"
+cat requirements.txt
+echo "updating packageges... "
 pip install --upgrade -r requirements.txt
-
 echo "listing $ENV_NAME"
 pip freeze 
