@@ -6,3 +6,4 @@ pymdown-extensions
 mkdocs-monorepo-plugin
 mkdocs-jupyter
 nbconvert < 6.0
+mkdocs-i18n
