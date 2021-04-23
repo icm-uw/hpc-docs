@@ -27,6 +27,7 @@ before_script:
   - ls -latr
   - rm -rf $CLONE_DIR
   - git clone git@git.icm.edu.pl:owu/hpc-docs.git $CLONE_DIR
+  - git branch -v
   - cd $CLONE_DIR
   - pwd 
   - ls -latr
