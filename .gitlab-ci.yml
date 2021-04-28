@@ -8,6 +8,8 @@ stages:
   allow_failure: false 
 
 before_script:
+  - pwd 
+  - ls -latr
   - pip install -r requirements
   - git submodule update --init --recursive --remote
 
