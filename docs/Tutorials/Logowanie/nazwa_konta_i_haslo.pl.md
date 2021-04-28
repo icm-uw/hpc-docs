@@ -16,5 +16,4 @@ Zmiana hasła możliwa jest pod adresem <https://haslo.icm.edu.pl/>
 W chwili skierowania konta do utworzenia, hasło jest wysyłane automatycznym mailem.
 Przed pierwszym logowaniem konieczna jest jego zmiana.
 Dopiero po dokonaniu zmiany hasła odblokuje się dostęp do serwera dostępowego `hpc.icm.edu.pl`.
-Hasło wysyłane jest automatycznym mailem, w chwili skierowania konta do utworzenia.
 Login jest zgodny z podanym na formularzu użytkownika.

@@ -9,7 +9,7 @@ Program `screen` to multiplekser terminala. Oznacza to, że można rozpocząć s
 
 Poniżej przykład użycia programu `screen` na komputerze Okeanos.
 
-1) [Logujemy się](../Logowanie/ssh.md)
+1) [Logujemy się](../Logowanie/ssh.pl.md)
 
     username@okeanos-login1:~> # należy zapamiętać na którym login-nodzie jesteśmy
 

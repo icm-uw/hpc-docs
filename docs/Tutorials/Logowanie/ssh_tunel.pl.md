@@ -10,7 +10,7 @@ draft: false
 
 Wieloetapowe logowanie bywa uciążliwe przy pracy na plikach.
 
-- Konieczność każdorazowego wpisywanie hasła można uprościć poprzez użycie [klucza ssh](ssh.md).
+- Konieczność każdorazowego wpisywanie hasła można uprościć poprzez użycie [klucza ssh](ssh.pl.md).
 
 - Konieczność wieloetapowego logowania można uprościć poprzez tunelowanie połączenia.
 

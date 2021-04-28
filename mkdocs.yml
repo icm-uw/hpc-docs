@@ -24,6 +24,12 @@ plugins:
         en: "This page is not translated to English."
       translate_nav:
         pl:
+          section_instrukcje: "Instrukcje"
+          sub_section_logowanie: "Logowanie"
+          page_nazwa_konta_i_haslo: "Nazwa użytkownika i hasło"
+          page_logowanie_SSH: "Logowanie SSH"
+          page_logowanie_SSH_windows: "Logowanie SSH (Użytkownicy Windows)"
+          page_SSH_tunel: "Tunelowanie SSH"
           section_grants_user_guide: "Podręcznik grantowy"
           page_zakladanie_konta:  "Zakładanie konta"
           page_poczta_elektroniczna: "Poczta elektroniczna"
@@ -34,6 +40,12 @@ plugins:
           page_SOL_sieci_neuronowe: "SOL - sieci neuronowe"
           page_regulamin_uzytkownika_icm: "Regulamin użytkownika"
         en:
+          section_instrukcje: "Tutorials"
+          sub_section_logowanie: "Login"
+          page_nazwa_konta_i_haslo: "User name and password"
+          page_logowanie_SSH: "Login via SSH"
+          page_logowanie_SSH_windows: "Login via SSH (Windows)"
+          page_SSH_tunel: "SSH tunneling"
           section_grants_user_guide: "Grants User Guide"
           page_zakladanie_konta:  "Creating account"
           page_poczta_elektroniczna: "ICM e-mail"
@@ -44,12 +56,10 @@ plugins:
           page_SOL_sieci_neuronowe: "SOL - neural networks"
           page_regulamin_uzytkownika_icm: "Terms of Service"
   - mkdocs-jupyter:
-      include_source: True
+      include_source: True # true - render on web; false - download
   - git-revision-date-localized:
       type: date
       fallback_to_build_date: true
-      exclude:
-        - '*.ipynb'
   - monorepo
 
 extra_css:
@@ -122,12 +132,16 @@ nav:
     - page_rodzaje_grantow: Podrecznik_grantowy/rodzaje_grantow.en.md
     - page_rozliczanie_grantu: Podrecznik_grantowy/rozliczanie_grantu.pl.md
     - page_rozliczanie_grantu: Podrecznik_grantowy/rozliczanie_grantu.en.md
-- Instrukcje:
-  - Logowanie:
-    - Nazwa konta i hasło: Tutorials/Logowanie/nazwa_konta_i_haslo.md
-    - Logowanie SSH: Tutorials/Logowanie/ssh.md
-    - Logowanie SSH (Użytkownicy Windows): Tutorials/Logowanie/ssh_windows.md
-    - Tunelowanie SSH: Tutorials/Logowanie/ssh-tunel.md
+- section_instrukcje:
+  - sub_section_logowanie:
+    - page_nazwa_konta_i_haslo: Tutorials/Logowanie/nazwa_konta_i_haslo.pl.md
+    - page_nazwa_konta_i_haslo: Tutorials/Logowanie/nazwa_konta_i_haslo.en.md
+    - page_logowanie_SSH: Tutorials/Logowanie/ssh.pl.md
+    - page_logowanie_SSH: Tutorials/Logowanie/ssh.en.md 
+    - page_logowanie_SSH_windows: Tutorials/Logowanie/ssh_windows.pl.md
+    - page_logowanie_SSH_windows: Tutorials/Logowanie/ssh_windows.en.md
+    - page_SSH_tunel: Tutorials/Logowanie/ssh_tunel.pl.md
+    - page_SSH_tunel: Tutorials/Logowanie/ssh_tunel.en.md
   - Podstawy HPC:
     - Wstęp: Tutorials/HPC-intro/introduction.md
     - Bash i terminal: Tutorials/HPC-intro/bash_intro.md
@@ -151,8 +165,6 @@ nav:
   - NEC SX-Aurora Tsubasa:
     - page_NEC_podstawy_uzycia: Tutorials/NEC/nec_podstawy.pl.md
     - page_NEC_podstawy_uzycia: Tutorials/NEC/nec_podstawy.en.md
-    # - (EN) Basic usage: Tutorials/NEC/en-basic-usage.md
-    # - (PL) Podstawy użycia: Tutorials/NEC/pl-podstawy.md
     - page_SOL_sieci_neuronowe: Tutorials/NEC/sol.en.md
     - page_SOL_sieci_neuronowe: Tutorials/NEC/sol.pl.md
   - Środowisko wirtualne:
