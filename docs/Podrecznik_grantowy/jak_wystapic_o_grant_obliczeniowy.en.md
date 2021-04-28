@@ -7,23 +7,28 @@ processing the *ICM grant management system* at
 
 The system allows to:
 
- - submit ICM account application,
- - submit ICM grant application,
- - add grant members/users,
- - submit annual grant reports,
- - add papers and other works that benefited from the ICM Infrastructure.
+- submit ICM account application,
+- submit ICM grant application,
+- add grant members/users,
+- submit annual grant reports,
+- add papers and other works that benefited from the ICM Infrastructure.
+
+Grant owner can at any stage. 
+It is the owner's responsibility to coordinate all
+aspects of the active grant, including results reporting, providing
+information on project-related papers, and adding an appropriate 
+[ICM reference](./rozliczanie_grantu.en.md) to every publication. 
+The users working in more than one grant should make sure to specify the correct
+grant ID in the job scripts submitted to the scheduling system.
 
 ### How to prepare the grant application
-
-Note: Application form to access the Cray system (**Okeanos**) are
-available [here](./en_konkurs_okeanos.md)
 
 **Grant cpplications to access Hydra, Topola, Boreasz, Nostromo**
 
 Upon accessing the grant management system at
 <https://granty.icm.edu.pl/IcmGrants> it is necessary to:
 
-  - Log in using previously [obtained credentials](./en_zakladanie_konta.md),
+  - Log in using previously [obtained credentials](./zakladanie_konta.en.md),
   - Access tab ***Utwórz grant***,
   - Fill in the form **Dodawanie grantu**:
     - Project title,
@@ -55,7 +60,7 @@ Upon accessing the grant management system at
 
 After filling the application form and successfully generating the application PDF, it is necessary to:
 
-  - Read the [Terms of Service](../O_zasobach_ICM/Formalnosci/en_regulamin.md),
+  - Read the [Terms of Service](../O_zasobach_ICM/Formalnosci/regulamin.en.md),
 
   - Sign the application (as the grant owner) and the user forms (as the grant users).
     
@@ -105,7 +110,7 @@ Grant owner, after the grant has been activated, should:
 Interdisciplinary Centre for Mathematical and Computational Modelling
 (ICM), University of Warsaw, under grant no Gxx-xx '''
 
-  - Once a year, Submit a [grant report](./en_sprawozdania_i_publikacje_w_grancie.md),
+  - Once a year, Submit a [grant report](./rozliczanie_grantu.en.md),
   - Once a year, participate in the ICM Users Conference (e-mail notifications).
 
 ### Multiple grants

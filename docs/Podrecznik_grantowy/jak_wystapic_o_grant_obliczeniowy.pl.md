@@ -16,11 +16,11 @@ System pozwala na:
 Możliwa jest aplikacja o grant obliczeniowy na komputarach Topola, Okeanos oraz Rysy.
 
 Rodzaje grantów obliczeniowych (w zależności od ilości zadeklarowanych CPUh) opisane są
-na stronie [rodzaje grantów](./rodzaje_grantow.md).
+na stronie [rodzaje grantów](./rodzaje_grantow.pl.md).
 
 Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
 
-  - zalogować się (login i hasło zgodnie z danymi ustalonymi przy [rejestracji](./zakladanie_konta.md))
+  - zalogować się (login i hasło zgodnie z danymi ustalonymi przy [rejestracji](./zakladanie_konta.pl.md))
     
   - przejść do zakładki ***Utwórz grant***
   
@@ -84,7 +84,7 @@ to nie zostanie utworzone dla niego konto użytkownika z dostępem do maszyn ICM
 
 Po wypełnieniu formularza i wygenerowaniu formularza grantu, należy:
 
-- zapoznać się z [regulaminem użytkownika](../O_zasobach_ICM/Formalnosci/regulamin.md),
+- zapoznać się z [regulaminem użytkownika](../O_zasobach_ICM/Formalnosci/regulamin.pl.md),
 
 - podpisać formularz grantu (podpis kierownika) oraz formularze nowych
     użytkowników (podpis użytkowników),
@@ -147,8 +147,8 @@ Kierownicy grantu, po uruchomieniu grantu, powinni:
 - aktulaizować dane o instytucji naukowej, w przypadku jej zmiany przez kierownika lub współwykonawców grantu
 - przestrzegać zasad dotyczących licencji
 - zamieszczać w bazie grantów publikacje naukowe dotyczące projektu,
-- zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_grantu.md)
-- raz w roku dokonywać [rozliczenia grantu](./rozliczanie_grantu.md)
+- zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_grantu.pl.md)
+- raz w roku dokonywać [rozliczenia grantu](./rozliczanie_grantu.pl.md)
 - raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w ICM, o której informacje rozsyłane są drogą mailową.
 
 ### Kilka grantów obliczeniowych
