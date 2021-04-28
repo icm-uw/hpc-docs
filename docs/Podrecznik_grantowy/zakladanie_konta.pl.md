@@ -61,9 +61,9 @@ Aktywacja konta nastąpi równocześnie z [uruchomieniem grantu obliczeniowego](
 
 Aby korzystać z zasobów obliczeniowych ICM, należy:
 
-- Zalogować się z systemu [Windows](../Tutorials/Logowanie/ssh_windows.md) lub [UNIX/Linux](../Tutorials/Logowanie/ssh.md). 
+- Zalogować się z systemu [Windows](../Tutorials/Logowanie/ssh_windows.pl.md) lub [UNIX/Linux](../Tutorials/Logowanie/ssh.pl.md). 
 
-- Przed pierwszym logowaniem należy [zmienić hasło](../Tutorials/Logowanie/nazwa_konta_i_haslo.md)
+- Przed pierwszym logowaniem należy [zmienić hasło](../Tutorials/Logowanie/nazwa_konta_i_haslo.pl.md)
 
 - Po zalogowaniu użytkownik możne uzyskać podstawowe dane o swoim [koncie i grancie](../Tutorials/HPC-intro/status_grantu_i_konta.md).
 

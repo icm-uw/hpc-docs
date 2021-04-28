@@ -123,7 +123,7 @@ Przykładowo, jeżeli grant ma numer `GBXX-YY`,
 
 Do transferu plików można wykorzystać (darmową) aplikacje, np `FileZilla`.
 
-W trakcie dwu etapowej autoryzacji (2FA) wymagane jest podanie hasła [OTP](../Logowanie/ssh.md).
+W trakcie dwu etapowej autoryzacji (2FA) wymagane jest podanie hasła [OTP](../Logowanie/ssh.pl.md).
 
 W kliencie FTP konieczne jest ustawienie logowania w trybie interaktywnym.
 
@@ -133,6 +133,6 @@ Przykładowo, dla aplikacji `FileZilla` konfiguracja wygląda następująco:
 
 ![sftp_2fa_site_manager](./images/sftp_2fa_site_manager.png)
 
-- Wpisz hasło [OTP](../Logowanie/ssh.md)
+- Wpisz hasło [OTP](../Logowanie/ssh.pl.md)
 
 ![sftp_enter_2fa](./images/sftp_enter_2fa.png)
