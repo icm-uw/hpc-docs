@@ -11,6 +11,7 @@ before_script:
   - pwd 
   - ls -latr
   - pip install -r requirements.txt
+  - pip freeze
   - git submodule update --init --recursive --remote
 
 test-pages:
@@ -35,7 +36,6 @@ publish-pages:
   extends: .all
   script:
     - mkdocs build --verbose --clean --strict --site-dir public
-
   artifacts:
     paths:
       - public
