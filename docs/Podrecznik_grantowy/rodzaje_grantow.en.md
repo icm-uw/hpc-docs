@@ -53,4 +53,4 @@ submit the grant application. The form with the grant-type specified
 (A/B/C) should be attached as abstracts to the grant
 application. Grant owner and member accounts have to be created
 directly within the grant management system. For more information,
-please see [this page](./en_jak_wystapic_o_grant_obliczeniowy.md).
+please see [this page](./jak_wystapic_o_grant_obliczeniowy.en.md).

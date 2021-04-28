@@ -1,4 +1,6 @@
 
+# Grant Report
+
 Grant reporting takes place once a year, usually in March/April. 
 A remainder is e-mailed in advance to all registered grant owners.
 
@@ -27,8 +29,7 @@ To every grant-related publication, the following clause should be added:
 Interdisciplinary Centre for Mathematical and Computational Modelling
 (ICM), University of Warsaw, under grant no Gxx-xx '''
 
-See also the [grant owner's
-responsibilities](./en_kierownik_oraz_nowi_wspolwykonawcy_grantu.md).
+See also the [grant owner's responsibilities](./jak_wystapic_o_grant_obliczeniowy.en.md).
 
 Grant reports as well as related publications should be uploaded in
 the [grant management system](http://granty.icm.edu.pl).

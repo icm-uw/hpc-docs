@@ -1,0 +1,64 @@
+stages: 
+  - test
+  - deploy
+
+.all:
+  tags: 
+    - www
+  allow_failure: false 
+  # when: always
+  # only:
+  #     - tags
+  #     - triggers
+  #     - schedules
+  #     - web
+  variables:
+    ENV_NAME: "mkdocs-env"
+    GIT_STRATEGY: none
+    CLONE_DIR: "temp-docs-repo-dir"
+
+before_script:
+  - pwd 
+  - eval $(ssh-agent -s)
+  - ls -latr /home/gitlab-runner-nginx/.ssh
+  - ssh-add -l && echo ok
+  - ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v3 <<< "$appbot_2_hpc_docs_pin" &
+  - ssh-add -l && echo ok
+  - ls -latr
+  - rm -rf $CLONE_DIR
+  - git clone git@git.icm.edu.pl:owu/hpc-docs.git $CLONE_DIR
+  - cd $CLONE_DIR
+  - git checkout -b $CI_COMMIT_BRANCH origin/$CI_COMMIT_BRANCH
+  - git branch -v
+  - pwd 
+  - ls -latr
+  - ssh -vT git@git.icm.edu.pl
+  - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
+  # - git submodule add https://github.com/kubajal/hpc-docs-graphs.git docs/Szkolenia/grafy
+  - git submodule update --init --recursive --remote
+
+after_script:
+  - killall ssh-agent
+
+test-pages:
+  stage: test
+  extends: .all
+  artifacts:
+    untracked: true
+    paths:
+        - 'tmp'
+    expire_in: 1 week
+    when: always # on_failure
+  script:
+    - mkdocs build --verbose --clean --strict
+
+publish-pages:
+  stage: deploy
+  needs: [test-pages]
+  dependencies:
+    - test-pages
+  extends: .all
+  script:
+    - mkdocs gh-deploy
+  only:
+    - master

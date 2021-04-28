@@ -34,7 +34,7 @@ Konto użytkownika zakładane jest po rejestracji w bazie grantów
 2.  Po otrzymaniu maila logujemy się ponownie do bazy grantów adresem mailowym i otrzymanym   hasłem. Login mailowy jest używany tylko raz, przy tworzeniu grantu. Dalej, do obliczeń na serwerach, należy utworzyć krótki login.
 3.  Zakładamy grant obliczeniowy zgodnie z informacją [Jak przygotować
     wniosek o grant
-    obliczeniowy](./jak_wystapic_o_grant_obliczeniowy.md#Jak_przygotowa.C4.87_wniosek_o_przyznanie_grantu_obliczeniowego)
+    obliczeniowy](./jak_wystapic_o_grant_obliczeniowy.pl.md#Jak_przygotowa.C4.87_wniosek_o_przyznanie_grantu_obliczeniowego)
       -
         Warunkiem koniecznym otwarcia konta w ICM jest posiadanie grantu
         obliczeniowego.
@@ -55,7 +55,7 @@ Konto użytkownika zakładane jest po rejestracji w bazie grantów
 
 ### Aktywacja konta
 
-Aktywacja konta nastąpi równocześnie z [uruchomieniem grantu obliczeniowego](./jak_wystapic_o_grant_obliczeniowy.md#uruchomienie-grantu "wikilink").
+Aktywacja konta nastąpi równocześnie z [uruchomieniem grantu obliczeniowego](./jak_wystapic_o_grant_obliczeniowy.pl.md#uruchomienie-grantu "wikilink").
 
 ## Mam już konto, co dalej?
 

@@ -4,13 +4,15 @@ date: 2020-04-09
 draft: false
 ---
 
+Warunki korzystania z zasobów ICM
+
 * Zasoby ICM są otwarte dla [środowiska naukowego](uzytkownik.md).
 
 * Dostęp do zasobów na potrzeby niekomercyjnych badań naukowych i dydaktyki jest nieodpłatny.
 
 * Prowadzenie obliczeń jest możliwe w ramach utworzonego grantu (lub kilku grantów o różnej tematyce)
 
-* Użytkownicy zobowiązani są do przestrzegania [Regulaminu](regulamin.md)
+* Użytkownicy zobowiązani są do przestrzegania [Regulaminu](regulamin.pl.md)
 
 * Kierownik zobowiązany jest w pierwszym kwartale każdego roku do wpisania sprawozdania w bazie grantów.
 

@@ -30,7 +30,7 @@ with your e-mail address as login.
 
 3.  Create a new grant according to [Jak przygotować
     wniosek o grant
-    obliczeniowy](./en_jak_wystapic_o_grant_obliczeniowy.md)
+    obliczeniowy](./jak_wystapic_o_grant_obliczeniowy.en.md)
 
     - To open the ICM account, it is necessary to have an active
       computational grant.
@@ -38,7 +38,7 @@ with your e-mail address as login.
 4.  In the tab **Uzyskaj konto ICM (zostań realizatorem grantu)**, choose the grant ID and propose your **login**. It will be used for:
       - logging into the grant system,
       - logging into the ICM machines,
-      - as your [e-mail address](./en_poczta_elektroniczna.md).
+      - as your [e-mail address](./poczta_elektroniczna.en.md).
 	
     Login should:
     	  - be max. 8 characters long,
@@ -51,16 +51,4 @@ with your e-mail address as login.
 ### Account activation
 
 The account is activated upon grant activation, see. [uruchomieniem grantu
-obliczeniowego](./en_jak_wystapic_o_grant_obliczeniowy.md)
-
-### Useful commands
-
-After [logging into the machine](./en_nazwa_konta_i_haslo.md), the user
-mat look up the basic information on the account:
-
-  - `finger` - user information lookup program,
-  - `id` - print real and effective user and group IDs,
-  - `groups` - print the groups a user is in,
-  - `limit` - show limits imposed on the user processes,
-  - `getent group | grep <grant-ID>` - information on all users with access to the group/grant,
-  - `ls` - list directory contents.
+obliczeniowego](./jak_wystapic_o_grant_obliczeniowy.en.md)

@@ -14,13 +14,42 @@ theme:
 
 plugins:
   - search # necessary for search to work
+  - i18n:
+      languages:
+          pl: "PL"
+          en: "EN"
+      default_language: 'pl'
+      no_translation:
+        pl: "Ta strona nie jest tłumaczona na polski."
+        en: "This page is not translated to English."
+      translate_nav:
+        pl:
+          section_grants_user_guide: "Podręcznik grantowy"
+          page_zakladanie_konta:  "Zakładanie konta"
+          page_poczta_elektroniczna: "Poczta elektroniczna"
+          page_jak_wystapic_o_grant_obliczeniowy: "Jak wystąpić o grant obliczeniowy"
+          page_rodzaje_grantow: "Rodzaje grantów"
+          page_rozliczanie_grantu: "Rozliczanie grantu"
+          page_NEC_podstawy_uzycia: "NEC - podstawy użycia"
+          page_SOL_sieci_neuronowe: "SOL - sieci neuronowe"
+          page_regulamin_uzytkownika_icm: "Regulamin użytkownika"
+        en:
+          section_grants_user_guide: "Grants User Guide"
+          page_zakladanie_konta:  "Creating account"
+          page_poczta_elektroniczna: "ICM e-mail"
+          page_jak_wystapic_o_grant_obliczeniowy: "Submitting grant application"
+          page_rodzaje_grantow: "Types of grants"
+          page_rozliczanie_grantu: "Reports and publications"
+          page_NEC_podstawy_uzycia: "NEC - basic usage"
+          page_SOL_sieci_neuronowe: "SOL - neural networks"
+          page_regulamin_uzytkownika_icm: "Terms of Service"
   - mkdocs-jupyter:
       include_source: True
   - git-revision-date-localized:
       type: date
       fallback_to_build_date: true
       exclude:
-      - '*.ipynb'
+        - '*.ipynb'
   - monorepo
 
 extra_css:
@@ -69,8 +98,8 @@ nav:
 - Formalności:
     - Kto może być użytkownikiem: O_zasobach_ICM/Formalnosci/uzytkownik.md
     - Warunki korzystania: O_zasobach_ICM/Formalnosci/warunki.md
-    - Regulamin użytkownika: O_zasobach_ICM/Formalnosci/regulamin.md
-    - (EN) Terms of Service: O_zasobach_ICM/Formalnosci/en_regulamin.md
+    - page_regulamin_uzytkownika_icm: O_zasobach_ICM/Formalnosci/regulamin.pl.md
+    - page_regulamin_uzytkownika_icm: O_zasobach_ICM/Formalnosci/regulamin.en.md
     - Polityka prywatności: O_zasobach_ICM/Formalnosci/polityka_prywatnosci.md
 - Zasoby sprzętowe:
     - Komputery: O_zasobach_ICM/Zasoby/komputery_w_icm.md
@@ -82,22 +111,17 @@ nav:
 - Licencje krajowe:
     - ANSYS: Licencje_krajowe/ansys.md
     - Gaussian: Licencje_krajowe/gaussian.md
-- Podręcznik grantowy:
-    - Zakładanie konta: Podrecznik_grantowy/zakladanie_konta.md
-    - Poczta elektroniczna: Podrecznik_grantowy/poczta_elektroniczna.md
-    - Jak wystąpić o grant obliczeniowy: Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.md
-    - Rodzaje grantów: Podrecznik_grantowy/rodzaje_grantow.md
-    - Rozliczanie grantu: Podrecznik_grantowy/rozliczanie_grantu.md
-
-- (EN) Grants User Guide:
-    - Creating account: Podrecznik_grantowy/en_zakladanie_konta.md
-    - Username and password: Podrecznik_grantowy/en_nazwa_konta_i_haslo.md
-    - ICM e-mail: Podrecznik_grantowy/en_poczta_elektroniczna.md
-    - Submitting grant application: Podrecznik_grantowy/en_jak_wystapic_o_grant_obliczeniowy.md
-    - Okeanos - Call for applications: Podrecznik_grantowy/en_konkurs_okeanos.md
-    - Grant owner and members: Podrecznik_grantowy/en_kierownik_oraz_nowi_wspolwykonawcy_grantu.md
-    - Reports and publications: Podrecznik_grantowy/en_sprawozdania_i_publikacje_w_grancie.md
-
+- section_grants_user_guide:
+    - page_zakladanie_konta:  Podrecznik_grantowy/zakladanie_konta.pl.md
+    - page_zakladanie_konta: Podrecznik_grantowy/zakladanie_konta.en.md
+    - page_poczta_elektroniczna: Podrecznik_grantowy/poczta_elektroniczna.pl.md
+    - page_poczta_elektroniczna: Podrecznik_grantowy/poczta_elektroniczna.en.md
+    - page_jak_wystapic_o_grant_obliczeniowy: Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.pl.md
+    - page_jak_wystapic_o_grant_obliczeniowy: Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.en.md
+    - page_rodzaje_grantow: Podrecznik_grantowy/rodzaje_grantow.pl.md
+    - page_rodzaje_grantow: Podrecznik_grantowy/rodzaje_grantow.en.md
+    - page_rozliczanie_grantu: Podrecznik_grantowy/rozliczanie_grantu.pl.md
+    - page_rozliczanie_grantu: Podrecznik_grantowy/rozliczanie_grantu.en.md
 - Instrukcje:
   - Logowanie:
     - Nazwa konta i hasło: Tutorials/Logowanie/nazwa_konta_i_haslo.md
@@ -116,19 +140,21 @@ nav:
     - Status zadania: Tutorials/HPC-intro/status_zadania.md
     - Status grantu/konta/qos: Tutorials/HPC-intro/status_grantu_i_konta.md
   - Podstawy GPU:
-    - Introduction (Cheat Sheet): Tutorials/GPU-intro/introduction.md
-    - Hello World: Tutorials/GPU-intro/hello_world.md
-    - Vector Add: Tutorials/GPU-intro/vector_add.md
-    - Element-wise Matrix Add: Tutorials/GPU-intro/matrix_addition.md
-    - Parallel reduction: Tutorials/GPU-intro/parallel_reduction.md
-    - Thrust library: Tutorials/GPU-intro/thrust.md
+    - Introduction (Cheat Sheet): Tutorials/GPU-intro/introduction.en.md
+    - Hello World: Tutorials/GPU-intro/hello_world.en.md
+    - Vector Add: Tutorials/GPU-intro/vector_add.en.md
+    - Element-wise Matrix Add: Tutorials/GPU-intro/matrix_addition.en.md
+    - Parallel reduction: Tutorials/GPU-intro/parallel_reduction.en.md
+    - Thrust library: Tutorials/GPU-intro/thrust.en.md
   - Kontenery:
     - Singularity: Tutorials/Kontenery/singularity_intro.md
   - NEC SX-Aurora Tsubasa:
-    - (EN) Basic usage: Tutorials/NEC/en-basic-usage.md
-    - (EN) SOL/neural networks: Tutorials/NEC/en-sol.md
-    - (PL) Podstawy użycia: Tutorials/NEC/pl-podstawy.md
-    - (PL) SOL/sieci neuronowe: Tutorials/NEC/pl-sol.md
+    - page_NEC_podstawy_uzycia: Tutorials/NEC/nec_podstawy.pl.md
+    - page_NEC_podstawy_uzycia: Tutorials/NEC/nec_podstawy.en.md
+    # - (EN) Basic usage: Tutorials/NEC/en-basic-usage.md
+    # - (PL) Podstawy użycia: Tutorials/NEC/pl-podstawy.md
+    - page_SOL_sieci_neuronowe: Tutorials/NEC/sol.en.md
+    - page_SOL_sieci_neuronowe: Tutorials/NEC/sol.pl.md
   - Środowisko wirtualne:
     - Python: Tutorials/python/python.md
     - Anaconda: Tutorials/python/anaconda.md
