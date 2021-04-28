@@ -21,7 +21,7 @@ test-pages:
     expire_in: 1 week
     when: always # on_failure
   script:
-    - mkdocs build --verbose --clean --strict tmp
+    - mkdocs build --verbose --clean --strict --site-dir tmp
 
 publish-pages:
   stage: deploy
