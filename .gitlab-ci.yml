@@ -10,7 +10,7 @@ stages:
 before_script:
   - pwd 
   - ls -latr
-  - pip install -r requirements
+  - pip install -r requirements.txt
   - git submodule update --init --recursive --remote
 
 test-pages:
