@@ -15,6 +15,7 @@ sacctmgr show assoc where user=$USER format=Cluster,Account%25,Partition%20,user
 sacctmgr show assoc format=Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 | grep $USER # j.w.
 sacctmgr show qos format=name,MaxWall,Priority,MaxTRESPU%50 # pokaż limit czasu obliczen dla poszczególnych qos
 scontrol show res # pokaż rezerwacje
+scontrol show config # pokaż ustawienia slurma oraz lokalizację slurm.conf
 ```
 
 Więcej informacji o na poszczegółnych systemach (topola/okeanos/rysy) znajduje się [tu](../../O_zasobach_ICM/Zasoby/komputery_w_icm.md).
