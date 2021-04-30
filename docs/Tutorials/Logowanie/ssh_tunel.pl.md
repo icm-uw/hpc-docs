@@ -189,9 +189,62 @@ function to_rysy {
 }
 
 function from_rysy {
-	REMOTE_HOME_DIR="${ICM_USERNAME}@icm-rysy:/home/${ICM_USERNAME}/"
+    REMOTE_HOME_DIR="${ICM_USERNAME}@icm-rysy:/home/${ICM_USERNAME}/"
     from_host $@
 }
+
+```
+
+#### Kopiowanie przy użyciu sftp
+
+Do kopiowania plików przydatny może być też program `sftp`.
+
+```.sh
+# terminal A - tworzymy tunel
+john@home-pc:~$ ssh hpc
+
+# następnie w terminalu B
+john@home-pc:~$ sftp icm-okeanos 
+Connected to icm-okeanos.
+sftp> pwd
+Remote working directory: /lustre/tetyda/home/icm_user_name
+sftp> lpwd
+Local working directory: /home/john/
+
+sftp> help
+Available commands:
+bye                                Quit sftp
+cd path                            Change remote directory to 'path'
+chgrp [-h] grp path                Change group of file 'path' to 'grp'
+chmod [-h] mode path               Change permissions of file 'path' to 'mode'
+chown [-h] own path                Change owner of file 'path' to 'own'
+df [-hi] [path]                    Display statistics for current directory or
+                                   filesystem containing 'path'
+exit                               Quit sftp
+get [-afpR] remote [local]         Download file
+help                               Display this help text
+lcd path                           Change local directory to 'path'
+lls [ls-options [path]]            Display local directory listing
+lmkdir path                        Create local directory
+ln [-s] oldpath newpath            Link remote file (-s for symlink)
+lpwd                               Print local working directory
+ls [-1afhlnrSt] [path]             Display remote directory listing
+lumask umask                       Set local umask to 'umask'
+mkdir path                         Create remote directory
+progress                           Toggle display of progress meter
+put [-afpR] local [remote]         Upload file
+pwd                                Display remote working directory
+quit                               Quit sftp
+reget [-fpR] remote [local]        Resume download file
+rename oldpath newpath             Rename remote file
+reput [-fpR] local [remote]        Resume upload file
+rm path                            Delete remote file
+rmdir path                         Remove remote directory
+symlink oldpath newpath            Symlink remote file
+version                            Show SFTP version
+!command                           Execute 'command' in local shell
+!                                  Escape to local shell
+?                                  Synonym for help
 
 ```
 
