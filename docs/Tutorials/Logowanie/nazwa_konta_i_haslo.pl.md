@@ -1,11 +1,9 @@
 # Nazwa konta i hasło
 
-Nazwa konta użytkownika i hasło tworzone są w momencie [rejestracji użytkownika](../../Podrecznik_grantowy/zakladanie_konta.pl.md) w bazie grantów (dotyczy kierownika grantu) lub na etapie [dodawania współwykonawcy do grantu](../../Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.pl.md). 
-Hasło wysyłane jest automatycznie e-mailem, na adres podany w formularzu rejestracyjnym.
+Nazwa konta użytkownika i hasło tworzone są w momencie [rejestracji użytkownika](../../System_alokacji_zasobow/zakladanie_konta.pl.md) w [Sytemie Alokacji Zasobów](../../System_alokacji_zasobow/wstep_i_definicje.pl.md).
 
-- Nazwa konta składa się z max. 8 znaków. Nie jest to adres mailowy podawany przy pierwszej rejestracji w bazie grantów, lecz login tworzonym w drugim etapie rejestracji.
-- Uwaga: hasło wygenerowane na formularzu nie jest aktywowane. Należny używać tylko hasła wysłanego drogą mailową.
-- Kierownik grantu powinien również utworzyć konto składające się z max.8 znaków, [dodając siebie jako współwykonawcę do grantu](../../Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.pl.md).
+- Nazwa konta składa się z max. 8 znaków. Nie jest to adres mailowy.
+- Hasło wygenerowane na formularzu nie jest aktywowane. Należny używać tylko hasła wysłanego drogą mailową.
 
 W razie trudności z uzyskaniem prawidłowego hasła do konta prosimy o wysłanie maila na adres pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
 

@@ -1,15 +1,10 @@
 # User name and password
 
 The user name and password are created at the time of 
-[user registration](../../Podrecznik_grantowy/zakladanie_konta.en.md) in the grant database 
-(applies to the grant manager) or at the stage of 
-[adding a contractor to the grant](../../Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.en.md).
-The password is sent automatically by e-mail to the address provided in the registration form.
+[user registration](../../System_alokacji_zasobow/zakladanie_konta.en.md) in the [Resource Alocation System](../../System_alokacji_zasobow/wstep_i_definicje.en.md).
 
-- The account name consists of max. 8 characters. It is not the e-mail address provided during the first registration in the grant database, but the login created in the second stage of registration.
-- Note: the password generated on the form is not activated. Only the password sent by e-mail should be used.
-- The grant manager should also create an account with a maximum of 8 characters, 
-[adding himself as contractor to the grant](../../Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.en.md).
+- The account name consists of max. 8 characters. It is not the e-mail address.
+- The password is sent automatically by e-mail to the address provided in the registration form.
 
 In case of difficulties with obtaining the correct password for the account, please send an e-mail to help pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl
 

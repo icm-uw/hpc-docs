@@ -10,10 +10,10 @@ Tutorials are hosted at <https://icm-uw.github.io/hpc-docs/>
 
 ## How to contribute - ICM internal workflow
 
-The `app-bot` runner is configure to automaticaly build, test and deploy the webpage.
+The `CI` runner is configure to automaticaly build, test and deploy the webpage.
 Just modify `somepage.md`, then commit changes to the master branch.
 
-## How to host the tutorials - general workflow
+## How to host the tutorials on your local PC - general workflow
 
 This short tutorial will show you how to serve the webpage at you local machine and test your changes. Tested on Ubuntu.
 
@@ -48,17 +48,20 @@ Install dependencies:
 (mkdocs-env) $ pip install --upgrade -r requirements.txt
 ```
 
-Run server on you local machine:
+Run a test server on you local machine:
 
 ```sh
 (mkdocs-env) $ mkdocs serve
 ```
 
-To deploy:
+To build
 
 ```sh
-(mkdocs-env) $ mkdocs gh-deploy
+(mkdocs-env) $ mkdocs build
 ```
+
+In general `$ mkdocs gh-deploy` would call `mkdocs build` command and push the generated html's to github.
+However, we use a different pipeline in ICM's gitlab. To deploy just push changes in `somefile.md` to your branch, then merge the pull request.
 
 More questions? Visit original documentation: http://www.mkdocs.org/
 

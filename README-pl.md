@@ -40,16 +40,10 @@ $ pip install -r requirements.txt
 $ mkdocs serve
 ```
 
-4. Wprowadzamy zmiany w plikach Markdown (*.md) lub tworzymy nowe. Żeby sprawdzić efekt zmian kierujemy przeglądarkę internetową na adres http://127.0.0.1:8000
+4. Wprowadzamy zmiany w plikach Markdown (*.md) lub tworzymy nowe. Żeby sprawdzić efekt zmian kierujemy przeglądarkę internetową na adres <http://127.0.0.1:8000>
 
-5. Jeżeli zmiany są zadowalające, wysyłamy je na serwer (z katalogu **hpc-docs**):
-```sh
-$ mkdocs gh-deploy
-```
+5. Jeżeli zmiany są zadowalające, dodajemy do repozytorium zmodyfikowane pliki źródłowe (*.md):
 
-Po chwili zmiany będą widoczne *online* (https://icm-uw.github.io/hpc-docs/).
-
-6. Dodatkowo dodajemy do repozytorium zmodyfikowane pliki źródłowe (*.md):
 ```sh
 $ cd hpc-docs
 $ git add ./
@@ -57,6 +51,9 @@ $ git commit -m "Adding this and that"
 $ git push
 ```
 
+Następnie należy utworzyć `pull request` do `master` branch'a i zmergować.
+
+Po chwili zmiany będą widoczne *online* (https://icm-uw.github.io/hpc-docs/).
 ### Uwagi
 
 - Do zarządzania układem (pod)stron wykorzystujemy sekcję **nav** w pliku *mkdocs.yml*.

@@ -1,19 +1,18 @@
 
-# Rozliczenie Grantu
+# Rozliczenie Projektu
 
-Rozliczanie grantu odbywa się raz do roku, najczęściej na przełomie lutego/marca.
+Rozliczanie projektu odbywa się raz do roku, najczęściej na przełomie lutego/marca.
 
-Przypomnienie o konieczności złożenia sprawozdania przesyłane jest mailem do wszystkich kierowników grantów oraz współwykonawców grantów. Sprawozdanie do bazy wstawia kierownik grantu.
+Przypomnienie o konieczności złożenia sprawozdania przesyłane jest mailem do wszystkich kierowników projektów oraz współwykonawców. Sprawozdanie do bazy wstawia kierownik projektu (PI).
 
-Zadaniem kierownika jest podsumowanie obliczeń w grancie prowadzonych
-przez jego wykonawców i uzasadnienie wykorzystania zasobów ICM.
+Zadaniem kierownika jest podsumowanie obliczeń w projekcie i uzasadnienie wykorzystania zasobów ICM.
 
 ## Po co składać sprawozdanie
 
 !!! info "Dlaczego sprawozdania są ważne?"
     Sprawozdania służą do pozyskiwania oraz rozliczania środków finansowych przeznaczonych na rozbudowę, utrzymanie Centrum Obliczeniowego (w tym zakup serwerów obliczeniowych) i dostęp do możliwości obliczeniowych (koszty energii, serwis techniczny, wsparcie techniczne dla prowadzących obliczenia, itp).
 
-    Nie złożenie sprawozdania przez kierownika grantu może skutkować zamknięciem grantu. 
+    Nie złożenie sprawozdania przez kierownika projektu może skutkować zamknięciem projektu. 
 
     Wam i Nam zależy aby obliczenia naukowe odbywały się niekomercyjnie.
 
@@ -33,33 +32,25 @@ Sprawozdanie powinno zawierać:
 
 Warto pamiętać o sprawdzeniu:
 
-- streszczenia grantu
-- danych kierownika oraz współwykonawców grantu (prosimy pamiętać o aktualizacji tytułów naukowych, telefonów kontaktowych oraz maili).
+- streszczenia projektu
+- danych kierownika oraz współwykonawców (prosimy pamiętać o aktualizacji tytułów naukowych, telefonów kontaktowych oraz maili).
 
 ### Publikacje
 
-Wszystkie publikacje związane z grantem obliczeniowym powinny być
-zamieszczane w bazie grantów oraz zawierać następującą informację:
+Wszystkie publikacje związane z projektem obliczeniowym powinny być
+zamieszczane na stronie projektu oraz zawierać następującą informację:
 
 !!! Info
-    Obliczenia zostały wykonane przy wsparciu Interdyscyplinarnego Centrum
-    Modelowania Matematycznego i Komputerowego (ICM) Uniwersytetu Warszawskiego 
-    w ramach grantu obliczeniowego nr Gxx-xx
-
-    lub 
-
     This research was carried out with the support of the
     Interdisciplinary Centre for Mathematical and Computational Modelling
-    ICM) University of Warsaw under grant no Gxx-xx
+    ICM) University of Warsaw under computational allocation no Gxx-xx
 
 ## Jak złożyć sprawozdanie
 
-Od 2021r. sprawozdanie należy składać poprzez <https://granty.icm.edu.pl/sprawozdania>.
+Od 2021r. sprawozdanie należy składać poprzez <https://granty.icm.edu.pl>.
 
-Jeśli nie prowadziłeś obliczeń, lub z innych powodów nie zamieszczasz sprawozdania kliknij w `Wyślij sprawozdanie` i wypełnij na dole strony **tylko jedno** pole: `Powód nieaktualizowania projektu`. 
+Jeśli nie prowadziłeś obliczeń (lub dopiero je zacząłeś), lub z innych powodów nie zamieszczasz sprawozdania kliknij w `Wyślij sprawozdanie` i wypełnij na dole strony **tylko jedno** pole: `Powód nieaktualizowania projektu`. 
 
-<!-- [Powód nieaktualizowania projektu](./rozliczanie_grantu.md#powod-nieaktualizowania-projektu "wikilink").
- -->
 Poniżej szczegółowa instrukcja.
 
 ### Logowanie
@@ -76,7 +67,7 @@ Wybieramy projekty które wymagają sprawozdania.
 
 ### Streszczenie Projektu
 
-Jeżeli streszczenie wymaga aktualizacji, to należy kliknąć w 'Zaktualizuj informacje o projekcie'.
+Jeżeli streszczenie wymaga aktualizacji, to należy kliknąć w `Zaktualizuj informacje o projekcie`.
 
 <center> ![](screen_shots/streszczenie_i_zarzadzanie.png) </center>
 
@@ -99,11 +90,8 @@ W celu wysłania sprawozdania należy kliknąć w link `Wyślij sprawozdanie` na
 
 <center> ![](screen_shots/wyslij_sprawozdanie.png) </center>
 
-
-
 ### Zatwierdź
 
 Kliknij w `Zatwierdź` aby wysłać sprawozdanie (zmiany nie będą później możliwe). Gotowe.
 
 <center> ![](screen_shots/zatwierdz_sprawozdanie.png) </center>
-

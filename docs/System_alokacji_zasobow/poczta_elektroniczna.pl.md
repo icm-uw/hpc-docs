@@ -33,7 +33,8 @@ Możliwe jest też odpowiednie skonfigurowanie swojego programu pocztowego, aby 
 ### Przekierowanie poczty
 
 Użytkowników odbierających pocztę w swojej macierzystej instytucji prosimy o założenie w swoim katalogu domowym pliku o nazwie `.forward` zawierającego:
-```
+
+```.txt
 \nazwakontawicm,adres@naserwerzezewnetrznym
 ```
 
