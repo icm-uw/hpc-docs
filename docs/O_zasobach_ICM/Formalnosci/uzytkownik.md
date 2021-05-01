@@ -13,6 +13,6 @@ obliczeniowych.
 
 Użytkownik może:
 
-* wystąpić o własny grant obliczeniowy (zostać kierownikiem grantu),
-* zostać współwykonawcą grantu (po zgłoszeniu przez kierownika grantu)
+* wystąpić o własny grant obliczeniowy (zostać kierownikiem grantu) o ile jest pracownikiem naukowym (np. ma stopień naukowy doktora),
+* zostać współwykonawcą grantu (po zgłoszeniu przez kierownika grantu),
 * założyć grant na potrzeby zajęć dydaktycznych.

@@ -30,12 +30,13 @@ plugins:
           page_logowanie_SSH: "Logowanie SSH"
           page_logowanie_SSH_windows: "Logowanie SSH (Użytkownicy Windows)"
           page_SSH_tunel: "Tunelowanie SSH"
-          section_grants_user_guide: "Podręcznik grantowy"
+          section_system_alokacji_zasobow: "System alokacji zasobów"
+          page_wstep_i_definicje: "Wstęp i Definicje"
           page_zakladanie_konta:  "Zakładanie konta"
+          page_rodzaje_alokacji: "Rodzaje alokacji"
+          page_rozliczanie_projektu: "Rozliczanie projektu"
+          page_faq_system_alokacji_zasobow: "FAQ"
           page_poczta_elektroniczna: "Poczta elektroniczna"
-          page_jak_wystapic_o_grant_obliczeniowy: "Jak wystąpić o grant obliczeniowy"
-          page_rodzaje_grantow: "Rodzaje grantów"
-          page_rozliczanie_grantu: "Rozliczanie grantu"
           page_NEC_podstawy_uzycia: "NEC - podstawy użycia"
           page_SOL_sieci_neuronowe: "SOL - sieci neuronowe"
           page_regulamin_uzytkownika_icm: "Regulamin użytkownika"
@@ -46,12 +47,13 @@ plugins:
           page_logowanie_SSH: "Login via SSH"
           page_logowanie_SSH_windows: "Login via SSH (Windows)"
           page_SSH_tunel: "SSH tunneling"
-          section_grants_user_guide: "Grants User Guide"
+          section_system_alokacji_zasobow: "Resource Allocation System"
+          page_wstep_i_definicje: "Introduction and definitions"
           page_zakladanie_konta:  "Creating account"
+          page_rodzaje_alokacji: "Types of allocations"
+          page_rozliczanie_projektu: "Reports and publications"
+          page_faq_system_alokacji_zasobow: "FAQ"
           page_poczta_elektroniczna: "ICM e-mail"
-          page_jak_wystapic_o_grant_obliczeniowy: "Submitting grant application"
-          page_rodzaje_grantow: "Types of grants"
-          page_rozliczanie_grantu: "Reports and publications"
           page_NEC_podstawy_uzycia: "NEC - basic usage"
           page_SOL_sieci_neuronowe: "SOL - neural networks"
           page_regulamin_uzytkownika_icm: "Terms of Service"
@@ -121,17 +123,19 @@ nav:
 - Licencje krajowe:
     - ANSYS: Licencje_krajowe/ansys.md
     - Gaussian: Licencje_krajowe/gaussian.md
-- section_grants_user_guide:
-    - page_zakladanie_konta:  Podrecznik_grantowy/zakladanie_konta.pl.md
-    - page_zakladanie_konta: Podrecznik_grantowy/zakladanie_konta.en.md
-    - page_poczta_elektroniczna: Podrecznik_grantowy/poczta_elektroniczna.pl.md
-    - page_poczta_elektroniczna: Podrecznik_grantowy/poczta_elektroniczna.en.md
-    - page_jak_wystapic_o_grant_obliczeniowy: Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.pl.md
-    - page_jak_wystapic_o_grant_obliczeniowy: Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.en.md
-    - page_rodzaje_grantow: Podrecznik_grantowy/rodzaje_grantow.pl.md
-    - page_rodzaje_grantow: Podrecznik_grantowy/rodzaje_grantow.en.md
-    - page_rozliczanie_grantu: Podrecznik_grantowy/rozliczanie_grantu.pl.md
-    - page_rozliczanie_grantu: Podrecznik_grantowy/rozliczanie_grantu.en.md
+- section_system_alokacji_zasobow:
+    - page_wstep_i_definicje: System_alokacji_zasobow/wstep_i_definicje.pl.md
+    - page_wstep_i_definicje: System_alokacji_zasobow/wstep_i_definicje.en.md
+    - page_zakladanie_konta: System_alokacji_zasobow/zakladanie_konta.pl.md
+    - page_zakladanie_konta: System_alokacji_zasobow/zakladanie_konta.en.md
+    - page_rodzaje_alokacji: System_alokacji_zasobow/rodzaje_alokacji.pl.md
+    - page_rodzaje_alokacji: System_alokacji_zasobow/rodzaje_alokacji.en.md
+    - page_rozliczanie_projektu: System_alokacji_zasobow/rozliczanie_projektu.pl.md
+    - page_rozliczanie_projektu: System_alokacji_zasobow/rozliczanie_projektu.en.md
+    - page_faq_system_alokacji_zasobow: System_alokacji_zasobow/faq.pl.md
+    - page_faq_system_alokacji_zasobow: System_alokacji_zasobow/faq.en.md
+    - page_poczta_elektroniczna: System_alokacji_zasobow/poczta_elektroniczna.pl.md
+    - page_poczta_elektroniczna: System_alokacji_zasobow/poczta_elektroniczna.en.md
 - section_instrukcje:
   - sub_section_logowanie:
     - page_nazwa_konta_i_haslo: Tutorials/Logowanie/nazwa_konta_i_haslo.pl.md
