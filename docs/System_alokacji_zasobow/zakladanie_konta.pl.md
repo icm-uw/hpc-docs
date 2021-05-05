@@ -82,8 +82,6 @@ Aby uruchomić obliczenia na superkomputerze, należy:
 
 * Zalogować się z systemu [Windows](../Tutorials/Logowanie/ssh_windows.pl.md) lub [UNIX/Linux](../Tutorials/Logowanie/ssh.pl.md).
 
-* Przed pierwszym logowaniem należy [zmienić hasło](../Tutorials/Logowanie/nazwa_konta_i_haslo.pl.md).
-
 * Użytkownik możne uzyskać podstawowe dane o swoim grancie i koncie z [linii poleceń](../Tutorials/HPC-intro/status_grantu_i_konta.md) lub korzystając z serwisu <https://granty.icm.edu.pl/>.
 
 * [Zlecić zadanie](../Tutorials/HPC-intro/slurm_intro.md).

@@ -81,8 +81,6 @@ To run calculations on a supercomputer:
 
 * Log in from [Windows](../Tutorials/Logowanie/ssh_windows.en.md) or [UNIX/Linux](../Tutorials/Logowanie/ssh.en.md).
 
-* Before logging in for the first time, [change the password](../Tutorials/Logowanie/nazwa_konta_i_haslo.en.md)
-
 * The user can obtain basic data about his grant and account from [command line](../Tutorials/HPC-intro/status_grantu_i_konta.md) or by using the website <https://granty.icm.edu.pl/>.
 
 * [Submit a computational task](../Tutorials/HPC-intro/slurm_intro.md).
