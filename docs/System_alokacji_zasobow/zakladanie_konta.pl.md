@@ -44,15 +44,15 @@ Informacje o zadobach udostępnianych przez ICM:
 
 Po uruchomieniu projektu, kierownicy powinni:
 
-* weryfikować informacje o współwykonawcach swojego projektu np.
+* Weryfikować informacje o współwykonawcach swojego projektu np.
 zgłaszać do zamknięcia konta osób z którymi zakończyli współpracę, poprawiać dane kontaktowe.
-* aktualizować streszczenie projektu w miarę rozwoju obliczeń naukowych
-* aktualizować dane o instytucji naukowej, w przypadku jej zmiany przez kierownika lub współwykonawców projektu
-* przestrzegać zasad dotyczących licencji
-* zamieszczać w publikacje naukowe dotyczące projektu,
-* zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_projektu.pl.md)
-* raz w roku dokonywać [rozliczenia projektu](./rozliczanie_projektu.pl.md)
-* raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w ICM, o której informacje rozsyłane są drogą mailową.
+* Aktualizować streszczenie projektu w miarę rozwoju obliczeń naukowych.
+* Aktualizować dane o instytucji naukowej, w przypadku jej zmiany przez kierownika lub współwykonawców projektu.
+* Rrzestrzegać zasad dotyczących licencji.
+* Zamieszczać w publikacje naukowe dotyczące projektu.
+* Zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_projektu.pl.md)
+* Raz w roku dokonywać [rozliczenia projektu](./rozliczanie_projektu.pl.md).
+* Raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w ICM, o której informacje rozsyłane są drogą mailową.
 
 ### Jak dodać współwykonawców do projektu
 
@@ -60,11 +60,11 @@ Kierownik projektu (PI), po wejściu w zakładkę `Projekty` i wybraniu
 właściwego projektu z listy, może dodać kolejnych współwykonawców.
 Klikamy w guzik `Dodaj użytkowników`.
 
-Jeżeli współwykonawca nie posiada konta w ICM
+Jeżeli współwykonawca nie posiada konta w ICM:
 
-* warto wysłać mu zaproszenie - zdecydowanie przyśpieszy to proces otwarcia konta
+* kierownik projektu wysyła zaproszenie współwykonawca - zdecydowanie przyśpiesza to proces otwarcia konta
 
-* lub wnioskuje samodzielnie o otwarcie konta
+* alterntatywnie, współwykonawca wnioskuje samodzielnie o otwarcie konta
   
 Jeżeli wspólwykonawca posiada już konto w ICM, 
 to korzystamy z opcji wyszukiwania użytkownika.

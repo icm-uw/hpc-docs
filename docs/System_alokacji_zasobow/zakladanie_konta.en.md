@@ -14,9 +14,9 @@ The account activation has the following stages:
 4. Activated - the account has been launched in the system.
 
 !!! success "Principal Investigator (PI)"
-    Only the Project Investigator (PI) can create projects and apply for computational resources (allocations).
+    Only the Principal Investigator (PI) can create projects and apply for computational resources (allocations).
 
-    We grant Project Investigator (PI) rights to users who:
+    We grant Principal Investigator (PI) rights to users who:
 
       * works in a Polish research instituition/university
       * holds a doctoral degree
@@ -43,27 +43,27 @@ Details regarding the resources provided by ICM:
 
 Once the project is launched, the Principal Investigator is obliged to:
 
-* verify information about co-contractors of his/her project, e.g.
+* Verify information about co-contractors of his/her project, e.g.
 report people with whom they have terminated their cooperation until the account is closed, correct their contact details.
-* update the grant summary as scientific calculations develop
-* update data on the research institution in the event of its change by the grant manager or co-contractors
-* follow the licensing rules
-* publish in scientific publications about the project,
-* the publications shall indicate that the computations have been carried out [using ICM infrastructure](./rozliczanie_projektu.en.md)
-* submit [report from project](./rozliczanie_projektu.en.md), annualy.
-* once a year participate in the KDM Users' Reporting Session at ICM, information about which is sent by e-mail.
+* Update the grant summary as scientific calculations develop.
+* Update data on the research institution in the event of its change by the grant manager or co-contractors.
+* Follow the licensing rules.
+* Publish in scientific publications about the project.
+* The publications shall indicate that the computations have been carried out [using ICM infrastructure](./rozliczanie_projektu.en.md).
+* Submit [report from project](./rozliczanie_projektu.en.md), annualy.
+* Once a year participate in the KDM Users' Reporting Session at ICM, information about which is sent by e-mail.
 
 ### How to add contractors to a project
 
-Project manager (PI), after entering the `Projects` tab and selecting
+Principal Investigator (PI), after entering the `Projects` tab and selecting
 appropriate project from the list, may add additional co-contractors.
 Click on the `Add users` button.
 
 If the contractor does not have an account in ICM, then
 
-* it is worth sending him/her an invitation - it will definitely speed up the account opening process
+* PI sends an invitation code to the contractor - it definitely speeds up the account opening process.
 
-* he/she may applies for the opening of an account by himself
+* Alternatively, the contractor may apply for the opening of an account without the invitation code.
   
 If the contractor already has an account in ICM,
 then the user search option shall be used.
