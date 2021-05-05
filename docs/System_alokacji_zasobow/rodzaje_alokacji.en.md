@@ -12,8 +12,10 @@ On the Topola supercomputer, only one type of grant is awarded, amounting to 1 m
 
 ## Rysy
 
-Due to the relatively small size and specificity of the Rysy supercomputer (GPU cluster), allocations are negotiated individually. 
-The application should justify the necessity to use the GPU in the calculations.
+Due to the relatively small size and specificity of the Rysy supercomputer (GPU cluster), allocations are negotiated individually.
+This supercomputer is an experimental machine, therefore no dedicated software is installed in the operating system.
+The main usage is focused on fundamental research related to machine learning, with low computational complexity.
+The application should justify the need to use the GPU in the calculations.
 
 ## Okeanos
 

@@ -12,7 +12,10 @@ Na superkomputerze Topola przyznawany jest tylko jeden rodzaj grantów w wymiarz
 
 ## Rysy
 
-Ze względu na stosunkowo niewielkie rozmiary i specyfikę superkomputera Rysy (klaster GPU) alokacje negocjonowane są indywidualnie. W aplikacji należy uzasadnić konieczność wykorzystania GPU w obliczeniach.
+Ze względu na stosunkowo niewielkie rozmiary i specyfikę superkomputera Rysy (klaster GPU) alokacje negocjonowane są indywidualnie.
+Superkomputer ten jest maszyną eksperymentalną, w związku z tym w systemie operacyjnym nie są instalowane dedykowane aplikacje.
+Głównym zastosowaniem są badania podstawowe związane z uczeniem maszynowym, o niewielkiej złożoności obliczeniowej.
+W aplikacji należy uzasadnić konieczność wykorzystania GPU w obliczeniach.
 
 ## Okeanos
 
