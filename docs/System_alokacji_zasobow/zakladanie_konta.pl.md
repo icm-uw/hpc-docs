@@ -62,9 +62,9 @@ Klikamy w guzik `Dodaj użytkowników`.
 
 Jeżeli współwykonawca nie posiada konta w ICM:
 
-* kierownik projektu wysyła zaproszenie współwykonawca - zdecydowanie przyśpiesza to proces otwarcia konta
+* Kierownik projektu wysyła zaproszenie współwykonawcy - zdecydowanie przyśpiesza to proces otwarcia konta.
 
-* alterntatywnie, współwykonawca wnioskuje samodzielnie o otwarcie konta
+* Alterntatywnie, współwykonawca wnioskuje samodzielnie o otwarcie konta.
   
 Jeżeli wspólwykonawca posiada już konto w ICM, 
 to korzystamy z opcji wyszukiwania użytkownika.
