@@ -10,11 +10,6 @@ body {text-align: justify}
 
 # Dokumentacja ICM UW
 
-!!! info "Repozytorium GitHub"
-    Pliki dokumentacji ICM UW są utrzymywane w [repozytorium GitHub] - wkład w rozwój serwisu jest mile widziany!
-
-[repozytorium GitHub]: https://github.com/icm-uw/hpc-docs/tree/master
-
 Komputery Dużej Mocy, zwane też superkomputerami to maszyny o wydajności przekraczającej wiele tysięcy razy komputery osobiste.
 Naukowcowcom oraz przedsiębiorcom oferujemy możliwość skorzystania ze sprzętu, którym dysponujemy.
 
