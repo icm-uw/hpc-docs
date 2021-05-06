@@ -1,6 +1,14 @@
 site_name: Dokumentacja ICM UW
 site_description: Komputery Dużej Mocy w ICM UW
 site_author: ICM
+site_url: https://icm.edu.pl/
+
+repo_name: ICM-HPC
+repo_url: https://git.icm.edu.pl/owu/hpc-docs
+edit_uri: https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/
+
+extra:
+  homepage: https://icm.edu.pl/
 
 theme: 
   logo: 'images/Logo_icm_biale.png'
@@ -64,15 +72,7 @@ plugins:
       fallback_to_build_date: true
   - monorepo
 
-extra_css:
-    - style.css
-
 # https://facelessuser.github.io/pymdown-extensions/
-
-repo_name: ICM-HPC
-repo_url: https://git.icm.edu.pl/owu/hpc-docs
-edit_uri: "https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/"
-
 markdown_extensions:
     - attr_list
     - fenced_code
@@ -99,11 +99,13 @@ markdown_extensions:
         emoji_index: !!python/name:pymdownx.emoji.twemoji
         emoji_generator: !!python/name:pymdownx.emoji.to_svg
 
-# list of emoji: https://gist.github.com/rxaviers/7360908
-
+extra_css:
+  - style.css
 
 extra_javascript: 
-    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+# list of emoji: https://gist.github.com/rxaviers/7360908
 
 nav:
 - Strona główna: index.md

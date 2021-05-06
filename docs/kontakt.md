@@ -29,3 +29,10 @@ Warto podać następujące dane:
 - plik wsadowy my_job.sbatch
 
 - plik wynikowy slurm-123456.out
+
+## Dokumentacja
+
+!!! info "Repozytorium GitLab"
+    Pliki dokumentacji ICM UW są utrzymywane w [repozytorium GitLab] - wkład w rozwój serwisu jest mile widziany!
+
+[repozytorium GitLab]: https://git.icm.edu.pl/owu/hpc-docs
