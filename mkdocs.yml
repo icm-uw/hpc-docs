@@ -122,7 +122,7 @@ extra_javascript:
 # list of emoji: https://gist.github.com/rxaviers/7360908
 
 nav:
-- page_strona_glowna: index.pl.md
+- page_strona_glowna: index.md
 - page_strona_glowna: index.en.md
 - section_formalnosci:
     - page_uzytkownik: O_zasobach_ICM/Formalnosci/uzytkownik.pl.md
