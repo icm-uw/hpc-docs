@@ -36,7 +36,7 @@ The description should focus on the **computational** aspect of the research.
 
 Details regarding the resources provided by ICM:
 
-* [Avalaible supercomputers - Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.md)
+* [Avalaible supercomputers - Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.en.md)
 * [Types of allocations](./rodzaje_alokacji.en.md)
 
 ## Principal Investigator (PI) - obligations

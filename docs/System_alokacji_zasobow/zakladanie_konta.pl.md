@@ -37,7 +37,7 @@ Opis powinien być skoncetrowany na **obliczeniowym** aspekcie badań.
 
 Informacje o zadobach udostępnianych przez ICM:
 
-* [Dostępne superkomputery - Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.md)
+* [Dostępne superkomputery - Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.pl.md)
 * [Rodzaje alokacji](./rodzaje_alokacji.pl.md)
 
 ## Obowiązki Kierownika Projektu (PI)

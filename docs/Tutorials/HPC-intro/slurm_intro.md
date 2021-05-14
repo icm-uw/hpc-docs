@@ -179,7 +179,7 @@ Niektóre opcje tego polecenia są specyficzne dla danego komputera.
     W przypadku pozostałych systemów możliwy/wymagany jest ***dodatkowy krok logowania*** wykonany z komputera
     hpc.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
-Więcej o komputerach dostępnych w ICM [tutaj](../../O_zasobach_ICM/Zasoby/komputery_w_icm.md).
+Więcej o komputerach dostępnych w ICM [tutaj](../../O_zasobach_ICM/Zasoby/komputery_w_icm.pl.md).
 
 ### Tryb wsadowy
 
@@ -233,4 +233,4 @@ Aby przypisać zadanie do konkretnego qos'a należy ustalić zmienną:
 --qos=NAZWA_QOSa
 ```
 
-Szczegóły qos'ów dostępnych w ICM znajdują się [tu](../../O_zasobach_ICM/Zasoby/komputery_w_icm.md).
+Szczegóły qos'ów dostępnych w ICM znajdują się [tu](../../O_zasobach_ICM/Zasoby/komputery_w_icm.pl.md).

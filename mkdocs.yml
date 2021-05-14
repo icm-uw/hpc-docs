@@ -34,6 +34,7 @@ plugins:
         pl:
           page_strona_glowna: "Strona główna"
           section_formalnosci: "Warunki korzystania"
+          section_zasoby_sprzetowe: "Zasoby sprzętowe"
           page_uzytkownik: "Kto może zostać użytkownikiem"
           page_warunki: "Warunki korzystania"
           page_regulamin: "Regulamin użytkownika"
@@ -57,6 +58,7 @@ plugins:
         en:
           page_strona_glowna: "Index page"
           section_formalnosci: "Terms of use"
+          section_zasoby_sprzetowe: "Hardware"
           page_uzytkownik: "Who can become a user"
           page_warunki: "General rules"
           page_regulamin: "Terms of service"
@@ -131,8 +133,9 @@ nav:
     - page_regulamin_uzytkownika_icm: O_zasobach_ICM/Formalnosci/regulamin.en.md
     - page_polityka_prywatnosci: O_zasobach_ICM/Formalnosci/polityka_prywatnosci.pl.md
     - page_polityka_prywatnosci: O_zasobach_ICM/Formalnosci/polityka_prywatnosci.en.md
-- Zasoby sprzętowe:
-    - Komputery: O_zasobach_ICM/Zasoby/komputery_w_icm.md
+- section_zasoby_sprzetowe:
+    - Komputery: O_zasobach_ICM/Zasoby/komputery_w_icm.pl.md
+    - Komputery: O_zasobach_ICM/Zasoby/komputery_w_icm.en.md
     - Przechowywanie danych: O_zasobach_ICM/Zasoby/przechowywanie_danych.md
 - Aplikacje:
     - Dostępne oprogramowanie: O_zasobach_ICM/Aplikacje/aplikacje.md
