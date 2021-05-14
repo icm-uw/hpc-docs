@@ -1,7 +1,7 @@
 # Types of Allocations
 
 The allocation type depends on the amount of requested CPUh
-and a supercomputer ([Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.md))
+and a supercomputer ([Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.en.md))
 on which the calculations are to be performed.
 
 ## Topola

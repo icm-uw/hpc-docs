@@ -6,7 +6,7 @@ draft: false
 
 Warunki korzystania z zasobów ICM
 
-* Zasoby ICM są otwarte dla [środowiska naukowego](uzytkownik.md).
+* Zasoby ICM są otwarte dla [środowiska naukowego](uzytkownik.pl.md).
 
 * Dostęp do zasobów na potrzeby niekomercyjnych badań naukowych i dydaktyki jest nieodpłatny.
 

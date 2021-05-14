@@ -21,7 +21,7 @@ W sprawach związanych z przetwarzaniem danych osobowych można się z nami kont
 
 ## Sposób zbierania i cel przetwarzania danych osobowych Użytkowników
 
-Dane osobowe Użytkowników zbierane są w momencie rejestracji w Bazie Grantów ICM oraz na etapie składania Wniosku o Grant Obliczeniowy oraz zakładania Konta Użytkownika. Usługi dostępu do serwerów obliczeniowych świadczone są na podstawie [Regulaminu Użytkownika](regulamin.pl.md) oraz [Zasad dostępu](warunki.md).
+Dane osobowe Użytkowników zbierane są w momencie rejestracji w Bazie Grantów ICM oraz na etapie składania Wniosku o Grant Obliczeniowy oraz zakładania Konta Użytkownika. Usługi dostępu do serwerów obliczeniowych świadczone są na podstawie [Regulaminu Użytkownika](regulamin.pl.md) oraz [Zasad dostępu](warunki.pl.md).
 
 Dane gromadzone są w celu:
 

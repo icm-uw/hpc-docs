@@ -18,7 +18,7 @@ scontrol show res # pokaż rezerwacje
 scontrol show config # pokaż ustawienia slurma oraz lokalizację slurm.conf
 ```
 
-Więcej informacji o na poszczegółnych systemach (topola/okeanos/rysy) znajduje się [tu](../../O_zasobach_ICM/Zasoby/komputery_w_icm.md).
+Więcej informacji o na poszczegółnych systemach (topola/okeanos/rysy) znajduje się [tu](../../O_zasobach_ICM/Zasoby/komputery_w_icm.pl.md).
 
 Inne przydatne komendy:
 

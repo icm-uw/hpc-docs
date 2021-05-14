@@ -1,7 +1,7 @@
 # Rodzaje Alokacji
 
 Rodzaj alokacji zależy od ilości zadeklarowanych CPUh 
-i superkomputera ([Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.md)) 
+i superkomputera ([Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.pl.md)) 
 na którym mają być realizowane obliczenia.
 
 ## Topola
