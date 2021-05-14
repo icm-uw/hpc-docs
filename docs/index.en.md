@@ -36,9 +36,10 @@ innovations in HPC.
 
 Some of ICM's most recognisable projects include:
 
-- meteo.pl - meteorological service utilising numerical weather
-  forecasts,
-- HPC hackathons and programming challenges,
+- <http://www.meteo.pl/> - meteorological service utilising numerical weather
+  forecasts.
+- HPC hackathons and programming challenges.
 - second-degree (MSc) studies in computational engineering.
+- epidemiological model for Poland <https://covid-19.icm.edu.pl/>
 
 <iframe width="952" height="380" src="https://www.youtube.com/embed/S5bn9t2EHV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
