@@ -13,6 +13,7 @@ before_script:
   - pip install -r requirements.txt
   - pip freeze
   - git submodule update --init --recursive --remote
+  - echo "$SSH_PRIVATE_KEY_KDM_PAGES" | tr -d '\r' | ssh-add -
 
 test-pages:
   stage: test
@@ -25,17 +26,22 @@ test-pages:
     when: always # on_failure
   script:
     - mkdocs build --verbose --clean --strict --site-dir tmp
+    - timeout 5 ssh -T kdm@213.135.55.88
+    - ssh kdm@213.135.55.88 'rm -rf /home/kdm/test'
+    - scp -r tmp/ kdm@213.135.55.88:/home/kdm/html/ 
 
-pages: # For GitLab Pages, the job must have a specific name, called pages. This setting tells the runner you want the job to deploy your website.
-  stage: deploy
-  only:
-    - master
-  needs: [test-pages]
-  dependencies:
-    - test-pages
-  extends: .all
-  script:
-    - mkdocs build --verbose --clean --strict --site-dir public
-  artifacts:
-    paths:
-      - public
+# pages: # For GitLab Pages, the job must have a specific name, called pages. This setting tells the runner you want the job to deploy your website.
+#   stage: deploy
+#   only:
+#     - master
+#   needs: [test-pages]
+#   dependencies:
+#     - test-pages
+#   extends: .all
+#   script:
+#     - mkdocs build --verbose --clean --strict --site-dir public
+#   artifacts:
+#     paths:
+#       - public
+
+
