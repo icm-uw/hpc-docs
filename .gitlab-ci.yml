@@ -11,6 +11,8 @@ stages:
 before_script:
   - eval $(ssh-agent -s)
   - echo "$SSH_PRIVATE_KEY_KDM_PAGES" | tr -d '\r' | ssh-add <<< "$PIN" &
+  - touch test_files.txt
+  - scp -r test_files.txt akdm@213.135.55.88:/home/kdm/
   - |- 
     if [[ "x$(ssh -q kdm@213.135.55.88 exit)$?" == "x0" ]] ; then 
       echo "ssh test: connection ok"
