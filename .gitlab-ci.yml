@@ -9,13 +9,14 @@ stages:
 
 # https://docs.gitlab.com/ee/ci/ssh_keys/
 before_script:
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY_KDM_PAGES" | tr -d '\r' | ssh-add -
+  - timeout 5 ssh -T kdm@213.135.55.88
   - pwd 
   - ls -latr
   - pip install -r requirements.txt
   - pip freeze
   - git submodule update --init --recursive --remote
-  - eval $(ssh-agent -s)
-  - echo "$SSH_PRIVATE_KEY_KDM_PAGES" | tr -d '\r' | ssh-add -
 
 test-pages:
   stage: test
@@ -28,7 +29,6 @@ test-pages:
     when: always # on_failure
   script:
     - mkdocs build --verbose --clean --strict --site-dir tmp
-    - timeout 5 ssh -T kdm@213.135.55.88
     - ssh kdm@213.135.55.88 'rm -rf /home/kdm/test'
     - scp -r tmp/ kdm@213.135.55.88:/home/kdm/html/ 
 
