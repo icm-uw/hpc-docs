@@ -14,7 +14,8 @@ stages:
 before_script:
   - eval $(ssh-agent -s)
   - echo "$SSH_KEY_ENCODED64" | base64 -di | tr -d '\r' | ssh-add -  
-  - ssh -o StrictHostKeyChecking=no -vvv kdm@213.135.55.88
+  # - ssh -o StrictHostKeyChecking=no -vvv kdm@213.135.55.88
+  - ssh-keyscan -H 192.168.1.162 >> ~/.ssh/known_hosts
   - |- 
     if [[ "x$(ssh -q kdm@213.135.55.88 exit)$?" == "x0" ]] ; then 
       echo "ssh test: connection ok"
