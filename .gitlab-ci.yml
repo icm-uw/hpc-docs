@@ -44,7 +44,7 @@ test-pages:
     when: always # on_failure
   script:
     - mkdocs build --verbose --clean --strict --site-dir tmp
-    - ssh kdm@213.135.55.88 'rm -rf /home/kdm/test'
+    - ssh kdm@213.135.55.88 'rm -rf /home/kdm/html'
     - scp -r tmp/ kdm@213.135.55.88:/home/kdm/html/ 
 
 # pages: # For GitLab Pages, the job must have a specific name, called pages. This setting tells the runner you want the job to deploy your website.
