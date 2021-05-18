@@ -7,22 +7,8 @@ stages:
 .all:
   allow_failure: false 
 
-# encode: base64 -w0 priv_key > priv_key_base64.txt
-# decode: cat priv_key_base64.txt | base64 -di
-
-# https://docs.gitlab.com/ee/ci/ssh_keys/
 before_script:
   - eval $(ssh-agent -s)
-  - echo "$SSH_KEY_ENCODED64" | base64 -di | tr -d '\r' | ssh-add -  
-  # - ssh -o StrictHostKeyChecking=no -vvv kdm@213.135.55.88
-  - mkdir -p ~/.ssh && touch ~/.ssh/known_hosts
-  - ssh-keyscan -H 213.135.55.88 >> ~/.ssh/known_hosts
-  - |- 
-    if [[ "x$(ssh -q kdm@213.135.55.88 exit)$?" == "x0" ]] ; then 
-      echo "ssh test: connection ok"
-    else 
-      echo "ssh test: something went wrong..." 
-    fi
   - pwd 
   - ls -latr
   - pip install -r requirements.txt
@@ -40,24 +26,36 @@ test-pages:
     when: always # on_failure
   script:
     - mkdocs build --verbose --clean --strict --site-dir tmp
-    - ssh kdm@213.135.55.88 'rm -rf /home/kdm/html'
-    - scp -r tmp/ kdm@213.135.55.88:/home/kdm/html/ 
 
+
+# https://docs.gitlab.com/ee/ci/ssh_keys/
+
+# encode: base64 -w0 priv_key > priv_key_base64.txt
+# decode: cat priv_key_base64.txt | base64 -di
 
 # For GitLab Pages, the job must have a specific name, called pages. This setting tells the runner you want the job to deploy your website.
 # Due to some problems with custom domain in gitlab, we host the webpage from out machine: 213.135.55.88
-# pages: 
-#   stage: deploy
-#   only:
-#     - master
-#   needs: [test-pages]
-#   dependencies:
-#     - test-pages
-#   extends: .all
-#   script:
-#     - mkdocs build --verbose --clean --strict --site-dir public
-#   artifacts:
-#     paths:
-#       - public
-
-
+pages: 
+  stage: deploy
+  only:
+    - master
+  needs: [test-pages]
+  dependencies:
+    - test-pages
+  extends: .all
+  script:
+    - echo "$SSH_KEY_ENCODED64" | base64 -di | tr -d '\r' | ssh-add -  
+    - mkdir -p ~/.ssh && touch ~/.ssh/known_hosts
+    - ssh-keyscan -H 213.135.55.88 >> ~/.ssh/known_hosts  # alternative: ssh -o StrictHostKeyChecking=no -vvv kdm@213.135.55.88
+    - |- 
+      if [[ "x$(ssh -q kdm@213.135.55.88 exit)$?" == "x0" ]] ; then 
+        echo "ssh test: connection ok"
+      else 
+        echo "ssh test: something went wrong..." 
+      fi
+    - mkdocs build --verbose --clean --strict --site-dir public # GitLab Pages requires the folder to be called public
+    - ssh kdm@213.135.55.88 'rm -rf /home/kdm/html'
+    - scp -r public/ kdm@213.135.55.88:/home/kdm/html/ 
+  artifacts:
+    paths:
+      - public 
