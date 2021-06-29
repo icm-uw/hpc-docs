@@ -22,22 +22,22 @@ The application should justify the need to use the GPU in the calculations.
 The resources of the Okeanos supercomputer are made available primarily to scientists,
 whose research work requires the use of massively parallel calculations.
 
-**A Allocation: Great Challenges**
+**Great Challenges**
 
-Type A allocations are intended for teams requesting computing time in excess of 2 million core hours. 
-Due to the amount of resources, bpth the requests for A allocations and annoual reports are rigorously assessed.
+These allocations are intended for teams requesting computing time in excess of 2 million core hours. 
+Due to the amount of resources, both the requests for allocations and annoual reports are rigorously assessed.
 
-**B allocation: Standard**
+**Standard allocation**
 
-Type B allocations are granted to teams requesting computation time no more than 2 million core hours.
+Standard allocations are granted to teams requesting computation time no more than 2 million core hours.
 
-**C: Test allocation**
+**Test allocation**
 
-Type C allocations are granted to teams requesting low computing resources
+Allocations are granted to teams requesting low computing resources
 (~20,000 core hours) needed to test software or computational models.
-The main purpose of type C grants is to collect information necessary to apply for a type A or B grant.
+The main purpose of type test allocations is to collect information necessary to apply for a "Standard" or "Great Challenges" allocations.
 Applications will only be assessed in formal and technical terms.
-Computational resources for Type C grants will be awarded for 6 months.
+Computational resources for test allocations will be awarded for 6 months.
 
 ## Rules for allocating allocations
 

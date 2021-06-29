@@ -21,6 +21,7 @@ theme:
     - search.highlight
 
 plugins:
+  - monorepo
   - search # necessary for search to work
   - i18n:
       languages:
@@ -48,6 +49,7 @@ plugins:
           section_system_alokacji_zasobow: "System alokacji zasobów"
           page_wstep_i_definicje: "Wstęp i Definicje"
           page_zakladanie_konta:  "Zakładanie konta"
+          page_wnioskowanie_o_alokacje: "Wnioskowanie o alokacje"
           page_rodzaje_alokacji: "Rodzaje alokacji"
           page_rozliczanie_projektu: "Rozliczanie projektu"
           page_faq_system_alokacji_zasobow: "FAQ"
@@ -72,6 +74,7 @@ plugins:
           section_system_alokacji_zasobow: "Resource Allocation System"
           page_wstep_i_definicje: "Introduction and definitions"
           page_zakladanie_konta:  "Creating account"
+          page_wnioskowanie_o_alokacje: "Request resource allocation"
           page_rodzaje_alokacji: "Types of allocations"
           page_rozliczanie_projektu: "Reports and publications"
           page_faq_system_alokacji_zasobow: "FAQ"
@@ -81,10 +84,10 @@ plugins:
           page_regulamin_uzytkownika_icm: "Terms of Service"
   - mkdocs-jupyter:
       include_source: True # true - render on web; false - download
-  - git-revision-date-localized:
-      type: date
-      fallback_to_build_date: true
-  - monorepo
+  # - git-revision-date-localized: # this plugin cannot handle sub-repositories (docs/Szkolenia/grafy/)
+  #     type: date
+  #     fallback_to_build_date: true
+
 
 # https://facelessuser.github.io/pymdown-extensions/
 markdown_extensions:
@@ -149,6 +152,8 @@ nav:
     - page_wstep_i_definicje: System_alokacji_zasobow/wstep_i_definicje.en.md
     - page_zakladanie_konta: System_alokacji_zasobow/zakladanie_konta.pl.md
     - page_zakladanie_konta: System_alokacji_zasobow/zakladanie_konta.en.md
+    - page_wnioskowanie_o_alokacje: System_alokacji_zasobow/wnioskowanie_o_alokacje.pl.md
+    - page_wnioskowanie_o_alokacje: System_alokacji_zasobow/wnioskowanie_o_alokacje.en.md
     - page_rodzaje_alokacji: System_alokacji_zasobow/rodzaje_alokacji.pl.md
     - page_rodzaje_alokacji: System_alokacji_zasobow/rodzaje_alokacji.en.md
     - page_rozliczanie_projektu: System_alokacji_zasobow/rozliczanie_projektu.pl.md

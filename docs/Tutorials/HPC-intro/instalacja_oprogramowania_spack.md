@@ -31,7 +31,7 @@ Poniżej przedstawione są komendy pozwalające zbudować program [OpenFOAM](htt
 1. Klonujemy projekt `spack-icm-topola` z git:
 
     ```.sh
-        $ git clone https://git.icm.edu.pl/owu-public/spack-icm-topola.git`
+        $ git clone https://git.icm.edu.pl/owu-public/spack-icm-topola.git
     ```
 
 2. Wchodzimy na węzeł obliczeniowy (to ważne, spack nie chce działać z tcsh):
@@ -167,5 +167,5 @@ cat spack-icm-topola/var/spack/repos/builtin/packages/openfoam-org/package.py
 cat spack-icm-topola/var/spack/repos/icm-edu-pl/packages/ 
 
 # logi z budowy
-/lu/topola.temp/spack-stage/moja_paczka 
+~/spack-build-stage
 ```
