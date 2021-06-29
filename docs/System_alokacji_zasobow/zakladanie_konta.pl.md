@@ -14,33 +14,17 @@ Wniosek o uruchomienie konta ma następujące statusy:
 3. Zaakceptowany - administratorzy zaakceptowali dane zawarte we wniosku.
 4. Aktywowany - konto zostało uruchomione systemie.
 
+### Kierownik Projektu
+
 !!! success "Kierownik Projektu (PI)"
     Tylko Kierownik Projektu (PI) może tworzyć projekty i występować o alokacje zasobów obliczeniowych.
 
     Uprawnienia Kierownika Projektu (PI) przyznajemy osobom, które:
 
       * pracują w polskiej jednostce naukowej
-      * posiadają stopień naukowy doktora   
+      * posiadają stopień naukowy doktora
 
-### Utworzenie projektu
-
-Po zalogowaniu, na górze strony <https://granty.icm.edu.pl/> należy kliknąć w `Projekt --> Dodaj projekt`.
-Należy podać tytuł, opis (wystarczy pół strony A4) i wybrać dyscyplinę.
-Opis projektu powinien być skoncetrowany na **naukowym** aspekcie badań.
-
-### Utworzenie alokacji
-
-Na stronie projektu należy kliknąć w `Wystąp o nową alokację`.
-Należy wybrać superkomputer z którego chcemy korzystać. 
-We wniosku należy podać ilość zasobów obliczeniowych (CPUh - rdzeniogodziny).
-Opis powinien być skoncetrowany na **obliczeniowym** aspekcie badań. 
-
-Informacje o zadobach udostępnianych przez ICM:
-
-* [Dostępne superkomputery - Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.pl.md)
-* [Rodzaje alokacji](./rodzaje_alokacji.pl.md)
-
-## Obowiązki Kierownika Projektu (PI)
+#### Obowiązki Kierownika Projektu (PI)
 
 Po uruchomieniu projektu, kierownicy powinni:
 
@@ -53,6 +37,16 @@ zgłaszać do zamknięcia konta osób z którymi zakończyli współpracę, popr
 * Zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_projektu.pl.md)
 * Raz w roku dokonywać [rozliczenia projektu](./rozliczanie_projektu.pl.md).
 * Raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w ICM, o której informacje rozsyłane są drogą mailową.
+
+### Utworzenie projektu
+
+Po zalogowaniu, na górze strony <https://granty.icm.edu.pl/> Kierownik projektu (PI) powinien kliknąć w `Projekt --> Dodaj projekt`.
+Należy podać tytuł, opis (wystarczy pół strony A4) i wybrać dyscyplinę.
+Opis projektu powinien być skoncetrowany na **naukowym** aspekcie badań.
+
+### Utworzenie alokacji
+
+Po utworzeniu projektu, Kierownik projektu (PI) powinien wystąpić o [nową alokację](./wnioskowanie_o_alokacje.pl.md).
 
 ### Jak dodać współwykonawców do projektu
 
@@ -70,6 +64,8 @@ Jeżeli wspólwykonawca posiada już konto w ICM,
 to korzystamy z opcji wyszukiwania użytkownika.
 
 Należy pamiętać, że tylko użytkownicy, którzy wyrazili zgodę na wyszukiwanie (`Profil użytkownika> Edytuj profil> Inni użytkownicy mogą znajdować mój profil`) będą widoczni.
+
+<center> ![](screen_shots/edytuj_profil_uzytkownika_pl.png) </center>
 
 ### Kilka projektów obliczeniowych
 

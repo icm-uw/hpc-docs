@@ -14,10 +14,10 @@ It allows you to:
     **Project** - describes the scientific activity.
     Within the project, we distinguish:
 
-    * **Project manager (PI - Principal Investigator)** - defines the person responsible for the project.
-    * **Allocation - (equivalent to 'account' in SLURM)** - describe the allocated computing resources (amount, duration).
+    * **[Project manager (PI - Principal Investigator)](./zakladanie_konta.pl.md#principal-investigator)** - defines the person responsible for the project.
+    * **[Allocation - (equivalent to 'account' in SLURM)](./wnioskowanie_o_alokacje.en.md)** - describe the allocated computing resources (amount, duration).
     * **Grants (NCN, NCBiR, etc.)** - describe the source of funding.
-    * **Reports** - describe the calculation results, reported once a year.
+    * **[Reports](./rozliczanie_projektu.en.md)** - describe the calculation results, reported once a year.
 
 ## Access to resources
 

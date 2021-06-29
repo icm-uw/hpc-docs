@@ -22,16 +22,16 @@ W aplikacji należy uzasadnić konieczność wykorzystania GPU w obliczeniach.
 Zasoby superkomputera Okeanos udostępniane są przede wszystkim naukowcom, 
 których praca badawcza wymaga zastosowania obliczeń masywnie równoległych. 
 
-**Alokacja A: Wielkie Wyzwania**
+**Wielkie Wyzwania**
 
-Alokacje typu A przeznaczone są dla zespołów wnioskujących o czas obliczeniowy przewyższający 2 miliony rdzeniogodzin. Ze względu na ilość zasobów, alokacje typu A są rygorystycznie oceniane i rozliczane.
+Największe alokacje przeznaczone są dla zespołów wnioskujących o czas obliczeniowy przewyższający 2 miliony rdzeniogodzin. Ze względu na ilość zasobów, alokacje typu "Wielkie Wyzwania" są rygorystycznie oceniane i rozliczane.
 
-**Alokacja B: Standardowa**
+**Alokacja Standardowa**
 
-Alokacje typu B przyznawane są zespołom wnioskującym o czas obliczeniowy nie większy niż
+Alokacje standardowe przyznawane są zespołom wnioskującym o czas obliczeniowy nie większy niż
 2 miliony rdzeniogodzin.
 
-**Alokacja C: Testowa**
+**Alokacja Testowa**
 
 Alokacje typu C przyznawane są zespołom wnioskującym o niewielkie zasoby obliczeniowe rzędu
 20 tysięcy rdzeniogodzin potrzebne do przetestowania oprogramowania lub modeli obliczeniowych.

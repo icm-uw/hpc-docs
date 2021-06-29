@@ -13,6 +13,8 @@ The account activation has the following stages:
 3. Accepted - the administrators accepted the data given in the application.
 4. Activated - the account has been launched in the system.
 
+### Principal Investigator
+
 !!! success "Principal Investigator (PI)"
     Only the Principal Investigator (PI) can create projects and apply for computational resources (allocations).
 
@@ -20,6 +22,20 @@ The account activation has the following stages:
 
       * works in a Polish research instituition/university
       * holds a doctoral degree
+
+#### Principal Investigator (PI) - obligations
+
+Once the project is launched, the Principal Investigator is obliged to:
+
+* Verify information about co-contractors of his/her project, e.g.
+report people with whom they have terminated their cooperation until the account is closed, correct their contact details.
+* Update the grant summary as scientific calculations develop.
+* Update data on the research institution in the event of its change by the grant manager or co-contractors.
+* Follow the licensing rules.
+* Publish in scientific publications about the project.
+* The publications shall indicate that the computations have been carried out [using ICM infrastructure](./rozliczanie_projektu.en.md).
+* Submit [report from project](./rozliczanie_projektu.en.md), annualy.
+* Once a year participate in the KDM Users' Reporting Session at ICM, information about which is sent by e-mail.
 
 ### Create a project
 
@@ -39,19 +55,6 @@ Details regarding the resources provided by ICM:
 * [Avalaible supercomputers - Okeanos, Topola, Rysy](../O_zasobach_ICM/Zasoby/komputery_w_icm.en.md)
 * [Types of allocations](./rodzaje_alokacji.en.md)
 
-## Principal Investigator (PI) - obligations
-
-Once the project is launched, the Principal Investigator is obliged to:
-
-* Verify information about co-contractors of his/her project, e.g.
-report people with whom they have terminated their cooperation until the account is closed, correct their contact details.
-* Update the grant summary as scientific calculations develop.
-* Update data on the research institution in the event of its change by the grant manager or co-contractors.
-* Follow the licensing rules.
-* Publish in scientific publications about the project.
-* The publications shall indicate that the computations have been carried out [using ICM infrastructure](./rozliczanie_projektu.en.md).
-* Submit [report from project](./rozliczanie_projektu.en.md), annualy.
-* Once a year participate in the KDM Users' Reporting Session at ICM, information about which is sent by e-mail.
 
 ### How to add contractors to a project
 
@@ -69,6 +72,8 @@ If the contractor already has an account in ICM,
 then the user search option shall be used.
 
 Please note that only users who have granted the consented (`User profile> Edit profile> Other users can find my profile`) will be visible.
+
+<center> ![](screen_shots/edytuj_profil_uzytkownika_en.png) </center>
 
 ### Several computing projects
 
