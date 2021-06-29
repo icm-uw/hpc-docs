@@ -21,6 +21,7 @@ theme:
     - search.highlight
 
 plugins:
+  - monorepo
   - search # necessary for search to work
   - i18n:
       languages:
@@ -83,10 +84,10 @@ plugins:
           page_regulamin_uzytkownika_icm: "Terms of Service"
   - mkdocs-jupyter:
       include_source: True # true - render on web; false - download
-  - git-revision-date-localized:
-      type: date
-      fallback_to_build_date: true
-  - monorepo
+  # - git-revision-date-localized: # this plugin cannot handle sub-repositories (docs/Szkolenia/grafy/)
+  #     type: date
+  #     fallback_to_build_date: true
+
 
 # https://facelessuser.github.io/pymdown-extensions/
 markdown_extensions:
