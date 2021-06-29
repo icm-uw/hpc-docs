@@ -95,9 +95,37 @@ Do zasobów współdzielonych należą:
 
 Katalog domowy okeanosa `/lustre/tetyda/home/` jest widoczny pod scieżką `/lu/tetyda/home/user_name/` z węzła dostępowego na topoli.
 
-## Udzielenie dostępu do danych dla członków tego samego grantu
+## Udzielenie dostępu do danych dla innych użytkowników
 
-Najlepszym sposobem na przekaznie dostępu do plików w ramach grantu jest użycie mechanizmu praw dostępu do pliku w Linux.
+Rekomendowanym sposobem na współdzielenie danych z innym użytkownikiem jest użycie komendy `setfacl`.
+
+```.sh
+## aby nadać uprawnienia (r - read, w - write, x - execute)
+$ setfacl --recursive -m u:inny_uzytkownik:rwx /somewhere/folder_to_share
+
+## aby sprawdzić uprawnienia
+$ getfacl /somewhere/folder_to_share/
+# file: /somewhere/folder_to_share/
+# owner: john_smith
+# group: icm-users
+user::rwx
+user:joe:r-x
+user:kate:rwx
+user:bob:r-x
+user:julia:r--
+group::r-x
+mask::r-x
+other::r-x
+```
+
+Więcej informacji na: <https://www.redhat.com/sysadmin/linux-access-control-lists>
+
+## Udzielenie dostępu do danych dla członków tej samej grupy użytkowników
+
+**Uwaga**, ten sposób współdzielenia zasobów stanie się w krótce nieaktualny.
+Grupy zostaną wycofane z użycia w systemach ICM.
+
+Innym sposobem na przekaznie dostępu do plików w ramach projektu jest użycie mechanizmu praw dostępu do pliku w Linux.
 W tym celu należy najpierw ustawić właściwą grupę dla plików które nas interesują,
 a następnie prawo odczytu (i zapisu jeżeli dotyczy) dla tej grupy.
 
