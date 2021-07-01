@@ -54,6 +54,7 @@ plugins:
           page_rozliczanie_projektu: "Rozliczanie projektu"
           page_faq_system_alokacji_zasobow: "FAQ"
           page_poczta_elektroniczna: "Poczta elektroniczna"
+          page_powiadomienia: "Powiadomienia"
           page_NEC_podstawy_uzycia: "NEC - podstawy użycia"
           page_SOL_sieci_neuronowe: "SOL - sieci neuronowe"
           page_regulamin_uzytkownika_icm: "Regulamin użytkownika"
@@ -79,6 +80,7 @@ plugins:
           page_rozliczanie_projektu: "Reports and publications"
           page_faq_system_alokacji_zasobow: "FAQ"
           page_poczta_elektroniczna: "ICM e-mail"
+          page_powiadomienia: "Notifications"
           page_NEC_podstawy_uzycia: "NEC - basic usage"
           page_SOL_sieci_neuronowe: "SOL - neural networks"
           page_regulamin_uzytkownika_icm: "Terms of Service"
@@ -162,6 +164,8 @@ nav:
     - page_faq_system_alokacji_zasobow: System_alokacji_zasobow/faq.en.md
     - page_poczta_elektroniczna: System_alokacji_zasobow/poczta_elektroniczna.pl.md
     - page_poczta_elektroniczna: System_alokacji_zasobow/poczta_elektroniczna.en.md
+    - page_powiadomienia: System_alokacji_zasobow/powiadomienia.pl.md
+    - page_powiadomienia: System_alokacji_zasobow/powiadomienia.en.md
 - section_instrukcje:
   - sub_section_logowanie:
     - page_nazwa_konta_i_haslo: Tutorials/Logowanie/nazwa_konta_i_haslo.pl.md
