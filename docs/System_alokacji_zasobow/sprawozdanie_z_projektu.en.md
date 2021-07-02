@@ -2,7 +2,7 @@
 
 The project is reported once a year, usually at the turn of February / March.
 
-A reminder sent in advance by e-mail to principal investigator and contractors.
+A reminder sent in advance by e-mail to principal investigator and users.
 The report shall be submited into the system by the principal investigator (PI).
 
 The PI's task is to summarize the project calculations and justify the use of ICM resources.
@@ -33,7 +33,7 @@ The report should include:
 It is worth remembering to verify:
 
 - project summaries
-- contact details of PI and contractors (please remember to update academic titles, telephone numbers and e-mails).
+- contact details of PI and users (please remember to update academic titles, telephone numbers and e-mails).
 
 ### Publications
 
@@ -77,16 +77,16 @@ Note that you only need DOI to add a publication.
 
 <center> ![](screen_shots/dodaj_publikacje.png) </center>
 
-### Report
+### Review
 
-Complete the remaining data: `Related Grants (NCN, NCBiR, etc.)`, `Publications` and `Report`.
+Complete the remaining data: `Related Grants (NCN, NCBiR, etc.)`, `Publications` and `Review`.
 In the `Related Grants` section, please provide information on the source of research funding, e.g. NCN, NCBiR, University X internal grant.
 
 <center> ![](screen_shots/szczegoly-projektu.png) </center>
 
-### Send report
+### Send review
 
-To send a report, click on the `Send report` link at the top of the page.
+To send a review, click on the `Send review` link at the top of the page.
 
 <center> ![](screen_shots/wyslij_sprawozdanie.png) </center>
 

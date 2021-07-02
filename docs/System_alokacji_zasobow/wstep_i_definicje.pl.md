@@ -18,7 +18,7 @@ Pozwala on na:
     * **[Kierownika projektu (PI - Principal Investigator)](./zakladanie_konta.pl.md#kierownik-projektu)** - definiuje osobę odpowiedzialną za projekt.
     * **[Alokacje - (odpowiednik 'account' w SLURM)](./wnioskowanie_o_alokacje.pl.md)** - opisują przyznane zasoby obliczeniowe (ilość, czas trwania).
     * **Granty (NCN, NCBiR, itp)** - opisują źródo finansowania.
-    * **[Sprawozdania z obliczeń](./rozliczanie_projektu.pl.md)** - opisują wyniki obliczeń, raportowane raz w roku.
+    * **[Sprawozdania z obliczeń](./sprawozdanie_z_projektu.pl.md)** - opisują wyniki obliczeń, raportowane raz w roku.
 
 ## Dostęp do zasobów
 
