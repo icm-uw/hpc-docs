@@ -2,7 +2,7 @@
 
 The project is reported once a year, usually at the turn of February / March.
 
-A reminder sent in advance by e-mail to principal investigator and contractors.
+A reminder sent in advance by e-mail to principal investigator and users.
 The report shall be submited into the system by the principal investigator (PI).
 
 The PI's task is to summarize the project calculations and justify the use of ICM resources.
@@ -33,7 +33,7 @@ The report should include:
 It is worth remembering to verify:
 
 - project summaries
-- contact details of PI and contractors (please remember to update academic titles, telephone numbers and e-mails).
+- contact details of PI and users (please remember to update academic titles, telephone numbers and e-mails).
 
 ### Publications
 

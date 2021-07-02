@@ -34,8 +34,8 @@ zgłaszać do zamknięcia konta osób z którymi zakończyli współpracę, popr
 * Aktualizować dane o instytucji naukowej, w przypadku jej zmiany przez kierownika lub współwykonawców projektu.
 * Rrzestrzegać zasad dotyczących licencji.
 * Zamieszczać w publikacje naukowe dotyczące projektu.
-* Zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_projektu.pl.md)
-* Raz w roku dokonywać [rozliczenia projektu](./rozliczanie_projektu.pl.md).
+* Zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./sprawozdanie_z_projektu.pl.md#publikacje)
+* Raz w roku dokonywać [rozliczenia projektu](./sprawozdanie_z_projektu.pl.md).
 * Raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w ICM, o której informacje rozsyłane są drogą mailową.
 
 ### Utworzenie projektu

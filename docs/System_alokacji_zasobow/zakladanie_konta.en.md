@@ -27,14 +27,14 @@ The account activation has the following stages:
 
 Once the project is launched, the Principal Investigator is obliged to:
 
-* Verify information about co-contractors of his/her project, e.g.
+* Verify information about users of his/her project, e.g.
 report people with whom they have terminated their cooperation until the account is closed, correct their contact details.
 * Update the grant summary as scientific calculations develop.
-* Update data on the research institution in the event of its change by the grant manager or co-contractors.
+* Update data on the research institution in the event of its change by the grant manager or user.
 * Follow the licensing rules.
 * Publish in scientific publications about the project.
-* The publications shall indicate that the computations have been carried out [using ICM infrastructure](./rozliczanie_projektu.en.md).
-* Submit [report from project](./rozliczanie_projektu.en.md), annualy.
+* The publications shall indicate that the computations have been carried out [using ICM infrastructure](./sprawozdanie_z_projektu.en.md#publications).
+* Submit [report from project](./sprawozdanie_z_projektu.en.md), annualy.
 * Once a year participate in the KDM Users' Reporting Session at ICM, information about which is sent by e-mail.
 
 ### Create a project
@@ -56,19 +56,19 @@ Details regarding the resources provided by ICM:
 * [Types of allocations](./rodzaje_alokacji.en.md)
 
 
-### How to add contractors to a project
+### How to add users to a project
 
 Principal Investigator (PI), after entering the `Projects` tab and selecting
-appropriate project from the list, may add additional co-contractors.
+appropriate project from the list, may add additional users.
 Click on the `Add users` button.
 
-If the contractor does not have an account in ICM, then
+If the user does not have an account in ICM, then
 
-* PI sends an invitation code to the contractor - it definitely speeds up the account opening process.
+* PI sends an invitation code to the user - it definitely speeds up the account opening process.
 
-* Alternatively, the contractor may apply for the opening of an account without the invitation code.
+* Alternatively, the user may apply for the opening of an account without the invitation code.
   
-If the contractor already has an account in ICM,
+If the user already has an account in ICM,
 then the user search option shall be used.
 
 Please note that only users who have granted the consented (`User profile> Edit profile> Other users can find my profile`) will be visible.

@@ -1,7 +1,7 @@
 
-# Rozliczenie Projektu
+# Sprawozdanie z Projektu
 
-Rozliczanie projektu odbywa się raz do roku, najczęściej na przełomie lutego/marca.
+Sprawozdanie projektu odbywa się raz do roku, najczęściej na przełomie lutego/marca.
 
 Przypomnienie o konieczności złożenia sprawozdania przesyłane jest mailem do wszystkich kierowników projektów oraz współwykonawców. Sprawozdanie do bazy wstawia kierownik projektu (PI).
 

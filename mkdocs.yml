@@ -51,7 +51,7 @@ plugins:
           page_zakladanie_konta:  "Zakładanie konta"
           page_wnioskowanie_o_alokacje: "Wnioskowanie o alokacje"
           page_rodzaje_alokacji: "Rodzaje alokacji"
-          page_rozliczanie_projektu: "Rozliczanie projektu"
+          page_sprawozdanie_z_projektu: "Sprawozdanie z projektu"
           page_faq_system_alokacji_zasobow: "FAQ"
           page_poczta_elektroniczna: "Poczta elektroniczna"
           page_powiadomienia: "Powiadomienia"
@@ -77,7 +77,7 @@ plugins:
           page_zakladanie_konta:  "Creating account"
           page_wnioskowanie_o_alokacje: "Request resource allocation"
           page_rodzaje_alokacji: "Types of allocations"
-          page_rozliczanie_projektu: "Reports and publications"
+          page_sprawozdanie_z_projektu: "Reports and publications"
           page_faq_system_alokacji_zasobow: "FAQ"
           page_poczta_elektroniczna: "ICM e-mail"
           page_powiadomienia: "Notifications"
@@ -158,8 +158,8 @@ nav:
     - page_wnioskowanie_o_alokacje: System_alokacji_zasobow/wnioskowanie_o_alokacje.en.md
     - page_rodzaje_alokacji: System_alokacji_zasobow/rodzaje_alokacji.pl.md
     - page_rodzaje_alokacji: System_alokacji_zasobow/rodzaje_alokacji.en.md
-    - page_rozliczanie_projektu: System_alokacji_zasobow/rozliczanie_projektu.pl.md
-    - page_rozliczanie_projektu: System_alokacji_zasobow/rozliczanie_projektu.en.md
+    - page_sprawozdanie_z_projektu: System_alokacji_zasobow/sprawozdanie_z_projektu.pl.md
+    - page_sprawozdanie_z_projektu: System_alokacji_zasobow/sprawozdanie_z_projektu.en.md
     - page_faq_system_alokacji_zasobow: System_alokacji_zasobow/faq.pl.md
     - page_faq_system_alokacji_zasobow: System_alokacji_zasobow/faq.en.md
     - page_poczta_elektroniczna: System_alokacji_zasobow/poczta_elektroniczna.pl.md
