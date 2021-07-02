@@ -77,16 +77,16 @@ Note that you only need DOI to add a publication.
 
 <center> ![](screen_shots/dodaj_publikacje.png) </center>
 
-### Report
+### Review
 
-Complete the remaining data: `Related Grants (NCN, NCBiR, etc.)`, `Publications` and `Report`.
+Complete the remaining data: `Related Grants (NCN, NCBiR, etc.)`, `Publications` and `Review`.
 In the `Related Grants` section, please provide information on the source of research funding, e.g. NCN, NCBiR, University X internal grant.
 
 <center> ![](screen_shots/szczegoly-projektu.png) </center>
 
-### Send report
+### Send review
 
-To send a report, click on the `Send report` link at the top of the page.
+To send a review, click on the `Send review` link at the top of the page.
 
 <center> ![](screen_shots/wyslij_sprawozdanie.png) </center>
 
